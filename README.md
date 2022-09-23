@@ -1,16 +1,21 @@
-# ReFrame test suite for CARC systems
+# CARC ReFrame test suite
 
 ## Purpose
 
-CARC uses [ReFrame](https://github.com/reframe-hpc/reframe) for the following regression testing:
+The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) system regression tests are designed to be short-running and to cover broad functionality. The tests include:
 
-- Module loading
-- Job submission (single-node and multi-node)
-- File system access and I/O performance
-- Data downloads
-- Programming environments (compilers, MPI libraries, toolchains, etc.)
-- Applications (Python, R, etc.)
-- Parallel computing (OpenMP, MPI, CUDA)
-- License server access
+- Software modules
+- Programming environments (compilers, toolchains, MPI libraries, etc.)
+- Parallel programming (OpenMP, MPI, CUDA)
+- Popular applications (Python, R, etc.)
+- Single-node and multi-node jobs
+- License server (e.g., qchem)
+- I/O on the /project, /scratch1, and /scratch2 file systems
+- File downloads
+- Singularity containers
 
-The tests emphasize functionality and not performance or benchmarking.
+Currently, tests are developed and run using ReFrame v3.12.0.
+
+## License
+
+[0BSD](LICENSE)
