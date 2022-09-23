@@ -1,0 +1,41 @@
+$comment
+Test of B3LYP-D3 functional (B3LYP with dispersion correction)
+Geometry optimization of methane_dimer, followed by single-point calculations
+with a larger basis set.
+$end
+
+$rem
+jobtype = opt
+method = b3lyp
+basis = 6-311++g**
+dft_d = d3
+incdft = false
+$end
+
+$molecule
+0 1
+C       0.000000    -0.000323     1.755803
+H      -0.887097     0.510784     1.390695
+H       0.887097     0.510784     1.390695
+H       0.000000    -1.024959     1.393014
+H       0.000000     0.001084     2.842908
+C       0.000000     0.000323    -1.755803
+H       0.000000    -0.001084    -2.842908
+H      -0.887097    -0.510784    -1.390695
+H       0.887097    -0.510784    -1.390695
+H       0.000000     1.024959    -1.393014
+$end
+
+@@@
+
+$rem
+jobtype = sp
+method = b3lyp
+basis = 6-311++g**
+dft_d = d3
+incdft = false
+$end
+
+$molecule
+READ
+$end
