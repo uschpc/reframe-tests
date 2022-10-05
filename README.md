@@ -9,7 +9,7 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - Parallel programming (OpenMP, MPI, CUDA)
 - Popular applications (Python, R, etc.)
 - Single-node and multi-node jobs
-- License server (e.g., qchem)
+- License server (e.g., Matlab, Q-Chem)
 - I/O on the /project, /scratch1, and /scratch2 file systems
 - File downloads
 - Singularity containers

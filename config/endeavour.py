@@ -40,6 +40,7 @@ site_configuration = {
                         'PrgEnv-python3',
                         'PrgEnv-R',
                         'PrgEnv-aria2',
+                        'PrgEnv-matlab',
                         'PrgEnv-qchem',
                         'PrgEnv-singularity'
                     ]
@@ -106,7 +107,7 @@ site_configuration = {
             'modules': [
                 'gcc/11.3.0',
                 'python/3.9.12'
-            ],
+            ]
         },
         {
             'name': 'PrgEnv-R',
@@ -114,20 +115,26 @@ site_configuration = {
                 'gcc/11.3.0',
                 'openblas/0.3.20',
                 'r/4.2.1'
-            ],
+            ]
         },
         {
             'name': 'PrgEnv-aria2',
             'modules': [
                 'gcc/11.3.0',
                 'aria2/1.36.0'
-            ],
+            ]
+        },
+        {
+            'name': 'PrgEnv-matlab',
+            'modules': [
+                'matlab/2022a'
+            ]
         },
         {
             'name': 'PrgEnv-qchem',
             'modules': [
                 'qchem/6.0.1'
-            ],
+            ]
         },
         {
              'name': 'PrgEnv-singularity',
