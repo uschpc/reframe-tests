@@ -16,9 +16,9 @@ class IOR_scratch2(rfm.RunOnlyRegressionTest):
             'PrgEnv-ior'
         ]
         self.sourcesdir = None
-        self.executable = 'ior -vvv -t 32m -b 384m -s 8 -F -C -e -o /scratch2/$USER/reframe.tmp'
+        self.executable = 'ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /scratch2/$USER/reframe.tmp'
         self.num_tasks = 16
-        self.num_tasks_per_node = 8
+        self.num_tasks_per_node = 4
         self.num_cpus_per_task = 1
         self.time_limit = '5m'
         self.sanity_patterns = sn.assert_found(r'Finished', self.stdout)
@@ -28,7 +28,7 @@ class IOR_scratch2(rfm.RunOnlyRegressionTest):
         }
         self.reference = {
             '*': {
-                'max write speed': (2500.00, -0.25, None, 'MiB/sec'),
-                'max read speed': (8000.00, -0.25, None, 'MiB/sec')
+                'max write speed': (2000.00, -0.25, None, 'MiB/sec'),
+                'max read speed': (4000.00, -0.25, None, 'MiB/sec')
             }
         }
