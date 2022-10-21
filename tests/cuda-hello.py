@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class CUDAHello(rfm.RegressionTest):
+class CUDA_Hello(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'CUDA hello world'
         self.tags = {

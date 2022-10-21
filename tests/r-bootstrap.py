@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class RBootstrap(rfm.RunOnlyRegressionTest):
+class R_Bootstrap(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Bootstrapping a GLM in parallel using R'
         self.tags = {

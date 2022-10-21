@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class PythonPi(rfm.RunOnlyRegressionTest):
+class Python_Pi(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Estimating pi in parallel using Python'
         self.tags = {

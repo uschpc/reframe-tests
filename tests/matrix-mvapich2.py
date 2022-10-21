@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class MatrixMVAPICH2(rfm.RegressionTest):
+class Matrix_MVAPICH2(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'Matrix-vector multiplication example using gcc/11.3.0 and mvapich2/2.3.7 with pmi2'
         self.tags = {

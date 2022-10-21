@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class SingularityHello(rfm.RunOnlyRegressionTest):
+class Singularity_Hello(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Singularity hello world'
         self.tags = {

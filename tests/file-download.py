@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class FileDownload(rfm.RunOnlyRegressionTest):
+class File_Download(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'File download'
         self.tags = {

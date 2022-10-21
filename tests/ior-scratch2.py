@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class IORscratch2(rfm.RunOnlyRegressionTest):
+class IOR_scratch2(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'IOR benchmark for /scratch2 file system'
         self.tags = {

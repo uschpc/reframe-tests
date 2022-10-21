@@ -3,7 +3,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class MatlabPi(rfm.RunOnlyRegressionTest):
+class Matlab_Pi(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Estimate pi using a Matlab parpool'
         self.tags = {

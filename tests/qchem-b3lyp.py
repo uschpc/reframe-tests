@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class QChemB3LYP(rfm.RunOnlyRegressionTest):
+class QChem_B3LYP(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Q-Chem B3LYP functional'
         self.tags = {
