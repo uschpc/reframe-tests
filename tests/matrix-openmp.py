@@ -2,11 +2,11 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Matrix_OpenMPI(rfm.RegressionTest):
+class Matrix_OpenMP(rfm.RegressionTest):
     def __init__(self):
-        self.descr = 'Matrix-vector multiplication example using gcc/11.3.0 and openmpi/4.1.4 with pmix_v2'
+        self.descr = 'Matrix-vector multiplication example using gcc/11.3.0 and OpenMP'
         self.tags = {
-            'daily'
+            ''
         }
         self.valid_systems = [
             'discovery:main',
@@ -14,10 +14,10 @@ class Matrix_OpenMPI(rfm.RegressionTest):
             'endeavour:shared'
         ]
         self.valid_prog_environs = [
-            'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
+            'PrgEnv-gcc-11.3.0'
         ]
-        self.sourcesdir = './src/matrix-mpi'
-        self.sourcepath = 'matrix-vector-multiplication-mpi-openmp.c'
+        self.sourcesdir = './src/matrix-openmp'
+        self.sourcepath = 'matrix-vector-multiplication-openmp.c'
         self.executable_opts = [
             '4200',
             '10000'
@@ -26,17 +26,11 @@ class Matrix_OpenMPI(rfm.RegressionTest):
         self.build_system.cflags = [
             '-fopenmp'
         ]
-        self.num_tasks = 4
-        self.num_tasks_per_node = 2
-        self.num_cpus_per_task = 1
+        self.num_tasks = 1
+        self.num_cpus_per_task = 8
         self.time_limit = '5m'
-        self.prerun_cmds = [
-            'ulimit -s unlimited'
-        ]
         self.variables = {
-            'OMP_NUM_THREADS': '1',
-            'SLURM_MPI_TYPE': 'pmix_v2',
-            'SLURM_CPU_BIND': 'verbose'
+            'OMP_NUM_THREADS': '8',
         }
         self.sanity_patterns = sn.assert_found(r'time for single matrix vector multiplication', self.stdout)
         self.perf_patterns = {
@@ -44,6 +38,6 @@ class Matrix_OpenMPI(rfm.RegressionTest):
         }
         self.reference = {
             '*': {
-                'elapsed time for multiplication': (1.5, -0.25, 0.25, 'seconds')
+                'elapsed time for multiplication': (8, -0.25, 0.25, 'seconds')
             }
         }

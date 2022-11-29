@@ -16,7 +16,7 @@ class Matrix_MPICH(rfm.RegressionTest):
         self.valid_prog_environs = [
             'PrgEnv-gcc-11.3.0-mpich-4.0.2'
         ]
-        self.sourcesdir = './src/matrix'
+        self.sourcesdir = './src/matrix-mpi'
         self.sourcepath = 'matrix-vector-multiplication-mpi-openmp.c'
         self.executable_opts = [
             '4200',
