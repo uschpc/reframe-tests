@@ -5,9 +5,6 @@ import reframe.utility.sanity as sn
 class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Singularity GPU access'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:gpu'
         ]

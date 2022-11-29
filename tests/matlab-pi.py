@@ -6,9 +6,6 @@ import reframe.utility.sanity as sn
 class Matlab_Pi(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Estimate pi using a Matlab parpool'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:main',
             'endeavour:shared'

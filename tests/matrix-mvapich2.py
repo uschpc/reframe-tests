@@ -5,9 +5,6 @@ import reframe.utility.sanity as sn
 class Matrix_MVAPICH2(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'Matrix-vector multiplication example using gcc/11.3.0 and mvapich2/2.3.7 with pmi2'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:main',
             'discovery:epyc-64',

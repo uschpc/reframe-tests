@@ -5,9 +5,6 @@ import reframe.utility.sanity as sn
 class CUDA_Hello(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'CUDA hello world'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:gpu'
         ]

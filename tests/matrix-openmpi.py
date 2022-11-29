@@ -5,9 +5,6 @@ import reframe.utility.sanity as sn
 class Matrix_OpenMPI(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'Matrix-vector multiplication example using gcc/11.3.0 and openmpi/4.1.4 with pmix_v2'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:main',
             'discovery:epyc-64',

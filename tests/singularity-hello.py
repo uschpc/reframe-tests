@@ -5,9 +5,6 @@ import reframe.utility.sanity as sn
 class Singularity_Hello(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Singularity hello world'
-        self.tags = {
-            'daily'
-        }
         self.valid_systems = [
             'discovery:main',
             'endeavour:shared'
