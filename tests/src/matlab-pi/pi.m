@@ -1,33 +1,31 @@
 % Estimate pi using local parpool
 
 cluster = parallel.cluster.Local;
-nproc = str2num(getenv('SLURM_CPUS_PER_TASK')) - 1;
+nproc = str2num(getenv('SLURM_CPUS_PER_TASK'));
 pool = parpool(cluster,nproc);
 
-% Start timer
-tic 
+tic;
 
-% Max number of points
-max = 1e5;
+% Number of points to use for the pi estimation
+n = 5000000000;
 
-% Number of points inside circle
-n = 0;
-
-parfor i = 1:max
-    x=rand;
-    y=rand;
+% Calculate the number of points in the unit circle out of n points
+c = 0;
+parfor i = 1:n
+    x = rand;
+    y = rand;
     if(x^2 + y^2 < 1.0)
-        n = n + 1;
+        c = c + 1;
     end
 end
 
-% Compute resulting value of pi
-est = (4.0 * n / max);
+% Estimate pi
+est = 4.0 * (c / n);
 
-% End timer
+delete(pool)
+
 elapsed = toc;
 
 % Display results
-fprintf("pi = %f, elapsed time = %f\n", est, elapsed)
-
-delete(pool)
+fprintf("Estimate of pi: %f\n", est)
+fprintf("Elapsed time: %f\n", elapsed)

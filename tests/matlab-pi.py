@@ -1,4 +1,3 @@
-import math
 import reframe as rfm
 import reframe.utility.sanity as sn
 
@@ -16,14 +15,14 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
         self.sourcesdir = './src/matlab-pi'
         self.executable = 'matlab -batch \'pi\''
         self.num_tasks = 1
-        self.num_cpus_per_task = 8
+        self.num_cpus_per_task = 4
         self.time_limit = '5m'
-        self.sanity_patterns = sn.assert_found(r'pi\s=', self.stdout)
+        self.sanity_patterns = sn.assert_found(r'3.14', self.stdout)
         self.perf_patterns = {
-            'pi estimate': sn.extractsingle(r'pi\s=\s(?P<pi_ret>[0-9]\.[0-9]+)', self.stdout, 'pi_ret', float)
+            'elapsed time': sn.extractsingle(r'Elapsed time:\s(?P<elapsed_ret>[0-9]+.[0-9]+)', self.stdout, 'elapsed_ret', float)
         }
         self.reference = {
             '*': {
-                'pi estimate': (math.pi, -0.05, 0.05, None)
+                'elapsed time': (175.0, None, 0.10, 'seconds')
             }
         }
