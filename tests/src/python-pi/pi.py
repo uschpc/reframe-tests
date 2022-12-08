@@ -5,7 +5,7 @@ import multiprocessing
 from multiprocessing import Pool
 import time
 
-# Caculate the number of points in the unit circle out of n points
+# Calculate the number of points in the unit circle out of n points
 def monte_carlo_pi_part(n):
     count = 0
 
