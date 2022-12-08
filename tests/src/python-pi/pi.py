@@ -8,7 +8,7 @@ import time
 # Caculate the number of points in the unit circle out of n points
 def monte_carlo_pi_part(n):
     count = 0
-    
+
     for i in range(n):
         x = random.random()
         y = random.random()
@@ -32,14 +32,16 @@ if __name__=='__main__':
     part_count = [n // cores] * cores
 
     # Create the worker pool
-    pool = Pool(processes = cores)   
+    pool = Pool(processes = cores)
 
     # Parallel map
     count = pool.map(monte_carlo_pi_part, part_count)
+
+    est = 4 * (sum(count) / (n * 1.0))
 
     end = time.time()
 
     elapsed = end - start
 
-    print("Estimate of pi:", sum(count) / (n * 1.0) * 4)
+    print("Estimate of pi:", est)
     print("Elapsed time:", elapsed)
