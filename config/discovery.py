@@ -72,6 +72,7 @@ site_configuration = {
                          '--partition=gpu'
                     ],
                     'environs': [
+                        'PrgEnv-nvhpc',
                         'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
@@ -175,6 +176,12 @@ site_configuration = {
             'name': 'PrgEnv-qchem',
             'modules': [
                 'qchem/6.0.1'
+            ]
+        },
+        {
+            'name': 'PrgEnv-nvhpc',
+            'modules': [
+                'nvhpc/22.11'
             ]
         },
         {
