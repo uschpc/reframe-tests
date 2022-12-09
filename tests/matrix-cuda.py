@@ -6,7 +6,8 @@ class Matrix_CUDA(rfm.RegressionTest):
     def __init__(self):
         self.descr = 'Matrix-vector multiplication example with CUDA'
         self.valid_systems = [
-            'discovery:gpu'
+            'discovery:gpu',
+            'discovery:debug'
         ]
         self.valid_prog_environs = [
             'PrgEnv-nvhpc',

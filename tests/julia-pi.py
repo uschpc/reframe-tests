@@ -7,6 +7,7 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
         self.descr = 'Estimating pi using Julia with multiple threads'
         self.valid_systems = [
             'discovery:main',
+            'discovery:debug',
             'endeavour:shared'
         ]
         self.valid_prog_environs = [

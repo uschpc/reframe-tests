@@ -79,6 +79,23 @@ site_configuration = {
                         'PrgEnv-intel-19.0.4-cuda-10.2.89',
                         'PrgEnv-singularity'
                     ]
+                },
+                {
+                    'name': 'debug',
+                    'descr': 'Discovery debug partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                         '--account=hpcroot',
+                         '--partition=debug'
+                    ],
+                    'environs': [
+                        'PrgEnv-julia',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-singularity',
+                        'PrgEnv-nvhpc'
+                    ]
                 }
             ]
         }
