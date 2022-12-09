@@ -81,6 +81,22 @@ site_configuration = {
                     ]
                 },
                 {
+                    'name': 'oneweek',
+                    'descr': 'Discovery oneweek partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                         '--account=hpcroot',
+                         '--partition=oneweek'
+                    ],
+                    'environs': [
+                        'PrgEnv-julia',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-singularity'
+                    ]
+                },
+                {
                     'name': 'debug',
                     'descr': 'Discovery debug partition',
                     'scheduler': 'slurm',

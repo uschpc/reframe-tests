@@ -7,6 +7,7 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
         self.descr = 'Estimate pi using a Matlab parpool'
         self.valid_systems = [
             'discovery:main',
+            'discovery:oneweek',
             'discovery:debug',
             'endeavour:shared'
         ]

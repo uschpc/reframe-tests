@@ -7,6 +7,7 @@ class Singularity_Hello(rfm.RunOnlyRegressionTest):
         self.descr = 'Singularity hello world'
         self.valid_systems = [
             'discovery:main',
+            'discovery:oneweek',
             'discovery:debug',
             'endeavour:shared'
         ]

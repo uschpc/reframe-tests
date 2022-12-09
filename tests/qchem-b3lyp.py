@@ -10,6 +10,7 @@ class QChem_B3LYP(rfm.RunOnlyRegressionTest):
         }
         self.valid_systems = [
             'discovery:main',
+            'discovery:oneweek',
             'discovery:debug',
             'endeavour:shared'
         ]
