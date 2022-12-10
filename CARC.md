@@ -58,7 +58,7 @@ To run an individual test, use the path to the test file. For example:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ior-project.py -r
+./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ior-project.py -r --purge-env
 ```
 
 ### Subset of tests
@@ -67,7 +67,7 @@ To run a subset of tests, use the `-n` option with grep-like syntax. For example
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Singularity' -r
+./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Singularity' -r --purge-env
 ```
 
 ### Tagged tests
@@ -76,7 +76,16 @@ To run tests with a specific tag, use the `-t` option and specify the tag value.
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r
+./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r --purge-env
+```
+
+### Tests for specific partition
+
+To run tests for a specific partition, use the `--system` option and specify the cluster and partition. For example:
+
+```
+cd /project/hpcroot/reframe2
+./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r --purge-env --system=discovery:gpu
 ```
 
 ### Entire test suite
@@ -85,7 +94,7 @@ To run the entire suite of tests, use the path to the tests directory:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
+./reframe-3.12.0/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r --purge-env
 ```
 
 ## Checking test logs
