@@ -81,6 +81,19 @@ site_configuration = {
                     ]
                 },
                 {
+                    'name': 'largemem',
+                    'descr': 'Discovery largemem partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                         '--account=hpcroot',
+                         '--partition=largemem'
+                    ],
+                    'environs': [
+                        'PrgEnv-gcc-11.3.0'
+                    ]
+                },
+                {
                     'name': 'oneweek',
                     'descr': 'Discovery oneweek partition',
                     'scheduler': 'slurm',
