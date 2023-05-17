@@ -134,7 +134,7 @@ site_configuration = {
             'modules': [
                 'gcc/11.3.0',
                 'openblas/0.3.20',
-                'r/4.2.1'
+                'r/4.3.0'
             ]
         },
         {
