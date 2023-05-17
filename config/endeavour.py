@@ -45,13 +45,26 @@ site_configuration = {
                         'PrgEnv-qchem',
                         'PrgEnv-singularity'
                     ]
+                },
+                {
+                    'name': 'isi',
+                    'descr': 'Endeavour isi partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                        '--account=hpcroot',
+                        '--partition=isi'
+                    ],
+                    'environs': [
+                        'PrgEnv-nvhpc',
+                        'PrgEnv-pgi',
+                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
+                        'PrgEnv-singularity'
+                    ]
                 }
             ]
-        }
-    ],
-   'schedulers': [
-        { 'name': 'slurm',
-          'use_nodes_option': False
         }
     ],
     'environments': [
@@ -142,6 +155,45 @@ site_configuration = {
             'modules': [
                 'qchem/6.0.1'
             ]
+        },
+        {
+            'name': 'PrgEnv-nvhpc',
+            'modules': [
+                'nvhpc/22.11'
+            ]
+        },
+        {
+            'name': 'PrgEnv-pgi',
+            'modules': [
+                'gcc/8.3.0',
+                'pgi-nvhpc'
+            ]
+        },
+        {
+             'name': 'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+             'modules': [
+                 'gcc/8.3.0',
+                 'cuda/10.2.89',
+                 'openmpi/4.0.2'
+             ]
+        },
+        {
+             'name': 'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+             'modules': [
+                 'gcc/11.3.0',
+                 'cuda/11.6.2',
+                 'openmpi/4.1.4'
+             ]
+        },
+        {
+             'name': 'PrgEnv-intel-19.0.4-cuda-10.2.89',
+             'modules': [
+                 'intel/19.0.4',
+                 'cuda/10.2.89'
+             ],
+            'cc': 'icc',
+            'cxx': 'icpc',
+            'ftn': 'ifort'
         },
         {
              'name': 'PrgEnv-singularity',

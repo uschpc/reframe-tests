@@ -129,11 +129,6 @@ site_configuration = {
             ]
         }
     ],
-   'schedulers': [
-        { 'name': 'slurm',
-          'use_nodes_option': False
-        }
-    ],
     'environments': [
         {
             'name': 'PrgEnv-gcc-11.3.0',

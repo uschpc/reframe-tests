@@ -17,7 +17,7 @@ class STREAM(rfm.RunOnlyRegressionTest):
         self.num_tasks = 1
         self.num_cpus_per_task = 64
         self.time_limit = '5m'
-        self.variables = {
+        self.env_vars = {
             'OMP_SCHEDULE': 'static',
             'OMP_DYNAMIC': 'false',
             'OMP_NESTED': 'false',

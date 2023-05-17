@@ -30,11 +30,12 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         self.prerun_cmds = [
             'ulimit -s unlimited'
         ]
-        self.variables = {
+        self.env_vars = {
             'OMP_NUM_THREADS': '1',
             'SLURM_MPI_TYPE': 'pmi2',
             'SLURM_CPU_BIND': 'verbose',
             'MV2_USE_RDMA_CM': '0',
+            'MV2_HOMOGENEOUS_CLUSTER': '1',
             'MV2_ENABLE_AFFINITY': '1'
         }
         self.sanity_patterns = sn.assert_found(r'time for single matrix vector multiplication', self.stdout)

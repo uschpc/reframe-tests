@@ -22,9 +22,9 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         self.prerun_cmds = [
             'ulimit -s unlimited'
         ]
-        self.variables = {
+        self.env_vars = {
             'SLURM_MPI_TYPE': 'pmix_v2',
-            'SLURM_CPU_BIND': 'verbose',
+            'SLURM_CPU_BIND': 'verbose'
         }
         self.sanity_patterns = sn.assert_found(r'END mpiGraph', self.stdout)
         self.perf_patterns = {

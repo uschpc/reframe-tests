@@ -26,8 +26,8 @@ class Matrix_OpenMP(rfm.RegressionTest):
         self.num_tasks = 1
         self.num_cpus_per_task = 8
         self.time_limit = '5m'
-        self.variables = {
-            'OMP_NUM_THREADS': '8',
+        self.env_vars = {
+            'OMP_NUM_THREADS': '8'
         }
         self.sanity_patterns = sn.assert_found(r'time for single matrix vector multiplication', self.stdout)
         self.perf_patterns = {

@@ -22,7 +22,7 @@ class QChem_B3LYP(rfm.RunOnlyRegressionTest):
         self.num_tasks = 1
         self.num_cpus_per_task = 8
         self.time_limit = '5m'
-        self.variables = {
+        self.env_vars = {
             'OMP_NUM_THREADS': '8'
         }
         self.sanity_patterns = sn.assert_found(r'Thank you very much for using Q-Chem', self.stdout)

@@ -17,8 +17,8 @@ class NPB_BT_MZ_OpenMP(rfm.RunOnlyRegressionTest):
         self.num_tasks = 1
         self.num_cpus_per_task = 8
         self.time_limit = '5m'
-        self.variables = {
-            'OMP_NUM_THREADS': '4,2',
+        self.env_vars = {
+            'OMP_NUM_THREADS': '4,2'
         }
         self.sanity_patterns = sn.assert_found(r'SUCCESSFUL', self.stdout)
         self.perf_patterns = {

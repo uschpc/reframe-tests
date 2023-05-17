@@ -6,7 +6,8 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
     def __init__(self):
         self.descr = 'Singularity GPU access'
         self.valid_systems = [
-            'discovery:gpu'
+            'discovery:gpu',
+            'endeavour:isi'
         ]
         self.valid_prog_environs = [
             'PrgEnv-singularity'
@@ -21,6 +22,5 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
     @run_before('run')
     def set_job_options(self):
         self.job.options += [
-            '--gres=gpu:p100:1',
-            '--gres-flags=enforce-binding'
+            '--gpus-per-task=p100:1'
         ]

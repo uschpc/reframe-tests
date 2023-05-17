@@ -7,7 +7,8 @@ class Matrix_CUDA(rfm.RegressionTest):
         self.descr = 'Matrix-vector multiplication example with CUDA'
         self.valid_systems = [
             'discovery:gpu',
-            'discovery:debug'
+            'discovery:debug',
+            'endeavour:isi'
         ]
         self.valid_prog_environs = [
             'PrgEnv-nvhpc',
@@ -42,6 +43,5 @@ class Matrix_CUDA(rfm.RegressionTest):
     @run_before('run')
     def set_job_options(self):
         self.job.options += [
-            '--gres=gpu:p100:1',
-            '--gres-flags=enforce-binding'
+            '--gpus-per-task=p100:1'
         ]
