@@ -23,6 +23,6 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
         }
         self.reference = {
             '*': {
-                'elapsed time': (240.0, None, 0.10, 'seconds')
+                'elapsed time': (140.0, None, 0.10, 'seconds')
             }
         }

@@ -197,7 +197,7 @@ site_configuration = {
             'name': 'PrgEnv-python3',
             'modules': [
                 'gcc/11.3.0',
-                'python/3.9.12'
+                'python/3.11.3'
             ]
         },
         {
