@@ -42,7 +42,11 @@ site_configuration = {
                         'PrgEnv-aria2',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-singularity'
+                        'PrgEnv-singularity',
+                        'PrgEnv-pgi',
+                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89'
                     ]
                 },
                 {
@@ -123,7 +127,11 @@ site_configuration = {
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
                         'PrgEnv-singularity',
-                        'PrgEnv-nvhpc'
+                        'PrgEnv-nvhpc',
+                        'PrgEnv-pgi',
+                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89'
                     ]
                 }
             ]
