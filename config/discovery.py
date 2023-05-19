@@ -288,7 +288,6 @@ site_configuration = {
     ],
     'logging': [
         {
-            'level': 'debug',
             'handlers': [
                 {
                     'type': 'file',
