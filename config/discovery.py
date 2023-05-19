@@ -64,6 +64,7 @@ site_configuration = {
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-ior',
+                        'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
                         'PrgEnv-curl'
@@ -79,6 +80,7 @@ site_configuration = {
                          '--partition=gpu'
                     ],
                     'environs': [
+                        'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
                         'PrgEnv-nvhpc',
@@ -101,6 +103,7 @@ site_configuration = {
                     ],
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
                         'PrgEnv-curl'

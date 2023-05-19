@@ -22,6 +22,6 @@ function est_pi(n)
     println("Estimate of pi: ", est)
 end
 
-elapsed = @elapsed est_pi(100000000000)
+elapsed = @elapsed est_pi(5000000000)
 
 println("Elapsed time: ", elapsed)

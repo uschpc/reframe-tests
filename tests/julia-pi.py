@@ -3,28 +3,34 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Julia_Pi(rfm.RunOnlyRegressionTest):
-    def __init__(self):
-        self.descr = 'Estimating pi using Julia with multiple threads'
-        self.valid_systems = [
-            'discovery:main',
-            'discovery:oneweek',
-            'discovery:debug',
-            'endeavour:shared'
-        ]
-        self.valid_prog_environs = [
-            'PrgEnv-julia'
-        ]
-        self.sourcesdir = './src/julia-pi'
-        self.executable = 'julia --threads 4 pi.jl'
-        self.num_tasks = 1
-        self.num_cpus_per_task = 4
-        self.time_limit = '5m'
-        self.sanity_patterns = sn.assert_found(r'3.14', self.stdout)
-        self.perf_patterns = {
-            'elapsed time': sn.extractsingle(r'Elapsed time:\s(?P<elapsed_ret>[0-9]+.[0-9]+)', self.stdout, 'elapsed_ret', float)
+    descr = 'Estimating pi using Julia with multiple threads'
+    valid_systems = [
+        'discovery:main',
+        'discovery:epyc-64',
+        'discovery:gpu',
+        'discovery:largemem',
+        'discovery:debug',
+        'discovery:oneweek',
+        'endeavour:shared'
+    ]
+    valid_prog_environs = [
+        'PrgEnv-julia'
+    ]
+    sourcesdir = './src/julia-pi'
+    executable = 'julia --threads 8 pi.jl'
+    num_tasks = 1
+    num_cpus_per_task = 8
+    time_limit = '1m'
+    reference = {
+        '*': {
+            'elapsed_time': (7.0, None, 0.10, 'seconds')
         }
-        self.reference = {
-            '*': {
-                'elapsed time': (220.0, None, 0.10, 'seconds')
-            }
-        }
+    }
+
+    @sanity_function
+    def assert_sanity(self):
+        return sn.assert_found(r'3.14', self.stdout)
+
+    @performance_function('seconds', perf_key = 'elapsed_time')
+    def extract_perf(self):
+        return sn.extractsingle(r'Elapsed time:\s(?P<elapsed_ret>[0-9]+.[0-9]+)', self.stdout, 'elapsed_ret', float)
