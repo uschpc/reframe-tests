@@ -39,14 +39,14 @@ site_configuration = {
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-R',
-                        'PrgEnv-aria2',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-singularity',
                         'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
-                        'PrgEnv-intel-19.0.4-cuda-10.2.89'
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 },
                 {
@@ -63,7 +63,8 @@ site_configuration = {
                         'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
-                        'PrgEnv-ior'
+                        'PrgEnv-ior',
+                        'PrgEnv-curl'
                     ]
                 },
                 {
@@ -81,7 +82,8 @@ site_configuration = {
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-intel-19.0.4-cuda-10.2.89',
-                        'PrgEnv-singularity'
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 },
                 {
@@ -94,7 +96,30 @@ site_configuration = {
                          '--partition=largemem'
                     ],
                     'environs': [
-                        'PrgEnv-gcc-11.3.0'
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-curl'
+                    ]
+                },
+                {
+                    'name': 'debug',
+                    'descr': 'Discovery debug partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                         '--account=hpcroot',
+                         '--partition=debug'
+                    ],
+                    'environs': [
+                        'PrgEnv-julia',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-nvhpc',
+                        'PrgEnv-pgi',
+                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 },
                 {
@@ -111,27 +136,6 @@ site_configuration = {
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
                         'PrgEnv-singularity'
-                    ]
-                },
-                {
-                    'name': 'debug',
-                    'descr': 'Discovery debug partition',
-                    'scheduler': 'slurm',
-                    'launcher': 'srun',
-                    'access': [
-                         '--account=hpcroot',
-                         '--partition=debug'
-                    ],
-                    'environs': [
-                        'PrgEnv-julia',
-                        'PrgEnv-matlab',
-                        'PrgEnv-qchem',
-                        'PrgEnv-singularity',
-                        'PrgEnv-nvhpc',
-                        'PrgEnv-pgi',
-                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
-                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
-                        'PrgEnv-intel-19.0.4-cuda-10.2.89'
                     ]
                 }
             ]
@@ -209,13 +213,6 @@ site_configuration = {
             ]
         },
         {
-            'name': 'PrgEnv-aria2',
-            'modules': [
-                'gcc/11.3.0',
-                'aria2/1.36.0'
-            ]
-        },
-        {
             'name': 'PrgEnv-matlab',
             'modules': [
                 'matlab/2022a'
@@ -271,6 +268,13 @@ site_configuration = {
              'modules': [
              ]
         },
+        {
+            'name': 'PrgEnv-curl',
+            'modules': [
+                'gcc/11.3.0',
+                'curl/7.83.0'
+            ]
+        }
     ],
     'logging': [
         {

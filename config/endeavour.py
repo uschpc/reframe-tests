@@ -40,10 +40,10 @@ site_configuration = {
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-R',
-                        'PrgEnv-aria2',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-singularity'
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 },
                 {
@@ -61,7 +61,8 @@ site_configuration = {
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-intel-19.0.4-cuda-10.2.89',
-                        'PrgEnv-singularity'
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 }
             ]
@@ -138,13 +139,6 @@ site_configuration = {
             ]
         },
         {
-            'name': 'PrgEnv-aria2',
-            'modules': [
-                'gcc/11.3.0',
-                'aria2/1.36.0'
-            ]
-        },
-        {
             'name': 'PrgEnv-matlab',
             'modules': [
                 'matlab/2022a'
@@ -199,6 +193,13 @@ site_configuration = {
              'name': 'PrgEnv-singularity',
              'modules': [
              ]
+        },
+        {
+            'name': 'PrgEnv-curl',
+            'modules': [
+                'gcc/11.3.0',
+                'curl/7.83.0'
+            ]
         }
     ],
     'logging': [
