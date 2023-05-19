@@ -262,9 +262,9 @@ site_configuration = {
                  'intel/19.0.4',
                  'cuda/10.2.89'
              ],
-            'cc': 'icc',
-            'cxx': 'icpc',
-            'ftn': 'ifort'
+             'cc': 'icc',
+             'cxx': 'icpc',
+             'ftn': 'ifort'
         },
         {
              'name': 'PrgEnv-singularity',
@@ -276,20 +276,6 @@ site_configuration = {
         {
             'level': 'debug',
             'handlers': [
-                {
-                    'type': 'stream',
-                    'level': 'info',
-                    'name': 'stdout',
-                    'format': '%(message)s'
-                },
-                {
-                    'type': 'file',
-                    'level': 'info',
-                    'name': './logs/reframe-discovery.out',
-                    'timestamp': '%FT%T',
-                    'format': '%(message)s',
-                    'append': True
-                },
                 {
                     'type': 'file',
                     'level': 'debug',
@@ -306,15 +292,15 @@ site_configuration = {
                     'basedir': './perflogs',
                     'prefix': '%(check_system)s/%(check_partition)s',
                     'format': (
-                        '%(check_job_completion_time)s|'
-                        '%(check_info)s|'
-                        'jobid=%(check_jobid)s|'
-                        'nodelist=%(check_job_nodelist)s|'
-                        '%(check_perf_var)s=%(check_perf_value)s|'
-                        'ref=%(check_perf_ref)s '
-                        '(l=%(check_perf_lower_thres)s, '
-                        'u=%(check_perf_upper_thres)s)|'
-                        '%(check_perf_unit)s'
+                        '%(check_job_completion_time)s,%(version)s,'
+                        '%(check_display_name)s,%(check_system)s,'
+                        '%(check_partition)s,%(check_environ)s,'
+                        '%(check_jobid)s,%(check_result)s,%(check_perfvalues)s'
+                    ),
+                    'format_perfvars': (
+                        '%(check_perf_value)s,%(check_perf_unit)s,'
+                        '%(check_perf_ref)s,%(check_perf_lower_thres)s,'
+                        '%(check_perf_upper_thres)s,'
                     ),
                     'datefmt': '%FT%T',
                     'append': True
