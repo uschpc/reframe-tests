@@ -120,10 +120,8 @@ site_configuration = {
                     ],
                     'environs': [
                         'PrgEnv-julia',
-                        'PrgEnv-python3',
-                        'PrgEnv-matlab',
-                        'PrgEnv-qchem',
                         'PrgEnv-nvhpc',
+                        'PrgEnv-python3',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]

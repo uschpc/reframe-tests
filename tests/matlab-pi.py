@@ -9,7 +9,6 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:largemem',
-        'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared'
     ]
