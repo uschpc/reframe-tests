@@ -69,6 +69,7 @@ site_configuration = {
                         'PrgEnv-R',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
+                        'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
                 },
@@ -116,6 +117,7 @@ site_configuration = {
                         'PrgEnv-R',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
+                        'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
                 },
