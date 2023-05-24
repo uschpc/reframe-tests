@@ -3,45 +3,56 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
-    def __init__(self):
-        self.descr = 'mpiGraph benchmark using gcc/11.3.0 and openmpi/4.1.4 with pmix_v2'
-        self.valid_systems = [
-            'discovery:main',
-            'discovery:epyc-64',
-            'endeavour:shared'
-        ]
-        self.valid_prog_environs = [
-            'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
-        ]
-        self.sourcesdir = None
-        self.executable = '/project/hpcroot/reframe2/resources/mpiGraph/gcc-11.3.0-openmpi-4.1.4/mpiGraph 1048576 10 10'
-        self.num_tasks = 8
-        self.num_tasks_per_node = 1
-        self.num_cpus_per_task = 1
-        self.time_limit = '5m'
-        self.prerun_cmds = [
-            'ulimit -s unlimited'
-        ]
-        self.env_vars = {
-            'SLURM_MPI_TYPE': 'pmix_v2',
-            'SLURM_CPU_BIND': 'verbose'
+    descr = 'mpiGraph benchmark using gcc/11.3.0 and openmpi/4.1.4 with pmix_v2'
+    valid_systems = [
+        'discovery:main',
+        'discovery:epyc-64',
+        'discovery:gpu',
+        'endeavour:shared'
+    ]
+    valid_prog_environs = [
+        'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
+    ]
+    sourcesdir = None
+    executable = '/project/hpcroot/reframe2/resources/mpiGraph/gcc-11.3.0-openmpi-4.1.4/mpiGraph 1048576 10 10'
+    num_tasks = 8
+    num_tasks_per_node = 1
+    num_cpus_per_task = 1
+    time_limit = '5m'
+    prerun_cmds = [
+        'ulimit -s unlimited'
+    ]
+    env_vars = {
+        'SLURM_MPI_TYPE': 'pmix_v2',
+        'SLURM_CPU_BIND': 'verbose'
+    }
+    reference = {
+        'discovery:main': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
+        },
+        'discovery:epyc-64': {
+            'send_avg': (5000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (5000, -0.10, None, 'msg_bandwidth')
+        },
+        'discovery:gpu': {
+            'send_avg': (4000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (4000, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:shared': {
+            'send_avg': (3700, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3700, -0.10, None, 'msg_bandwidth')
         }
-        self.sanity_patterns = sn.assert_found(r'END mpiGraph', self.stdout)
-        self.perf_patterns = {
-            'send avg': sn.extractsingle(r'Send avg\s+(?P<S_ret>[0-9]+\.[0-9]+)', self.stdout, 'S_ret', float),
-            'recv avg': sn.extractsingle(r'Recv avg\s+(?P<R_ret>[0-9]+\.[0-9]+)', self.stdout, 'R_ret', float)
-        }
-        self.reference = {
-            'discovery:main': {
-                'send avg': (3000, -0.10, None, 'msg bandwidth'),
-                'recv avg': (3000, -0.10, None, 'msg bandwidth')
-            },
-            'discovery:epyc-64': {
-                'send avg': (5000, -0.10, None, 'msg bandwidth'),
-                'recv avg': (5000, -0.10, None, 'msg bandwidth')
-            },
-            'endeavour:shared': {
-                'send avg': (3700, -0.10, None, 'msg bandwidth'),
-                'recv avg': (3700, -0.10, None, 'msg bandwidth')
-            }
-        }
+    }
+
+    @sanity_function
+    def assert_sanity(self):
+        return sn.assert_found(r'END mpiGraph', self.stdout)
+
+    @performance_function('msg_bandwidth', perf_key = 'send_avg')
+    def extract_perf_send(self):
+        return sn.extractsingle(r'Send avg\s+(?P<S_ret>[0-9]+\.[0-9]+)', self.stdout, 'S_ret', float)
+
+    @performance_function('msg_bandwidth', perf_key = 'recv_avg')
+    def extract_perf_recv(self):
+        return sn.extractsingle(r'Recv avg\s+(?P<R_ret>[0-9]+\.[0-9]+)', self.stdout, 'R_ret', float)
