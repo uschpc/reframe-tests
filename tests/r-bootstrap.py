@@ -3,29 +3,47 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class R_Bootstrap(rfm.RunOnlyRegressionTest):
-    def __init__(self):
-        self.descr = 'Bootstrapping a GLM in parallel using R'
-        self.valid_systems = [
-            'discovery:main',
-            'endeavour:shared'
-        ]
-        self.valid_prog_environs = [
-            'PrgEnv-R'
-        ]
-        self.sourcesdir = './src/r-bootstrap'
-        self.executable = 'Rscript bootstrap.R'
-        self.num_tasks = 1
-        self.num_cpus_per_task = 8
-        self.time_limit = '5m'
-        self.env_vars = {
-            'OMP_NUM_THREADS': '1'
+    descr = 'Bootstrapping a GLM in parallel using R'
+    valid_systems = [
+        'discovery:main',
+        'discovery:epyc-64',
+        'discovery:gpu',
+        'discovery:largemem',
+        'endeavour:shared'
+    ]
+    valid_prog_environs = [
+        'PrgEnv-R'
+    ]
+    sourcesdir = './src/r-bootstrap'
+    executable = 'Rscript bootstrap.R'
+    num_tasks = 1
+    num_cpus_per_task = 8
+    time_limit = '5m'
+    env_vars = {
+        'OMP_NUM_THREADS': '1'
+    }
+    reference = {
+        'discovery:main': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'discovery:epyc-64': {
+            'elapsed_time': (115.0, None, 0.25, 'seconds')
+        },
+        'discovery:gpu': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'discovery:largemem': {
+            'elapsed_time': (90.0, None, 0.25, 'seconds')
+        },
+        'endeavour:shared': {
+            'elapsed_time': (210.0, None, 0.25, 'seconds')
         }
-        self.sanity_patterns = sn.assert_found(r'Elapsed time', self.stdout)
-        self.perf_patterns = {
-            'elapsed time': sn.extractsingle(r'Elapsed time:\s(?P<elapsed_ret>[0-9]+.[0-9]+)', self.stdout, 'elapsed_ret', float)
-        }
-        self.reference = {
-            '*': {
-                'elapsed time': (210.0, None, 0.25, 'seconds')
-            }
-        }
+    }
+
+    @sanity_function
+    def assert_sanity(self):
+        return sn.assert_found(r'Elapsed time', self.stdout)
+
+    @performance_function('seconds', perf_key = 'elapsed_time')
+    def extract_perf(self):
+        return sn.extractsingle(r'Elapsed time:\s(?P<elapsed_ret>[0-9]+.[0-9]+)', self.stdout, 'elapsed_ret', float)
