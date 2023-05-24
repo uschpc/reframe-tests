@@ -67,6 +67,7 @@ site_configuration = {
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
+                        'PrgEnv-qchem',
                         'PrgEnv-curl'
                     ]
                 },
@@ -87,6 +88,7 @@ site_configuration = {
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
+                        'PrgEnv-qchem',
                         'PrgEnv-nvhpc',
                         'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
@@ -110,6 +112,7 @@ site_configuration = {
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
+                        'PrgEnv-qchem',
                         'PrgEnv-curl'
                     ]
                 },
