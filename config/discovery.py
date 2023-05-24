@@ -80,6 +80,10 @@ site_configuration = {
                          '--partition=gpu'
                     ],
                     'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-matlab',
