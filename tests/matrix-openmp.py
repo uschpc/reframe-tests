@@ -8,6 +8,7 @@ class Matrix_OpenMP(rfm.RegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:largemem',
         'endeavour:shared'
     ]
     valid_prog_environs = [
