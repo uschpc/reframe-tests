@@ -33,6 +33,7 @@ site_configuration = {
                     ],
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
                         'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
@@ -73,6 +74,15 @@ site_configuration = {
             'name': 'PrgEnv-gcc-11.3.0',
             'modules': [
                 'gcc/11.3.0'
+            ],
+            'cc': 'gcc',
+            'cxx': 'g++',
+            'ftn': 'gfortran'
+        },
+        {
+            'name': 'PrgEnv-gcc-12.3.0',
+            'modules': [
+                'gcc/12.3.0'
             ],
             'cc': 'gcc',
             'cxx': 'g++',

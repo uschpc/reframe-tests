@@ -3,7 +3,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Matrix_OpenMP(rfm.RegressionTest):
-    descr = 'Matrix-vector multiplication example using gcc/11.3.0 and OpenMP'
+    descr = 'Matrix-vector multiplication example using OpenMP'
     valid_systems = [
         'discovery:main',
         'discovery:epyc-64',
@@ -12,7 +12,8 @@ class Matrix_OpenMP(rfm.RegressionTest):
         'endeavour:shared'
     ]
     valid_prog_environs = [
-        'PrgEnv-gcc-11.3.0'
+        'PrgEnv-gcc-11.3.0',
+        'PrgEnv-gcc-12.3.0'
     ]
     sourcesdir = './src/matrix-openmp'
     sourcepath = 'matrix-vector-multiplication-openmp.c'
