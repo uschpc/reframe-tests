@@ -38,6 +38,7 @@ site_configuration = {
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-ior',
+                        'PrgEnv-fio',
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-R',
@@ -125,6 +126,11 @@ site_configuration = {
                 'openmpi/4.1.4',
                 'ucx/1.12.1',
                 'ior/3.3.0'
+            ]
+        },
+        {
+            'name': 'PrgEnv-fio',
+            'modules': [
             ]
         },
         {
