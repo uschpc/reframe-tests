@@ -8,6 +8,7 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:oneweek',
         'endeavour:shared'
     ]
     valid_prog_environs = [
@@ -38,6 +39,10 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         'discovery:gpu': {
             'send_avg': (4000, -0.10, None, 'msg_bandwidth'),
             'recv_avg': (4000, -0.10, None, 'msg_bandwidth')
+        },
+        'discovery:oneweek': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
         },
         'endeavour:shared': {
             'send_avg': (3700, -0.10, None, 'msg_bandwidth'),

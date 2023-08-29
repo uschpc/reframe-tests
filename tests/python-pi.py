@@ -10,6 +10,7 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
         'discovery:gpu',
         'discovery:largemem',
         'discovery:debug',
+        'discovery:oneweek',
         'endeavour:shared'
     ]
     valid_prog_environs = [

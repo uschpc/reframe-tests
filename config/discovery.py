@@ -153,10 +153,18 @@ site_configuration = {
                          '--partition=oneweek'
                     ],
                     'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-singularity'
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
                     ]
                 }
             ]

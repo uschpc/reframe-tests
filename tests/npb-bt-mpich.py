@@ -8,6 +8,7 @@ class NPB_BT_MPICH(rfm.RunOnlyRegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:oneweek',
         'endeavour:shared'
     ]
     valid_prog_environs = [
@@ -35,6 +36,9 @@ class NPB_BT_MPICH(rfm.RunOnlyRegressionTest):
             'Mop/s_total': (25000, -0.1, None, 'Mop/s')
         },
         'discovery:gpu': {
+            'Mop/s_total': (10000, -0.1, None, 'Mop/s')
+        },
+        'discovery:oneweek': {
             'Mop/s_total': (10000, -0.1, None, 'Mop/s')
         },
         'endeavour:shared': {

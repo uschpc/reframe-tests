@@ -8,6 +8,7 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:oneweek',
         'endeavour:shared'
     ]
     valid_prog_environs = [

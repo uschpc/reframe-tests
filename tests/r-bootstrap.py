@@ -9,6 +9,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:largemem',
+        'discovery:oneweek',
         'endeavour:shared'
     ]
     valid_prog_environs = [
@@ -34,6 +35,9 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         },
         'discovery:largemem': {
             'elapsed_time': (90.0, None, 0.25, 'seconds')
+        },
+        'discovery:oneweek': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
         },
         'endeavour:shared': {
             'elapsed_time': (210.0, None, 0.25, 'seconds')
