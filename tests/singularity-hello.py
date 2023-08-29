@@ -17,7 +17,7 @@ class Singularity_Hello(rfm.RunOnlyRegressionTest):
         'PrgEnv-singularity'
     ]
     sourcesdir = None
-    executable = 'singularity exec /spack/singularity/ood/centos7-xfce.sif echo \"Hello world\"'
+    executable = 'singularity exec /spack/singularity/ood/centos7-xfce-oodv3.sif echo \"Hello world\"'
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = '5m'
