@@ -105,6 +105,16 @@ cd /project/hpcroot/reframe2
 ./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
 ```
 
+### Reservations
+
+If a reservation is required to run Slurm jobs, like during maintenance periods, set the reservation name using the SBATCH_RESERVATION environment variable. For example:
+
+```
+export SBATCH_RESERVATION=res_12345
+```
+
+The variable will then be exported to the ReFrame Slurm jobs and allow them to run.
+
 ## Checking test logs
 
 Various log files can be found in `/project/hpcroot/reframe2/`.
