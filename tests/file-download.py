@@ -13,6 +13,7 @@ class File_Download(rfm.RunOnlyRegressionTest):
         'discovery:gpu',
         'discovery:largemem',
         'discovery:debug',
+        'discovery:oneweek',
         'endeavour:shared',
         'endeavour:isi'
     ]
@@ -20,7 +21,7 @@ class File_Download(rfm.RunOnlyRegressionTest):
         'PrgEnv-curl'
     ]
     sourcesdir = None
-    executable = 'curl -LO https://github.com/reframe-hpc/reframe/archive/refs/tags/v4.2.0.tar.gz |& cat'
+    executable = 'curl -LO https://carc.usc.edu/index.html |& cat'
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = '5m'
