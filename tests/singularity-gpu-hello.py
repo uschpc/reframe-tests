@@ -12,7 +12,7 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
         'PrgEnv-singularity'
     ]
     sourcesdir = None
-    executable = 'singularity exec --nv /spack/singularity/ood/centos7-xfce.sif nvidia-smi'
+    executable = 'singularity exec --nv /spack/singularity/ood/centos7-xfce-oodv3.sif nvidia-smi'
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = '5m'
