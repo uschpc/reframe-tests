@@ -163,7 +163,7 @@ site_configuration = {
         {
             'name': 'PrgEnv-qchem',
             'modules': [
-                'qchem/6.0.1'
+                'qchem/6.1.0'
             ]
         },
         {
