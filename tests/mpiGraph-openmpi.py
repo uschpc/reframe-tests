@@ -9,7 +9,12 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
@@ -47,6 +52,26 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         'endeavour:shared': {
             'send_avg': (3700, -0.10, None, 'msg_bandwidth'),
             'recv_avg': (3700, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:cryoem': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:isi': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:priya': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:qcb': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
+        },
+        'endeavour:scec': {
+            'send_avg': (3000, -0.10, None, 'msg_bandwidth'),
+            'recv_avg': (3000, -0.10, None, 'msg_bandwidth')
         }
     }
 

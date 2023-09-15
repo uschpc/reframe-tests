@@ -7,6 +7,7 @@ class Matrix_CUDA_P100(rfm.RegressionTest):
     valid_systems = [
         'discovery:gpu',
         'discovery:debug',
+        'endeavour:cryoem',
         'endeavour:isi'
     ]
     valid_prog_environs = [

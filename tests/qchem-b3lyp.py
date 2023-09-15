@@ -13,7 +13,12 @@ class QChem_B3LYP(rfm.RunOnlyRegressionTest):
         'discovery:gpu',
         'discovery:largemem',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-qchem'

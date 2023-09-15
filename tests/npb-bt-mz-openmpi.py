@@ -9,7 +9,12 @@ class NPB_BT_MZ_OpenMPI(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
@@ -42,6 +47,21 @@ class NPB_BT_MZ_OpenMPI(rfm.RunOnlyRegressionTest):
             'Mop/s_total': (26000, -0.1, None, 'Mop/s')
         },
         'endeavour:shared': {
+            'Mop/s_total': (26000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:cryoem': {
+            'Mop/s_total': (26000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:isi': {
+            'Mop/s_total': (26000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:priya': {
+            'Mop/s_total': (26000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:qcb': {
+            'Mop/s_total': (22000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:scec': {
             'Mop/s_total': (26000, -0.1, None, 'Mop/s')
         }
     }

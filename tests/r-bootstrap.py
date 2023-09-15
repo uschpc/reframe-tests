@@ -10,7 +10,12 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         'discovery:gpu',
         'discovery:largemem',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-R'
@@ -40,7 +45,22 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
             'elapsed_time': (170.0, None, 0.25, 'seconds')
         },
         'endeavour:shared': {
-            'elapsed_time': (210.0, None, 0.25, 'seconds')
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'endeavour:cryoem': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'endeavour:isi': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'endeavour:priya': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'endeavour:qcb': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
+        },
+        'endeavour:scec': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
         }
     }
 

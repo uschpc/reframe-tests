@@ -49,6 +49,36 @@ site_configuration = {
                     ]
                 },
                 {
+                    'name': 'cryoem',
+                    'descr': 'Endeavour cryoem partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                        '--account=hpcroot',
+                        '--partition=cryoem'
+                    ],
+                    'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
+                        'PrgEnv-fio',
+                        'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-nvhpc',
+                        'PrgEnv-pgi',
+                        'PrgEnv-gcc-8.3.0-cuda-10.2.89',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
+                    ]
+                },
+                {
                     'name': 'isi',
                     'descr': 'Endeavour isi partition',
                     'scheduler': 'slurm',
@@ -58,11 +88,97 @@ site_configuration = {
                         '--partition=isi'
                     ],
                     'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
+                        'PrgEnv-fio',
+                        'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
                         'PrgEnv-nvhpc',
                         'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-intel-19.0.4-cuda-10.2.89',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
+                    ]
+                },
+                {
+                    'name': 'priya',
+                    'descr': 'Endeavour priya partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                        '--account=hpcroot',
+                        '--partition=priya'
+                    ],
+                    'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
+                        'PrgEnv-fio',
+                        'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
+                    ]
+                },
+                {
+                    'name': 'qcb',
+                    'descr': 'Endeavour qcb partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                        '--account=hpcroot',
+                        '--partition=qcb'
+                    ],
+                    'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
+                        'PrgEnv-fio',
+                        'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-singularity',
+                        'PrgEnv-curl'
+                    ]
+                },
+                {
+                    'name': 'scec',
+                    'descr': 'Endeavour scec partition',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'access': [
+                        '--account=hpcroot',
+                        '--partition=scec'
+                    ],
+                    'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
+                        'PrgEnv-fio',
+                        'PrgEnv-julia',
+                        'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]

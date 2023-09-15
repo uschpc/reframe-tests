@@ -6,7 +6,9 @@ class STREAM(rfm.RunOnlyRegressionTest):
     descr = 'STREAM benchmark using gcc/11.3.0'
     valid_systems = [
         'discovery:epyc-64',
-        'discovery:largemem'
+        'discovery:largemem',
+        'endeavour:priya',
+        'endeavour:qcb'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-11.3.0'

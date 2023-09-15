@@ -11,7 +11,12 @@ class Singularity_Hello(rfm.RunOnlyRegressionTest):
         'discovery:largemem',
         'discovery:debug',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-singularity'

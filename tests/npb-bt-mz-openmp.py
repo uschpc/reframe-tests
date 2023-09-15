@@ -10,7 +10,12 @@ class NPB_BT_MZ_OpenMP(rfm.RunOnlyRegressionTest):
         'discovery:gpu',
         'discovery:largemem',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-11.3.0'
@@ -40,6 +45,21 @@ class NPB_BT_MZ_OpenMP(rfm.RunOnlyRegressionTest):
             'Mop/s_total': (21000, -0.1, None, 'Mop/s')
         },
         'endeavour:shared': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:cryoem': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:isi': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:priya': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:qcb': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
+        },
+        'endeavour:scec': {
             'Mop/s_total': (21000, -0.1, None, 'Mop/s')
         }
     }

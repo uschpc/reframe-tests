@@ -15,7 +15,11 @@ class File_Download(rfm.RunOnlyRegressionTest):
         'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared',
-        'endeavour:isi'
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-curl'

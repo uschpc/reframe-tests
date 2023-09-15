@@ -6,6 +6,7 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
     descr = 'Singularity GPU access'
     valid_systems = [
         'discovery:gpu',
+        'endeavour:cryoem',
         'endeavour:isi'
     ]
     valid_prog_environs = [

@@ -9,7 +9,12 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:oneweek',
-        'endeavour:shared'
+        'endeavour:shared',
+        'endeavour:cryoem',
+        'endeavour:isi',
+        'endeavour:priya',
+        'endeavour:qcb',
+        'endeavour:scec'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7'
