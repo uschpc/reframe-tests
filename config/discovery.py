@@ -31,6 +31,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=main'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -59,6 +60,7 @@ site_configuration = {
                          '--account=hpcroot',
                          '--partition=epyc-64'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -85,6 +87,7 @@ site_configuration = {
                          '--account=hpcroot',
                          '--partition=gpu'
                     ],
+                    'max_jobs': 100,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -114,6 +117,7 @@ site_configuration = {
                          '--account=hpcroot',
                          '--partition=largemem'
                     ],
+                    'max_jobs': 10,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -135,6 +139,7 @@ site_configuration = {
                          '--account=hpcroot',
                          '--partition=debug'
                     ],
+                    'max_jobs': 5,
                     'environs': [
                         'PrgEnv-julia',
                         'PrgEnv-nvhpc',
@@ -152,6 +157,7 @@ site_configuration = {
                          '--account=hpcroot',
                          '--partition=oneweek'
                     ],
+                    'max_jobs': 50,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',

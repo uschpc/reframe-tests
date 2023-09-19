@@ -142,6 +142,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=qcb'
                     ],
+                    'max_jobs': 1000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
