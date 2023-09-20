@@ -8,6 +8,7 @@ class NPB_BT_MZ_MPICH(rfm.RunOnlyRegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared',
         'endeavour:cryoem',
@@ -41,6 +42,9 @@ class NPB_BT_MZ_MPICH(rfm.RunOnlyRegressionTest):
             'Mop/s_total': (45000, -0.1, None, 'Mop/s')
         },
         'discovery:gpu': {
+            'Mop/s_total': (26000, -0.1, None, 'Mop/s')
+        },
+        'discovery:debug': {
             'Mop/s_total': (26000, -0.1, None, 'Mop/s')
         },
         'discovery:oneweek': {

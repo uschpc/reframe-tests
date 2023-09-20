@@ -8,6 +8,7 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         'discovery:main',
         'discovery:epyc-64',
         'discovery:gpu',
+        'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared',
         'endeavour:cryoem',

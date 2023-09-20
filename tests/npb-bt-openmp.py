@@ -9,6 +9,7 @@ class NPB_BT_OpenMP(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:largemem',
+        'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared',
         'endeavour:cryoem',
@@ -40,6 +41,9 @@ class NPB_BT_OpenMP(rfm.RunOnlyRegressionTest):
         },
         'discovery:largemem': {
             'Mop/s_total': (48000, -0.1, None, 'Mop/s')
+        },
+        'discovery:debug': {
+            'Mop/s_total': (21000, -0.1, None, 'Mop/s')
         },
         'discovery:oneweek': {
             'Mop/s_total': (21000, -0.1, None, 'Mop/s')

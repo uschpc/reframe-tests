@@ -9,6 +9,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         'discovery:epyc-64',
         'discovery:gpu',
         'discovery:largemem',
+        'discovery:debug',
         'discovery:oneweek',
         'endeavour:shared',
         'endeavour:cryoem',
@@ -40,6 +41,9 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         },
         'discovery:largemem': {
             'elapsed_time': (90.0, None, 0.25, 'seconds')
+        },
+        'discovery:debug': {
+            'elapsed_time': (170.0, None, 0.25, 'seconds')
         },
         'discovery:oneweek': {
             'elapsed_time': (170.0, None, 0.25, 'seconds')

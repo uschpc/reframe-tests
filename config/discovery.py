@@ -141,9 +141,18 @@ site_configuration = {
                     ],
                     'max_jobs': 5,
                     'environs': [
+                        'PrgEnv-gcc-11.3.0',
+                        'PrgEnv-gcc-12.3.0',
+                        'PrgEnv-gcc-11.3.0-openmpi-4.1.4',
+                        'PrgEnv-gcc-11.3.0-mpich-4.0.2',
+                        'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-julia',
-                        'PrgEnv-nvhpc',
                         'PrgEnv-python3',
+                        'PrgEnv-R',
+                        'PrgEnv-matlab',
+                        'PrgEnv-qchem',
+                        'PrgEnv-nvhpc',
+                        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
