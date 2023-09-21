@@ -9,12 +9,7 @@ class Fio_randrw_scratch2(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         'discovery:epyc-64',
-        'endeavour:shared',
-        'endeavour:cryoem',
-        'endeavour:isi',
-        'endeavour:priya',
-        'endeavour:qcb',
-        'endeavour:scec'
+        'endeavour:shared'
     ]
     valid_prog_environs = [
         'PrgEnv-fio'
