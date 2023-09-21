@@ -10,11 +10,11 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - Popular applications (Python, R, etc.)
 - Single-node and multi-node jobs
 - License server (e.g., Matlab, Q-Chem)
-- I/O on the /project, /scratch1, and /scratch2 file systems
+- I/O on the /home1, /project, /scratch1, and /scratch2 file systems
 - File downloads
 - Singularity containers
 
-Currently, tests are developed and run using ReFrame v4.2.0.
+Currently, tests are developed and run using ReFrame v4.3.2.
 
 ## License
 
