@@ -66,7 +66,7 @@ To run an individual test, use the path to the test file. For example:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ior-project.py -r
+./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py -r
 ```
 
 ### Subset of tests
@@ -94,6 +94,15 @@ To run tests for a specific partition, use the `--system` option and specify the
 ```
 cd /project/hpcroot/reframe2
 ./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --system=discovery:gpu -r
+```
+
+### Tests for every node in specific partition
+
+To run tests for every node in a specific partition, use the `--system` and `--distribute` options. For example:
+
+```
+cd /project/hpcroot/reframe2
+./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --system=discovery:debug --distribute=all -r
 ```
 
 ### Entire test suite
