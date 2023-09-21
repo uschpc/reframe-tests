@@ -6,6 +6,7 @@ class STREAM(rfm.RunOnlyRegressionTest):
     descr = 'STREAM benchmark using gcc/11.3.0'
     valid_systems = [
         'discovery:epyc-64',
+        'discovery:gpu',
         'discovery:largemem',
         'endeavour:priya',
         'endeavour:qcb'
