@@ -25,11 +25,11 @@ class File_Download(rfm.RunOnlyRegressionTest):
         'PrgEnv-curl'
     ]
     sourcesdir = None
-    executable = 'curl -LO https://carc.usc.edu/index.html |& cat'
+    executable = 'curl -L https://carc.usc.edu/index.html'
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = '5m'
 
     @sanity_function
     def assert_sanity(self):
-        return sn.assert_found(r'100', self.stdout)
+        return sn.assert_found(r'USC Center for Advanced Research Computing', self.stdout)
