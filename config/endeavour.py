@@ -248,7 +248,7 @@ site_configuration = {
         {
             'name': 'PrgEnv-julia',
             'modules': [
-                'julia/1.9.3'
+                'julia/1.9.4'
             ]
         },
         {
