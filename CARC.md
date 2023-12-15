@@ -2,7 +2,7 @@
 
 ## Installing ReFrame
 
-Currently, tests are developed and run using ReFrame v4.3.2. A shared install is available on CARC HPC clusters in `/project/hpcroot/reframe2/reframe-4.3.2`.
+Currently, tests are developed and run using ReFrame v4.4.2. A shared install is available on CARC HPC clusters in `/project/hpcroot/reframe2/reframe-4.4.2`.
 
 The following steps were used to install ReFrame:
 
@@ -10,10 +10,10 @@ The following steps were used to install ReFrame:
 cd /project/hpcroot/reframe2
 module purge
 module load gcc/11.3.0 python/3.11.3 curl tar gzip
-curl -LO https://github.com/reframe-hpc/reframe/archive/refs/tags/v4.3.2.tar.gz
-tar -xf v4.3.2.tar.gz
-rm v4.3.2.tar.gz
-cd reframe-4.3.2
+curl -LO https://github.com/reframe-hpc/reframe/archive/refs/tags/v4.4.2.tar.gz
+tar -xf v4.4.2.tar.gz
+rm v4.4.2.tar.gz
+cd reframe-4.4.2
 ./bootstrap.sh
 ./bin/reframe -V
 ```
@@ -24,7 +24,7 @@ In addition, write permissions were removed to protect the installation:
 
 ```
 cd /project/hpcroot/reframe2
-chmod -R ug-w reframe-4.3.2
+chmod -R ug-w reframe-4.4.2
 ```
 
 ## Installing the CARC test suite
@@ -44,7 +44,7 @@ To list and validate tests, use the `--list` option:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --list
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --list
 ```
 
 The `-C` option specifies the path to a configuration file, and the `-c` option specifies the path to the test files.
@@ -66,7 +66,7 @@ To run an individual test, use the path to the test file. For example:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py -r
 ```
 
 ### Subset of tests
@@ -75,7 +75,7 @@ To run a subset of tests, use the `-n` option with grep-like syntax. For example
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Singularity' -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Singularity' -r
 ```
 
 ### Tagged tests
@@ -84,7 +84,7 @@ To run tests with a specific tag, use the `-t` option and specify the tag value.
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r
 ```
 
 ### Tests for specific partition
@@ -93,7 +93,7 @@ To run tests for a specific partition, use the `--system` option and specify the
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --system=discovery:gpu -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --system=discovery:gpu -r
 ```
 
 ### Tests for every node in specific partition
@@ -102,7 +102,7 @@ To run tests for every node in a specific partition, use the `--system` and `--d
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --system=discovery:debug --distribute=all -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --system=discovery:debug --distribute=all -r
 ```
 
 ### Entire test suite
@@ -111,7 +111,7 @@ To run the entire suite of tests, use the path to the tests directory:
 
 ```
 cd /project/hpcroot/reframe2
-./reframe-4.3.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
+./reframe-4.4.2/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
 ```
 
 ### Reservations

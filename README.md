@@ -14,7 +14,7 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - File downloads
 - Singularity containers
 
-Currently, tests are developed and run using ReFrame v4.3.2.
+Currently, tests are developed and run using ReFrame v4.4.2.
 
 ## License
 
