@@ -11,10 +11,12 @@ class Matrix_CUDA_P100(rfm.RegressionTest):
         'endeavour:isi'
     ]
     valid_prog_environs = [
-        'PrgEnv-nvhpc',
         'PrgEnv-pgi',
+        'PrgEnv-nvhpc-22.11',
+        'PrgEnv-nvhpc-23.11',
         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+        'PrgEnv-gcc-12.3.0-cuda-12.2.1',
         'PrgEnv-intel-19.0.4-cuda-10.2.89'
     ]
     sourcesdir = './src/matrix-cuda'

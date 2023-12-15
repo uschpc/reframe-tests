@@ -6,12 +6,15 @@ class Matrix_CUDA_A40(rfm.RegressionTest):
     descr = 'Matrix-vector multiplication example with CUDA using A40'
     valid_systems = [
         'discovery:gpu',
+        'discovery:debug',
         'endeavour:cryoem',
         'endeavour:isi'
     ]
     valid_prog_environs = [
-        'PrgEnv-nvhpc',
-        'PrgEnv-gcc-11.3.0-cuda-11.6.2'
+        'PrgEnv-nvhpc-22.11',
+        'PrgEnv-nvhpc-23.11',
+        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+        'PrgEnv-gcc-12.3.0-cuda-12.2.1'
     ]
     sourcesdir = './src/matrix-cuda'
     sourcepath = 'matrix-vector-multiplication-cuda.cu'

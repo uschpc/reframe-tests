@@ -99,10 +99,12 @@ site_configuration = {
                         'PrgEnv-R',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-nvhpc',
+                        'PrgEnv-nvhpc-22.11',
+                        'PrgEnv-nvhpc-23.11',
                         'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-gcc-12.3.0-cuda-12.2.1',
                         'PrgEnv-intel-19.0.4-cuda-10.2.89',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
@@ -151,8 +153,10 @@ site_configuration = {
                         'PrgEnv-R',
                         'PrgEnv-matlab',
                         'PrgEnv-qchem',
-                        'PrgEnv-nvhpc',
+                        'PrgEnv-nvhpc-22.11',
+                        'PrgEnv-nvhpc-23.11',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
+                        'PrgEnv-gcc-12.3.0-cuda-12.2.1',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
@@ -283,9 +287,15 @@ site_configuration = {
             ]
         },
         {
-            'name': 'PrgEnv-nvhpc',
+            'name': 'PrgEnv-nvhpc-22.11',
             'modules': [
                 'nvhpc/22.11'
+            ]
+        },
+        {
+            'name': 'PrgEnv-nvhpc-23.11',
+            'modules': [
+                'nvhpc/23.11'
             ]
         },
         {
@@ -309,6 +319,14 @@ site_configuration = {
                  'gcc/11.3.0',
                  'cuda/11.6.2',
                  'openmpi/4.1.4'
+             ]
+        },
+        {
+             'name': 'PrgEnv-gcc-12.3.0-cuda-12.2.1',
+             'modules': [
+                 'gcc/12.3.0',
+                 'cuda/12.2.1',
+                 'openmpi/4.1.5'
              ]
         },
         {
