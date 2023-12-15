@@ -6,7 +6,6 @@ class Matrix_CUDA_K40(rfm.RegressionTest):
     descr = 'Matrix-vector multiplication example with CUDA using K40'
     valid_systems = [
         'discovery:main',
-        'discovery:debug',
         'endeavour:cryoem'
     ]
     valid_prog_environs = [
