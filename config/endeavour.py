@@ -70,11 +70,9 @@ site_configuration = {
                         'PrgEnv-qchem',
                         'PrgEnv-nvhpc-22.11',
                         'PrgEnv-nvhpc-23.11',
-                        'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-gcc-12.3.0-cuda-12.2.1',
-                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
@@ -101,11 +99,9 @@ site_configuration = {
                         'PrgEnv-qchem',
                         'PrgEnv-nvhpc-22.11',
                         'PrgEnv-nvhpc-23.11',
-                        'PrgEnv-pgi',
                         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
                         'PrgEnv-gcc-11.3.0-cuda-11.6.2',
                         'PrgEnv-gcc-12.3.0-cuda-12.2.1',
-                        'PrgEnv-intel-19.0.4-cuda-10.2.89',
                         'PrgEnv-singularity',
                         'PrgEnv-curl'
                     ]
@@ -295,13 +291,6 @@ site_configuration = {
             ]
         },
         {
-            'name': 'PrgEnv-pgi',
-            'modules': [
-                'gcc/8.3.0',
-                'pgi-nvhpc'
-            ]
-        },
-        {
              'name': 'PrgEnv-gcc-8.3.0-cuda-10.2.89',
              'modules': [
                  'gcc/8.3.0',
@@ -324,16 +313,6 @@ site_configuration = {
                  'cuda/12.2.1',
                  'openmpi/4.1.5'
              ]
-        },
-        {
-             'name': 'PrgEnv-intel-19.0.4-cuda-10.2.89',
-             'modules': [
-                 'intel/19.0.4',
-                 'cuda/10.2.89'
-             ],
-             'cc': 'icc',
-             'cxx': 'icpc',
-             'ftn': 'ifort'
         },
         {
              'name': 'PrgEnv-singularity',

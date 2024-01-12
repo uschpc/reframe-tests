@@ -9,10 +9,8 @@ class Matrix_CUDA_K40(rfm.RegressionTest):
         'endeavour:cryoem'
     ]
     valid_prog_environs = [
-        'PrgEnv-pgi',
         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
-        'PrgEnv-gcc-11.3.0-cuda-11.6.2',
-        'PrgEnv-intel-19.0.4-cuda-10.2.89'
+        'PrgEnv-gcc-11.3.0-cuda-11.6.2'
     ]
     sourcesdir = './src/matrix-cuda'
     sourcepath = 'matrix-vector-multiplication-cuda.cu'
