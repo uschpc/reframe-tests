@@ -5,8 +5,7 @@ import reframe.utility.sanity as sn
 class Matrix_CUDA_K40(rfm.RegressionTest):
     descr = 'Matrix-vector multiplication example with CUDA using K40'
     valid_systems = [
-        'discovery:main',
-        'endeavour:cryoem'
+        'discovery:main'
     ]
     valid_prog_environs = [
         'PrgEnv-gcc-8.3.0-cuda-10.2.89',
