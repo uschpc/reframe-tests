@@ -22,7 +22,7 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
     @run_before('run')
     def set_job_options(self):
         self.job.options += [
-            '--gpus-per-task=p100:1'
+            '--gpus-per-task=1'
         ]
 
     @sanity_function
