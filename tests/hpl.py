@@ -28,7 +28,7 @@ class HPL(rfm.RunOnlyRegressionTest):
     }
     reference = {
         '*': {
-            'gflops': (3.8, 0.1, None, 'gflops')
+            'gflops': (3.8, -0.1, None, 'gflops')
         }
     }
 
