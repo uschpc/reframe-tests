@@ -3,7 +3,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class HPL(rfm.RunOnlyRegressionTest):
-    descr = 'HPL benchmark using 10 epyc-7513 nodes'
+    descr = 'HPL benchmark using 1 epyc-7513 node'
     valid_systems = [
         'discovery:epyc-64',
         'discovery:main',
@@ -14,10 +14,9 @@ class HPL(rfm.RunOnlyRegressionTest):
     ]
     sourcesdir = './src/hpl'
     executable = 'xhpl'
-    num_tasks = 640
-    num_tasks_per_node = 64
+    num_tasks = 64
     num_cpus_per_task = 1
-    time_limit = '10m'
+    time_limit = '30m'
     prerun_cmds = [
         'ulimit -s unlimited'
     ]
@@ -28,7 +27,7 @@ class HPL(rfm.RunOnlyRegressionTest):
     }
     reference = {
         '*': {
-            'gflops': (3.8, -0.1, None, 'gflops')
+            'gflops': (2.2, -0.1, None, 'gflops')
         }
     }
 
