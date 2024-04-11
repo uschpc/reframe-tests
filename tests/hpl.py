@@ -7,7 +7,8 @@ class HPL(rfm.RunOnlyRegressionTest):
     valid_systems = [
         'discovery:epyc-64',
         'discovery:main',
-        'endeavour:priya'
+        'endeavour:priya',
+        'endeavour:qcb'
     ]
     valid_prog_environs = [
         'PrgEnv-hpl'
@@ -43,5 +44,5 @@ class HPL(rfm.RunOnlyRegressionTest):
         return sn.assert_found(r'PASSED', self.stdout)
 
     @performance_function('gflops', perf_key = 'gflops')
-    def extract_perf_copy(self):
+    def extract_perf(self):
         return sn.extractsingle(r'(?P<gflops_ret>[0-9]+.[0-9]+)e\+03$', self.stdout, 'gflops_ret', float)
