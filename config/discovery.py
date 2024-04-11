@@ -39,6 +39,7 @@ site_configuration = {
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-hpl',
+                        'PrgEnv-hpcg',
                         'PrgEnv-julia',
                         'PrgEnv-python3',
                         'PrgEnv-R',
@@ -67,6 +68,7 @@ site_configuration = {
                         'PrgEnv-gcc-11.3.0-mpich-4.0.2',
                         'PrgEnv-gcc-11.3.0-mvapich2-2.3.7',
                         'PrgEnv-hpl',
+                        'PrgEnv-hpcg',
                         'PrgEnv-ior',
                         'PrgEnv-fio',
                         'PrgEnv-julia',
@@ -244,6 +246,14 @@ site_configuration = {
                 'openblas/0.3.20',
                 'openmpi/4.1.4',
                 'hpl/2.3'
+            ]
+        },
+        {
+            'name': 'PrgEnv-hpcg',
+            'modules': [
+                'gcc/11.3.0',
+                'openmpi/4.1.4',
+                'hpcg/3.1'
             ]
         },
         {
