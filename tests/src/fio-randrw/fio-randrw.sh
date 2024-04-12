@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run fio randrw test and remove test files
-# For /project, /scratch1, and /scratch2 file systems
+# For parallel file systems
 
 set -e
 
