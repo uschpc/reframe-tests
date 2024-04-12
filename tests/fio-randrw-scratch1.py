@@ -14,7 +14,6 @@ class Fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         'PrgEnv-fio'
     ]
-    sourcesdir = None
     sourcesdir = './src/fio-randrw'
     executable = 'bash fio-randrw.sh /scratch1/$USER'
     num_tasks = 1
