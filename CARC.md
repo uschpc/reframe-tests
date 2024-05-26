@@ -1,4 +1,4 @@
-# Using ReFrame on CARC systems
+# Using ReFrame on CARC HPC clusters
 
 ## Installing ReFrame
 
@@ -124,7 +124,7 @@ First, find the reservation name to use:
 scontrol show reservation
 ```
 
-Then, specify the reservation name using SBATCH_RESERVATION environment variable. For example:
+Then, specify the reservation name using the `SBATCH_RESERVATION` environment variable. For example:
 
 ```
 export SBATCH_RESERVATION=res_12345
@@ -139,12 +139,23 @@ A list of specific tests to run during maintenance periods.
 ### Discovery tests
 
 ```
+module purge
+cd /project/hpcroot/rfm
+export SBATCH_RESERVATION=<res>
+export SBATCH_QOS=hpcroot
+
 # All tests
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
+
 # Test every node using Julia test
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
+
+# Test every node using file download test
+./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
+
 # Test GPU access for every node in gpu partition
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/singularity-gpu-hello.py --system=discovery:gpu --distribute=all -r
+
 # Test every node in epyc-64 and largemem partitions using STREAM test
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:epyc-64 --distribute=all -r
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:largemem --distribute=all -r
@@ -153,10 +164,19 @@ A list of specific tests to run during maintenance periods.
 ### Endeavour tests
 
 ```
+module purge
+cd /project/hpcroot/rfm
+export SBATCH_RESERVATION=<res>
+export SBATCH_QOS=hpcroot
+
 # All tests
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/ -r
+
 # Test every node using Julia test
 ./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
+
+# Test every node using file download test
+./reframe-4.5.1/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
 ```
 
 ## Checking test logs
