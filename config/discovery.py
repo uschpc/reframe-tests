@@ -8,15 +8,15 @@ site_configuration = {
             ],
             'check_search_recursive': True,
             'purge_environment': True,
-            'report_file': '/project/hpcroot/reframe2/reports/discovery-run-report-$(date --iso-8601=seconds).json',
+            'report_file': '/project/hpcroot/rfm/reports/discovery-run-report-$(date --iso-8601=seconds).json',
         }
     ],
     'systems': [
         {
             'name': 'discovery',
             'descr': 'Discovery Cluster',
-            'stagedir': '/project/hpcroot/reframe2/stage/discovery-stage-$(date --iso-8601=seconds)',
-            'outputdir': '/project/hpcroot/reframe2/output/discovery-output-$(date --iso-8601=seconds)',
+            'stagedir': '/project/hpcroot/rfm/stage/discovery-stage-$(date --iso-8601=seconds)',
+            'outputdir': '/project/hpcroot/rfm/output/discovery-output-$(date --iso-8601=seconds)',
             'modules_system': 'lmod',
             'hostnames': [
                 'discovery.*'

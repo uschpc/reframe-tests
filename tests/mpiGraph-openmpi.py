@@ -20,7 +20,7 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         'PrgEnv-gcc-11.3.0-openmpi-4.1.4'
     ]
     sourcesdir = None
-    executable = '/project/hpcroot/reframe2/resources/mpiGraph/gcc-11.3.0-openmpi-4.1.4/mpiGraph 1048576 10 10'
+    executable = '/project/hpcroot/rfm/resources/mpiGraph/gcc-11.3.0-openmpi-4.1.4/mpiGraph 1048576 10 10'
     num_tasks = 8
     num_tasks_per_node = 1
     num_cpus_per_task = 1

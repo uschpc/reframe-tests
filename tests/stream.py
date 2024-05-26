@@ -15,7 +15,7 @@ class STREAM(rfm.RunOnlyRegressionTest):
         'PrgEnv-gcc-11.3.0'
     ]
     sourcesdir = None
-    executable = '/project/hpcroot/reframe2/resources/STREAM/stream_c.exe'
+    executable = '/project/hpcroot/rfm/resources/STREAM/stream_c.exe'
     num_tasks = 1
     num_cpus_per_task = 64
     time_limit = '5m'

@@ -8,15 +8,15 @@ site_configuration = {
             ],
             'check_search_recursive': True,
             'purge_environment': True,
-            'report_file': '/project/hpcroot/reframe2/reports/endeavour-run-report-$(date --iso-8601=seconds).json',
+            'report_file': '/project/hpcroot/rfm/reports/endeavour-run-report-$(date --iso-8601=seconds).json',
         }
     ],
     'systems': [
         {
             'name': 'endeavour',
             'descr': 'Endeavour Cluster',
-            'stagedir': '/project/hpcroot/reframe2/stage/endeavour-stage-$(date --iso-8601=seconds)',
-            'outputdir': '/project/hpcroot/reframe2/output/endeavour-output-$(date --iso-8601=seconds)',
+            'stagedir': '/project/hpcroot/rfm/stage/endeavour-stage-$(date --iso-8601=seconds)',
+            'outputdir': '/project/hpcroot/rfm/output/endeavour-output-$(date --iso-8601=seconds)',
             'modules_system': 'lmod',
             'hostnames': [
                 'endeavour.*'

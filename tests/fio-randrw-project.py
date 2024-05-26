@@ -15,7 +15,7 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
         'PrgEnv-fio'
     ]
     sourcesdir = './src/fio-randrw'
-    executable = 'bash fio-randrw.sh /project/hpcroot/reframe2/tmp'
+    executable = 'bash fio-randrw.sh /project/hpcroot/rfm/tmp'
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = '5m'

@@ -22,7 +22,7 @@ class NPB_BT_MZ_OpenMP(rfm.RunOnlyRegressionTest):
         'PrgEnv-gcc-11.3.0'
     ]
     sourcesdir = None
-    executable = '/project/hpcroot/reframe2/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-OMP/bin/bt-mz.A.x'
+    executable = '/project/hpcroot/rfm/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-OMP/bin/bt-mz.A.x'
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = '5m'

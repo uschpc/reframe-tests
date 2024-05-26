@@ -15,7 +15,7 @@ class IOR_project(rfm.RunOnlyRegressionTest):
         'PrgEnv-ior'
     ]
     sourcesdir = None
-    executable = 'ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /project/hpcroot/reframe2/tmp/reframe.tmp'
+    executable = 'ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /project/hpcroot/rfm/tmp/reframe.tmp'
     num_tasks = 16
     num_tasks_per_node = 4
     num_cpus_per_task = 1

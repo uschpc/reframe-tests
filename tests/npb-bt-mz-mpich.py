@@ -21,7 +21,7 @@ class NPB_BT_MZ_MPICH(rfm.RunOnlyRegressionTest):
         'PrgEnv-gcc-11.3.0-mpich-4.0.2'
     ]
     sourcesdir = None
-    executable = '/project/hpcroot/reframe2/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-MPI-mpich-4.0.2/bin/bt-mz.A.x'
+    executable = '/project/hpcroot/rfm/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-MPI-mpich-4.0.2/bin/bt-mz.A.x'
     num_tasks = 4
     num_tasks_per_node = 2
     num_cpus_per_task = 2
