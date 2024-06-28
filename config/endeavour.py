@@ -31,6 +31,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=shared'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -57,6 +58,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=cryoem'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -86,6 +88,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=isi'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -115,6 +118,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=priya'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
@@ -167,6 +171,7 @@ site_configuration = {
                         '--account=hpcroot',
                         '--partition=scec'
                     ],
+                    'max_jobs': 5000,
                     'environs': [
                         'PrgEnv-gcc-11.3.0',
                         'PrgEnv-gcc-12.3.0',
