@@ -42,7 +42,7 @@ site_configuration = {
                         "env-hpcg",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-gcc-8.3.0-cuda-10.2.89",
@@ -73,7 +73,7 @@ site_configuration = {
                         "env-fio",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-singularity",
@@ -98,7 +98,7 @@ site_configuration = {
                         "env-gcc-11.3.0-mvapich2-2.3.7",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-nvhpc-22.11",
@@ -125,7 +125,7 @@ site_configuration = {
                         "env-gcc-12.3.0",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-singularity",
@@ -150,7 +150,7 @@ site_configuration = {
                         "env-gcc-11.3.0-mvapich2-2.3.7",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-nvhpc-22.11",
@@ -179,7 +179,7 @@ site_configuration = {
                         "env-gcc-11.3.0-mvapich2-2.3.7",
                         "env-julia",
                         "env-python",
-                        "env-R",
+                        "env-r",
                         "env-matlab",
                         "env-qchem",
                         "env-singularity",
@@ -284,11 +284,11 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-R",
+            "name": "env-r",
             "modules": [
                 "gcc/11.3.0",
                 "openblas/0.3.20",
-                "r/4.3.3"
+                "r/4.4.1"
             ]
         },
         {
