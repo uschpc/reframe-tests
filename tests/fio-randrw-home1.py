@@ -3,37 +3,37 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Fio_randrw_home1(rfm.RunOnlyRegressionTest):
-    descr = 'Fio random read/write benchmark for /home1 file system'
+    descr = "Fio random read/write benchmark for /home1 file system"
     tags = {
-        'daily'
+        "daily"
     }
     valid_systems = [
-        'discovery:epyc-64',
-        'endeavour:shared'
+        "discovery:epyc-64",
+        "endeavour:shared"
     ]
     valid_prog_environs = [
-        'PrgEnv-fio'
+        "PrgEnv-fio"
     ]
-    sourcesdir = './src/fio-randrw'
-    executable = 'bash fio-randrw-home1.sh'
+    sourcesdir = "./src/fio-randrw"
+    executable = "bash fio-randrw-home1.sh"
     num_tasks = 1
     num_cpus_per_task = 4
-    time_limit = '5m'
+    time_limit = "5m"
     reference = {
-        '*': {
-            'avg_write_speed': (30.00, -0.25, None, 'MiB/sec'),
-            'avg_read_speed': (30.00, -0.25, None, 'MiB/sec')
+        "*": {
+            "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
         }
     }
 
     @sanity_function
     def assert_sanity(self):
-        return sn.assert_found(r'all jobs', self.stdout)
+        return sn.assert_found(r"all jobs", self.stdout)
 
-    @performance_function('MiB/sec', perf_key = 'avg_write_speed')
+    @performance_function("MiB/sec", perf_key = "avg_write_speed")
     def extract_perf_write(self):
-        return sn.extractsingle(r'WRITE:\sbw=(?P<W_ret>\d+.\d+)', self.stdout, 'W_ret', float)
+        return sn.extractsingle(r"WRITE:\sbw=(?P<W_ret>\d+.\d+)", self.stdout, "W_ret", float)
 
-    @performance_function('MiB/sec', perf_key = 'avg_read_speed')
+    @performance_function("MiB/sec", perf_key = "avg_read_speed")
     def extract_perf_read(self):
-        return sn.extractsingle(r'READ:\sbw=(?P<R_ret>\d+.\d+)', self.stdout, 'R_ret', float)
+        return sn.extractsingle(r"READ:\sbw=(?P<R_ret>\d+.\d+)", self.stdout, "R_ret", float)
