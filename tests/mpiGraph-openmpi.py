@@ -17,7 +17,7 @@ class mpiGraph_OpenMPI(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0-openmpi-4.1.4"
+        "env-gcc-11.3.0-openmpi-4.1.4"
     ]
     sourcesdir = None
     executable = "/project/hpcroot/rfm/resources/mpiGraph/gcc-11.3.0-openmpi-4.1.4/mpiGraph 1048576 10 10"

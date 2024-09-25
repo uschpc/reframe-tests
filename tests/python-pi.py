@@ -19,7 +19,7 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-python3"
+        "env-python3"
     ]
     sourcesdir = "./src/python-pi"
     executable = "python3 pi.py"

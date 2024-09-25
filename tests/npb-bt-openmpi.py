@@ -18,7 +18,7 @@ class NPB_BT_OpenMPI(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0-openmpi-4.1.4"
+        "env-gcc-11.3.0-openmpi-4.1.4"
     ]
     sourcesdir = None
     executable = "/project/hpcroot/rfm/resources/NPB/gcc-11.3.0/NPB3.4.2/NPB3.4-MPI-openmpi-4.1.4/bin/bt.A.x"

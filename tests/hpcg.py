@@ -10,7 +10,7 @@ class HPCG(rfm.RunOnlyRegressionTest):
         "endeavour:priya"
     ]
     valid_prog_environs = [
-        "PrgEnv-hpcg"
+        "env-hpcg"
     ]
     sourcesdir = None
     executable = "xhpcg"

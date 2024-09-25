@@ -22,7 +22,7 @@ class File_Download(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-curl"
+        "env-curl"
     ]
     sourcesdir = None
     executable = "curl -L https://carc.usc.edu/index.html"

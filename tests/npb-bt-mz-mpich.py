@@ -18,7 +18,7 @@ class NPB_BT_MZ_MPICH(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0-mpich-4.0.2"
+        "env-gcc-11.3.0-mpich-4.0.2"
     ]
     sourcesdir = None
     executable = "/project/hpcroot/rfm/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-MPI-mpich-4.0.2/bin/bt-mz.A.x"

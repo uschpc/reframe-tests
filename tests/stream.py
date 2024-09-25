@@ -12,7 +12,7 @@ class STREAM(rfm.RunOnlyRegressionTest):
         "endeavour:qcb"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0"
+        "env-gcc-11.3.0"
     ]
     sourcesdir = None
     executable = "/project/hpcroot/rfm/resources/STREAM/stream_c.exe"

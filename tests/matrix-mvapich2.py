@@ -18,7 +18,7 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7"
+        "env-gcc-11.3.0-mvapich2-2.3.7"
     ]
     sourcesdir = "./src/matrix-mpi"
     sourcepath = "matrix-vector-multiplication-mpi-openmp.c"

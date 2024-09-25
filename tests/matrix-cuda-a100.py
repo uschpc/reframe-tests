@@ -8,10 +8,10 @@ class Matrix_CUDA_A100(rfm.RegressionTest):
         "discovery:gpu"
     ]
     valid_prog_environs = [
-        "PrgEnv-nvhpc-22.11",
-        "PrgEnv-nvhpc-23.11",
-        "PrgEnv-gcc-11.3.0-cuda-11.6.2",
-        "PrgEnv-gcc-12.3.0-cuda-12.2.1"
+        "env-nvhpc-22.11",
+        "env-nvhpc-23.11",
+        "env-gcc-11.3.0-cuda-11.6.2",
+        "env-gcc-12.3.0-cuda-12.2.1"
     ]
     sourcesdir = "./src/matrix-cuda"
     sourcepath = "matrix-vector-multiplication-cuda.cu"

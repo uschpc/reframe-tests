@@ -12,7 +12,7 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
         "endeavour:isi"
     ]
     valid_prog_environs = [
-        "PrgEnv-singularity"
+        "env-singularity"
     ]
     sourcesdir = None
     executable = "singularity exec --nv /spack/singularity/ood/desktop/centos7-xfce-desktop-ood3.sif echo \"Hello world from $(nvidia-smi -L)\""

@@ -19,7 +19,7 @@ class NPB_BT_MZ_OpenMP(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0"
+        "env-gcc-11.3.0"
     ]
     sourcesdir = None
     executable = "/project/hpcroot/rfm/resources/NPB/gcc-11.3.0/NPB3.4.2-MZ/NPB3.4-MZ-OMP/bin/bt-mz.A.x"

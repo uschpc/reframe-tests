@@ -19,7 +19,7 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-julia"
+        "env-julia"
     ]
     sourcesdir = "./src/julia-pi"
     executable = "julia --threads 8 pi.jl"

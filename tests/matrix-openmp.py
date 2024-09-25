@@ -19,8 +19,8 @@ class Matrix_OpenMP(rfm.RegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-11.3.0",
-        "PrgEnv-gcc-12.3.0"
+        "env-gcc-11.3.0",
+        "env-gcc-12.3.0"
     ]
     sourcesdir = "./src/matrix-openmp"
     sourcepath = "matrix-vector-multiplication-openmp.c"

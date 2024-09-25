@@ -8,8 +8,8 @@ class Matrix_CUDA_K40(rfm.RegressionTest):
         "discovery:main"
     ]
     valid_prog_environs = [
-        "PrgEnv-gcc-8.3.0-cuda-10.2.89",
-        "PrgEnv-gcc-11.3.0-cuda-11.6.2"
+        "env-gcc-8.3.0-cuda-10.2.89",
+        "env-gcc-11.3.0-cuda-11.6.2"
     ]
     sourcesdir = "./src/matrix-cuda"
     sourcepath = "matrix-vector-multiplication-cuda.cu"

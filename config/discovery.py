@@ -33,22 +33,22 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
-                        "PrgEnv-gcc-11.3.0-mpich-4.0.2",
-                        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
-                        "PrgEnv-hpl",
-                        "PrgEnv-hpcg",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-gcc-8.3.0-cuda-10.2.89",
-                        "PrgEnv-gcc-11.3.0-cuda-11.6.2",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-gcc-11.3.0-openmpi-4.1.4",
+                        "env-gcc-11.3.0-mpich-4.0.2",
+                        "env-gcc-11.3.0-mvapich2-2.3.7",
+                        "env-hpl",
+                        "env-hpcg",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-gcc-8.3.0-cuda-10.2.89",
+                        "env-gcc-11.3.0-cuda-11.6.2",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 },
                 {
@@ -62,22 +62,22 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
-                        "PrgEnv-gcc-11.3.0-mpich-4.0.2",
-                        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
-                        "PrgEnv-hpl",
-                        "PrgEnv-hpcg",
-                        "PrgEnv-ior",
-                        "PrgEnv-fio",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-gcc-11.3.0-openmpi-4.1.4",
+                        "env-gcc-11.3.0-mpich-4.0.2",
+                        "env-gcc-11.3.0-mvapich2-2.3.7",
+                        "env-hpl",
+                        "env-hpcg",
+                        "env-ior",
+                        "env-fio",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 },
                 {
@@ -91,23 +91,23 @@ site_configuration = {
                     ],
                     "max_jobs": 100,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
-                        "PrgEnv-gcc-11.3.0-mpich-4.0.2",
-                        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-nvhpc-22.11",
-                        "PrgEnv-nvhpc-23.11",
-                        "PrgEnv-gcc-8.3.0-cuda-10.2.89",
-                        "PrgEnv-gcc-11.3.0-cuda-11.6.2",
-                        "PrgEnv-gcc-12.3.0-cuda-12.2.1",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-gcc-11.3.0-openmpi-4.1.4",
+                        "env-gcc-11.3.0-mpich-4.0.2",
+                        "env-gcc-11.3.0-mvapich2-2.3.7",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-nvhpc-22.11",
+                        "env-nvhpc-23.11",
+                        "env-gcc-8.3.0-cuda-10.2.89",
+                        "env-gcc-11.3.0-cuda-11.6.2",
+                        "env-gcc-12.3.0-cuda-12.2.1",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 },
                 {
@@ -121,15 +121,15 @@ site_configuration = {
                     ],
                     "max_jobs": 10,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 },
                 {
@@ -143,22 +143,22 @@ site_configuration = {
                     ],
                     "max_jobs": 5,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
-                        "PrgEnv-gcc-11.3.0-mpich-4.0.2",
-                        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-nvhpc-22.11",
-                        "PrgEnv-nvhpc-23.11",
-                        "PrgEnv-gcc-11.3.0-cuda-11.6.2",
-                        "PrgEnv-gcc-12.3.0-cuda-12.2.1",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-gcc-11.3.0-openmpi-4.1.4",
+                        "env-gcc-11.3.0-mpich-4.0.2",
+                        "env-gcc-11.3.0-mvapich2-2.3.7",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-nvhpc-22.11",
+                        "env-nvhpc-23.11",
+                        "env-gcc-11.3.0-cuda-11.6.2",
+                        "env-gcc-12.3.0-cuda-12.2.1",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 },
                 {
@@ -172,18 +172,18 @@ site_configuration = {
                     ],
                     "max_jobs": 50,
                     "environs": [
-                        "PrgEnv-gcc-11.3.0",
-                        "PrgEnv-gcc-12.3.0",
-                        "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
-                        "PrgEnv-gcc-11.3.0-mpich-4.0.2",
-                        "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
-                        "PrgEnv-julia",
-                        "PrgEnv-python3",
-                        "PrgEnv-R",
-                        "PrgEnv-matlab",
-                        "PrgEnv-qchem",
-                        "PrgEnv-singularity",
-                        "PrgEnv-curl"
+                        "env-gcc-11.3.0",
+                        "env-gcc-12.3.0",
+                        "env-gcc-11.3.0-openmpi-4.1.4",
+                        "env-gcc-11.3.0-mpich-4.0.2",
+                        "env-gcc-11.3.0-mvapich2-2.3.7",
+                        "env-julia",
+                        "env-python3",
+                        "env-R",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-singularity",
+                        "env-curl"
                     ]
                 }
             ]
@@ -191,7 +191,7 @@ site_configuration = {
     ],
     "environments": [
         {
-            "name": "PrgEnv-gcc-11.3.0",
+            "name": "env-gcc-11.3.0",
             "modules": [
                 "gcc/11.3.0"
             ],
@@ -200,7 +200,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "PrgEnv-gcc-12.3.0",
+            "name": "env-gcc-12.3.0",
             "modules": [
                 "gcc/12.3.0"
             ],
@@ -209,7 +209,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "PrgEnv-gcc-11.3.0-openmpi-4.1.4",
+            "name": "env-gcc-11.3.0-openmpi-4.1.4",
             "modules": [
                 "gcc/11.3.0",
                 "openmpi/4.1.4",
@@ -220,7 +220,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "PrgEnv-gcc-11.3.0-mpich-4.0.2",
+            "name": "env-gcc-11.3.0-mpich-4.0.2",
             "modules": [
                 "gcc/11.3.0",
                 "mpich/4.0.2"
@@ -230,7 +230,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "PrgEnv-gcc-11.3.0-mvapich2-2.3.7",
+            "name": "env-gcc-11.3.0-mvapich2-2.3.7",
             "modules": [
                 "gcc/11.3.0",
                 "mvapich2/2.3.7"
@@ -240,7 +240,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "PrgEnv-hpl",
+            "name": "env-hpl",
             "modules": [
                 "gcc/11.3.0",
                 "openblas/0.3.20",
@@ -249,7 +249,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "PrgEnv-hpcg",
+            "name": "env-hpcg",
             "modules": [
                 "gcc/11.3.0",
                 "openmpi/4.1.4",
@@ -257,7 +257,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "PrgEnv-ior",
+            "name": "env-ior",
             "modules": [
                 "gcc/11.3.0",
                 "openmpi/4.1.4",
@@ -266,25 +266,25 @@ site_configuration = {
             ]
         },
         {
-            "name": "PrgEnv-fio",
+            "name": "env-fio",
             "modules": [
             ]
         },
         {
-            "name": "PrgEnv-julia",
+            "name": "env-julia",
             "modules": [
                 "julia/1.10.3"
             ]
         },
         {
-            "name": "PrgEnv-python3",
+            "name": "env-python3",
             "modules": [
                 "gcc/11.3.0",
                 "python/3.11.3"
             ]
         },
         {
-            "name": "PrgEnv-R",
+            "name": "env-R",
             "modules": [
                 "gcc/11.3.0",
                 "openblas/0.3.20",
@@ -292,31 +292,31 @@ site_configuration = {
             ]
         },
         {
-            "name": "PrgEnv-matlab",
+            "name": "env-matlab",
             "modules": [
                 "matlab/2022a"
             ]
         },
         {
-            "name": "PrgEnv-qchem",
+            "name": "env-qchem",
             "modules": [
                 "qchem/6.1.1"
             ]
         },
         {
-            "name": "PrgEnv-nvhpc-22.11",
+            "name": "env-nvhpc-22.11",
             "modules": [
                 "nvhpc/22.11"
             ]
         },
         {
-            "name": "PrgEnv-nvhpc-23.11",
+            "name": "env-nvhpc-23.11",
             "modules": [
                 "nvhpc/23.11"
             ]
         },
         {
-             "name": "PrgEnv-gcc-8.3.0-cuda-10.2.89",
+             "name": "env-gcc-8.3.0-cuda-10.2.89",
              "modules": [
                  "gcc/8.3.0",
                  "cuda/10.2.89",
@@ -324,7 +324,7 @@ site_configuration = {
              ]
         },
         {
-             "name": "PrgEnv-gcc-11.3.0-cuda-11.6.2",
+             "name": "env-gcc-11.3.0-cuda-11.6.2",
              "modules": [
                  "gcc/11.3.0",
                  "cuda/11.6.2",
@@ -332,7 +332,7 @@ site_configuration = {
              ]
         },
         {
-             "name": "PrgEnv-gcc-12.3.0-cuda-12.2.1",
+             "name": "env-gcc-12.3.0-cuda-12.2.1",
              "modules": [
                  "gcc/12.3.0",
                  "cuda/12.2.1",
@@ -340,12 +340,12 @@ site_configuration = {
              ]
         },
         {
-             "name": "PrgEnv-singularity",
+             "name": "env-singularity",
              "modules": [
              ]
         },
         {
-            "name": "PrgEnv-curl",
+            "name": "env-curl",
             "modules": [
                 "gcc/11.3.0",
                 "curl/7.83.0"

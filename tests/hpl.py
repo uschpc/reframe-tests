@@ -11,7 +11,7 @@ class HPL(rfm.RunOnlyRegressionTest):
         "endeavour:qcb"
     ]
     valid_prog_environs = [
-        "PrgEnv-hpl"
+        "env-hpl"
     ]
     sourcesdir = "./src/hpl"
     executable = "xhpl"

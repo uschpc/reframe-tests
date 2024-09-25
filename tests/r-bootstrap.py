@@ -19,7 +19,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-R"
+        "env-R"
     ]
     sourcesdir = "./src/r-bootstrap"
     executable = "Rscript bootstrap.R"

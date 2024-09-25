@@ -19,7 +19,7 @@ class Singularity_Hello(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "PrgEnv-singularity"
+        "env-singularity"
     ]
     sourcesdir = None
     executable = "singularity exec /spack/singularity/ood/desktop/centos7-xfce-desktop-ood3.sif echo \"Hello world\""

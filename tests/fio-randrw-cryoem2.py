@@ -12,7 +12,7 @@ class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
         "endeavour:shared"
     ]
     valid_prog_environs = [
-        "PrgEnv-fio"
+        "env-fio"
     ]
     sourcesdir = "./src/fio-randrw"
     executable = "bash fio-randrw.sh /cryoem2/osinski_703/rfm/"
