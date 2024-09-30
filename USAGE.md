@@ -2,7 +2,7 @@
 
 ## Installing ReFrame
 
-Currently, tests are developed and run using ReFrame v4.6.3. A shared install is available on CARC HPC clusters in `/project/hpcroot/rfm/reframe-4.6.3`.
+Currently, tests are developed and run using ReFrame v4.6.3. A shared installation is available on CARC HPC clusters in `/project/hpcroot/rfm/reframe-4.6.3`.
 
 The following steps were used to install ReFrame:
 
@@ -15,26 +15,23 @@ tar -xf v4.6.3.tar.gz
 rm v4.6.3.tar.gz
 cd reframe-4.6.3
 ./bootstrap.sh
-./bin/reframe -V
-```
-
-The `./bin/reframe` script was modified to include the path to the python3 binary used for the install so that the module does not need to be loaded in order to run ReFrame.
-
-In addition, write permissions were removed to protect the installation:
-
-```
-cd /project/hpcroot/rfm
+py="$(type -p python3)"
+sed -i "1s%.*%#\!${py}%" ./bin/reframe
+unset py
+module purge
+cd ..
 chmod -R ug-w reframe-4.6.3
+./reframe-4.6.3/bin/reframe -V
 ```
 
 ## Installing the CARC test suite
 
-A shared install of the test suite is available on CARC systems in `/project/hpcroot/rfm/reframe-tests`.
+A shared installation of the test suite is available on CARC HPC clusters in `/project/hpcroot/rfm/reframe-tests`.
 
 To install the CARC test suite, clone the repo:
 
 ```
-git clone https://github.com/uschpc/reframe-tests
+git clone https://github.com/uschpc/reframe-tests.git
 cd reframe-tests
 ```
 
@@ -132,9 +129,13 @@ export SBATCH_RESERVATION=res_12345
 
 The variable will then be exported to the ReFrame Slurm jobs and allow them to run.
 
-## Running tests during maintenance periods
+## Checking test logs
 
-A list of specific tests to run during maintenance periods.
+Various log files can be found in `/project/hpcroot/rfm/`.
+
+## Reference guide for test suite
+
+A reference guide for specific tests to run during testing or maintenance periods.
 
 ### Discovery tests
 
@@ -153,7 +154,10 @@ export SBATCH_QOS=hpcroot
 # Test every node using file download test
 ./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
 
-# Test GPU access for every node in gpu partition
+# Test every node using Singularity test
+./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/singularity-hello.py --distribute=all -r
+
+# Test GPU access for every node in gpu partition using Singularity test
 ./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/singularity-gpu-hello.py --system=discovery:gpu --distribute=all -r
 
 # Test every node in epyc-64 and largemem partitions using STREAM test
@@ -177,8 +181,7 @@ export SBATCH_QOS=hpcroot
 
 # Test every node using file download test
 ./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
+
+# Test every node using Singularity test
+./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/singularity-hello.py --distribute=all -r
 ```
-
-## Checking test logs
-
-Various log files can be found in `/project/hpcroot/rfm/`.
