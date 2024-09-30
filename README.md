@@ -14,7 +14,7 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - Singularity containers
 - Single-node and multi-node jobs
 
-Currently, tests are developed and run using ReFrame v4.5.1.
+Currently, tests are developed and run using ReFrame v4.6.3.
 
 ## License
 
