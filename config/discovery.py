@@ -14,7 +14,7 @@ site_configuration = {
     "systems": [
         {
             "name": "discovery",
-            "descr": "Discovery Cluster",
+            "descr": "Discovery cluster",
             "stagedir": "/project/hpcroot/rfm/stage/discovery-stage-$(date --iso-8601=seconds)",
             "outputdir": "/project/hpcroot/rfm/output/discovery-output-$(date --iso-8601=seconds)",
             "modules_system": "lmod",
@@ -33,6 +33,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-gcc-11.3.0-openmpi-4.1.4",
@@ -47,7 +48,6 @@ site_configuration = {
                         "env-qchem",
                         "env-gcc-8.3.0-cuda-10.2.89",
                         "env-gcc-11.3.0-cuda-11.6.2",
-                        "env-singularity",
                         "env-curl"
                     ]
                 },
@@ -62,6 +62,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-gcc-11.3.0-openmpi-4.1.4",
@@ -76,7 +77,6 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-singularity",
                         "env-curl"
                     ]
                 },
@@ -91,6 +91,7 @@ site_configuration = {
                     ],
                     "max_jobs": 100,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-gcc-11.3.0-openmpi-4.1.4",
@@ -106,7 +107,6 @@ site_configuration = {
                         "env-gcc-8.3.0-cuda-10.2.89",
                         "env-gcc-11.3.0-cuda-11.6.2",
                         "env-gcc-12.3.0-cuda-12.2.1",
-                        "env-singularity",
                         "env-curl"
                     ]
                 },
@@ -121,6 +121,7 @@ site_configuration = {
                     ],
                     "max_jobs": 10,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-julia",
@@ -128,7 +129,6 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-singularity",
                         "env-curl"
                     ]
                 },
@@ -143,6 +143,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-gcc-11.3.0-openmpi-4.1.4",
@@ -157,7 +158,6 @@ site_configuration = {
                         "env-nvhpc-23.11",
                         "env-gcc-11.3.0-cuda-11.6.2",
                         "env-gcc-12.3.0-cuda-12.2.1",
-                        "env-singularity",
                         "env-curl"
                     ]
                 },
@@ -172,6 +172,7 @@ site_configuration = {
                     ],
                     "max_jobs": 50,
                     "environs": [
+                        "env-singularity",
                         "env-gcc-11.3.0",
                         "env-gcc-12.3.0",
                         "env-gcc-11.3.0-openmpi-4.1.4",
@@ -182,7 +183,6 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-singularity",
                         "env-curl"
                     ]
                 }
@@ -190,6 +190,11 @@ site_configuration = {
         }
     ],
     "environments": [
+        {
+             "name": "env-singularity",
+             "modules": [
+             ]
+        },
         {
             "name": "env-gcc-11.3.0",
             "modules": [
@@ -337,11 +342,6 @@ site_configuration = {
                  "gcc/12.3.0",
                  "cuda/12.2.1",
                  "openmpi/4.1.5"
-             ]
-        },
-        {
-             "name": "env-singularity",
-             "modules": [
              ]
         },
         {
