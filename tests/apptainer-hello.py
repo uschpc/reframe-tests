@@ -2,8 +2,8 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Singularity_Hello(rfm.RunOnlyRegressionTest):
-    descr = "Singularity hello world"
+class Apptainer_Hello(rfm.RunOnlyRegressionTest):
+    descr = "Apptainer hello world"
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",
@@ -19,10 +19,10 @@ class Singularity_Hello(rfm.RunOnlyRegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "env-singularity"
+        "env-apptainer"
     ]
     sourcesdir = None
-    executable = "singularity exec /spack/singularity/ood/desktop/centos7-xfce-desktop-ood3.sif echo \"Hello world\""
+    executable = "apptainer exec /apps/containers/ood/desktop/rocky8-xfce-desktop-ood3.sif echo \"Hello world\""
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = "5m"

@@ -2,26 +2,30 @@
 
 ## Installing ReFrame
 
-Currently, tests are developed and run using ReFrame v4.6.3. A shared installation is available on CARC HPC clusters in `/project/hpcroot/rfm/reframe-4.6.3`.
+Currently, tests are developed and run using ReFrame v4.7.2. A shared installation is available on CARC HPC clusters in `/project/hpcroot/rfm/reframe-4.7.2`.
 
 The following steps were used to install ReFrame:
 
 ```
 cd /project/hpcroot/rfm
 module purge
-module load gcc/11.3.0 python/3.11.3 curl tar gzip
-curl -LO https://github.com/reframe-hpc/reframe/archive/refs/tags/v4.6.3.tar.gz
-tar -xf v4.6.3.tar.gz
-rm v4.6.3.tar.gz
-cd reframe-4.6.3
+module load gcc/13.3.0 python/3.11.9 curl tar gzip
+ver=4.7.2
+curl -LO https://github.com/reframe-hpc/reframe/archive/refs/tags/v"$ver".tar.gz
+tar -xf v"$ver".tar.gz
+rm v"$ver".tar.gz
+cd reframe-"$ver"
 ./bootstrap.sh
 py="$(type -p python3)"
 sed -i "1s%.*%#\!${py}%" ./bin/reframe
 unset py
 module purge
 cd ..
-chmod -R ug-w reframe-4.6.3
-./reframe-4.6.3/bin/reframe -V
+chmod -R ug-w reframe-"$ver"
+unlink reframe
+ln -s reframe-"$ver" reframe
+unset ver
+./reframe/bin/reframe -V
 ```
 
 ## Installing the CARC test suite
@@ -41,7 +45,7 @@ To list and validate tests, use the `--list` option:
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --list
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --list
 ```
 
 The `-C` option specifies the path to a configuration file, and the `-c` option specifies the path to the test files.
@@ -63,7 +67,7 @@ To run an individual test, use the path to the test file. For example:
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py -r
 ```
 
 ### Subset of tests
@@ -72,7 +76,7 @@ To run a subset of tests, use the `-n` option with grep-like syntax. For example
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Singularity' -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -n 'Python|Apptainer' -r
 ```
 
 ### Tagged tests
@@ -81,7 +85,7 @@ To run tests with a specific tag, use the `-t` option and specify the tag value.
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -t daily -r
 ```
 
 ### Tests for specific partition
@@ -90,7 +94,7 @@ To run tests for a specific partition, use the `--system` option and specify the
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --system=discovery:gpu -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ --system=discovery:gpu -r
 ```
 
 ### Tests for every node in specific partition
@@ -99,7 +103,7 @@ To run tests for every node in a specific partition, use the `--system` and `--d
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --system=discovery:debug --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --system=discovery:debug --distribute=all -r
 ```
 
 ### Entire test suite
@@ -108,7 +112,7 @@ To run the entire suite of tests, use the path to the tests directory:
 
 ```
 cd /project/hpcroot/rfm
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
 ```
 
 ### Reservations
@@ -146,23 +150,23 @@ export SBATCH_RESERVATION=<res>
 export SBATCH_QOS=hpcroot
 
 # All tests
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/ -r
 
 # Test every node using Julia test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
 
 # Test every node using file download test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
 
-# Test every node using Singularity test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/singularity-hello.py --distribute=all -r
+# Test every node using Apptainer test
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/apptainer-hello.py --distribute=all -r
 
-# Test GPU access for every node in gpu partition using Singularity test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/singularity-gpu-hello.py --system=discovery:gpu --distribute=all -r
+# Test GPU access for every node in gpu partition using Apptainer test
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/apptainer-gpu-hello.py --system=discovery:gpu --distribute=all -r
 
 # Test every node in epyc-64 and largemem partitions using STREAM test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:epyc-64 --distribute=all -r
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:largemem --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:epyc-64 --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/discovery.py -c ./reframe-tests/tests/stream.py --system=discovery:largemem --distribute=all -r
 ```
 
 ### Endeavour tests
@@ -174,14 +178,14 @@ export SBATCH_RESERVATION=<res>
 export SBATCH_QOS=hpcroot
 
 # All tests
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/ -r
+./reframe/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/ -r
 
 # Test every node using Julia test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/julia-pi.py --distribute=all -r
 
 # Test every node using file download test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
+./reframe/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/file-download.py --distribute=all -r
 
-# Test every node using Singularity test
-./reframe-4.6.3/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/singularity-hello.py --distribute=all -r
+# Test every node using Apptainer test
+./reframe/bin/reframe -C ./reframe-tests/config/endeavour.py -c ./reframe-tests/tests/apptainer-hello.py --distribute=all -r
 ```

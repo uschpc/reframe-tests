@@ -11,10 +11,8 @@ class Matrix_CUDA_A40(rfm.RegressionTest):
         "endeavour:isi"
     ]
     valid_prog_environs = [
-        "env-nvhpc-22.11",
-        "env-nvhpc-23.11",
-        "env-gcc-11.3.0-cuda-11.6.2",
-        "env-gcc-12.3.0-cuda-12.2.1"
+        "env-gcc-13.3.0-cuda-12.6.3",
+        "env-nvhpc-24.5"
     ]
     sourcesdir = "./src/matrix-cuda"
     sourcepath = "matrix-vector-multiplication-cuda.cu"

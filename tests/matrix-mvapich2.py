@@ -3,7 +3,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Matrix_MVAPICH2(rfm.RegressionTest):
-    descr = "Matrix-vector multiplication example using gcc/11.3.0 and mvapich2/2.3.7 with pmi2"
+    descr = "Matrix-vector multiplication example using MVAPICH2 with PMI2"
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",
@@ -18,7 +18,7 @@ class Matrix_MVAPICH2(rfm.RegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "env-gcc-11.3.0-mvapich2-2.3.7"
+        "env-gcc-13.3.0-mvapich2-2.3.7"
     ]
     sourcesdir = "./src/matrix-mpi"
     sourcepath = "matrix-vector-multiplication-mpi-openmp.c"

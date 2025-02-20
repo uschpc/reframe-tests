@@ -7,6 +7,6 @@ set -e
 
 cd /home1/"$USER"
 
-/project/hpcroot/rfm/resources/fio/fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
+fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
 
 rm fio-randrw-"$SLURM_JOB_ID"*

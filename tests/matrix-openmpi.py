@@ -3,7 +3,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Matrix_OpenMPI(rfm.RegressionTest):
-    descr = "Matrix-vector multiplication example using gcc/11.3.0 and openmpi/4.1.4 with pmix_v2"
+    descr = "Matrix-vector multiplication example using OpenMPI with PMIX"
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",
@@ -18,7 +18,7 @@ class Matrix_OpenMPI(rfm.RegressionTest):
         "endeavour:scec"
     ]
     valid_prog_environs = [
-        "env-gcc-11.3.0-openmpi-4.1.4"
+        "env-gcc-13.3.0-openmpi-5.0.5"
     ]
     sourcesdir = "./src/matrix-mpi"
     sourcepath = "matrix-vector-multiplication-mpi-openmp.c"
@@ -36,7 +36,7 @@ class Matrix_OpenMPI(rfm.RegressionTest):
     ]
     env_vars = {
         "OMP_NUM_THREADS": "1",
-        "SLURM_MPI_TYPE": "pmix_v2",
+        "SLURM_MPI_TYPE": "pmix_v5",
         "SLURM_CPU_BIND": "verbose"
     }
     reference = {

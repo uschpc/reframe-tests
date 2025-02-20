@@ -25,7 +25,7 @@ class HPCG(rfm.RunOnlyRegressionTest):
     ]
     env_vars = {
         "OMP_NUM_THREADS": "1",
-        "SLURM_MPI_TYPE": "pmix_v2",
+        "SLURM_MPI_TYPE": "pmix_v5",
         "SLURM_CPU_BIND": "verbose"
     }
     reference = {

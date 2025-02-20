@@ -2,8 +2,8 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
-    descr = "Singularity GPU access"
+class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
+    descr = "Apptainer GPU access"
     valid_systems = [
         "discovery:main",
         "discovery:gpu",
@@ -12,10 +12,10 @@ class Singularity_GPU_Hello(rfm.RunOnlyRegressionTest):
         "endeavour:isi"
     ]
     valid_prog_environs = [
-        "env-singularity"
+        "env-apptainer"
     ]
     sourcesdir = None
-    executable = "singularity exec --nv /spack/singularity/ood/desktop/centos7-xfce-desktop-ood3.sif echo \"Hello world from $(nvidia-smi -L)\""
+    executable = "apptainer exec --nv /apps/containers/ood/desktop/rocky8-xfce-desktop-ood3.sif echo \"Hello world from $(nvidia-smi -L)\""
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = "5m"
