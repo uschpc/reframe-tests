@@ -90,7 +90,6 @@ site_configuration = {
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
                         "env-gcc-13.3.0-cuda-12.6.3",
-                        "env-nvhpc-24.5",
                         "env-julia",
                         "env-python",
                         "env-r",
@@ -139,7 +138,6 @@ site_configuration = {
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
                         "env-gcc-13.3.0-cuda-12.6.3",
-                        "env-nvhpc-24.5",
                         "env-julia",
                         "env-python",
                         "env-r",
@@ -282,12 +280,6 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "ior/3.3.0"
-            ]
-        },
-        {
-            "name": "env-nvhpc-24.5",
-            "modules": [
-                "nvhpc/24.5"
             ]
         },
     ],

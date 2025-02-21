@@ -68,8 +68,7 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl",
-                        "env-nvhpc-24.5"
+                        "env-curl"
                     ]
                 },
                 {
@@ -93,8 +92,7 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl",
-                        "env-nvhpc-24.5"
+                        "env-curl"
                     ]
                 },
                 {
@@ -276,12 +274,6 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "ior/3.3.0"
-            ]
-        },
-        {
-            "name": "env-nvhpc-24.5",
-            "modules": [
-                "nvhpc/24.5"
             ]
         },
     ],
