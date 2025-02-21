@@ -37,7 +37,6 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-mvapich2-2.3.7",
                         "env-hpcg",
                         "env-julia",
                         "env-python",
@@ -64,7 +63,6 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-mvapich2-2.3.7",
                         "env-hpcg",
                         "env-julia",
                         "env-python",
@@ -91,7 +89,6 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-mvapich2-2.3.7",
                         "env-gcc-13.3.0-cuda-12.6.3",
                         "env-nvhpc-24.5",
                         "env-julia",
@@ -141,7 +138,6 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-mvapich2-2.3.7",
                         "env-gcc-13.3.0-cuda-12.6.3",
                         "env-nvhpc-24.5",
                         "env-julia",
@@ -168,7 +164,6 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-mvapich2-2.3.7",
                         "env-julia",
                         "env-python",
                         "env-r",
@@ -222,16 +217,6 @@ site_configuration = {
             "modules": [
                 "gcc/13.3.0",
                 "mpich/4.2.2"
-            ],
-            "cc": "mpicc",
-            "cxx": "mpic++",
-            "ftn": "mpif90"
-        },
-        {
-            "name": "env-gcc-13.3.0-mvapich2-2.3.7",
-            "modules": [
-                "gcc/13.3.0",
-                "mvapich2/2.3.7"
             ],
             "cc": "mpicc",
             "cxx": "mpic++",
