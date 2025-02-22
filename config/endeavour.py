@@ -173,7 +173,7 @@ site_configuration = {
         {
              "name": "env-apptainer",
              "modules": [
-                 "apptainer/1.3.3"
+                 "apptainer/1.3.6"
              ]
         },
         {
