@@ -134,6 +134,7 @@ site_configuration = {
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
                         "env-julia",
                         "env-python",
                         "env-r",
@@ -202,7 +203,10 @@ site_configuration = {
             ],
             "cc": "mpicc",
             "cxx": "mpic++",
-            "ftn": "mpif90"
+            "ftn": "mpif90",
+            "env_vars": [
+                ["SLURM_MPI_TYPE", "pmix_v5"]
+            ]
         },
         {
             "name": "env-gcc-13.3.0-mpich-4.2.2",
@@ -212,7 +216,10 @@ site_configuration = {
             ],
             "cc": "mpicc",
             "cxx": "mpic++",
-            "ftn": "mpif90"
+            "ftn": "mpif90",
+            "env_vars": [
+                ["SLURM_MPI_TYPE", "pmi2"]
+            ]
         },
         {
             "name": "env-hpcg",
