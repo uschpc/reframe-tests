@@ -1,8 +1,8 @@
 # Estimate pi in parallel using multiple cores
 
-import random
-import multiprocessing
 from multiprocessing import Pool
+import os
+import random
 import time
 
 # Calculate the number of points in the unit circle out of n points
@@ -20,7 +20,7 @@ def monte_carlo_pi_part(n):
     return count
 
 if __name__=='__main__':
-    cores = multiprocessing.cpu_count()
+    cores = int(os.environ["SLURM_CPUS_PER_TASK"])
 
     start = time.time()
 
