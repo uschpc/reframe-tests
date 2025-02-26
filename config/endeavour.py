@@ -42,9 +42,7 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl",
-                        "env-fio",
-                        "env-ior"
+                        "env-curl"
                     ]
                 },
                 {
@@ -140,7 +138,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-fio",
+                        "env-ior"
                     ]
                 },
                 {
@@ -227,6 +227,9 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "hpcg/3.1"
+            ],
+            "env_vars": [
+                ["SLURM_MPI_TYPE", "pmix_v5"]
             ]
         },
         {
@@ -281,6 +284,9 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "ior/3.3.0"
+            ],
+            "env_vars": [
+                ["SLURM_MPI_TYPE", "pmix_v5"]
             ]
         },
     ],
