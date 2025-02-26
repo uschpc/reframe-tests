@@ -2,8 +2,8 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class IOR_cryoem2(rfm.RunOnlyRegressionTest):
-    descr = "IOR benchmark for /cryoem2 file system"
+class IOR_project2(rfm.RunOnlyRegressionTest):
+    descr = "IOR benchmark for /project2 file system"
     tags = {
         "daily"
     }
@@ -15,7 +15,7 @@ class IOR_cryoem2(rfm.RunOnlyRegressionTest):
         "env-ior"
     ]
     sourcesdir = None
-    executable = "ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /cryoem2/osinski_703/rfm/reframe-$SLURM_JOB_ID.tmp"
+    executable = "ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /project2/wjendrze_120/rfm/tmp/reframe-$SLURM_JOB_ID.tmp"
     num_tasks = 16
     num_tasks_per_node = 4
     num_cpus_per_task = 1
