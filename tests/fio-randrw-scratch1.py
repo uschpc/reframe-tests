@@ -9,22 +9,28 @@ class Fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-64",
-        "endeavour:shared"
+        "endeavour:qcb"
     ]
     valid_prog_environs = [
         "env-fio"
     ]
-    sourcesdir = "./src/fio-randrw"
+    sourcesdir = "src/fio-randrw"
     executable = "bash fio-randrw.sh /scratch1/$USER"
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"
     reference = {
         "*": {
-            "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
-            "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
+            "avg_write_speed": (30.00, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (30.00, -0.1, None, "MiB/sec")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--constraint=epyc-7513"
+        ]
 
     @sanity_function
     def assert_sanity(self):

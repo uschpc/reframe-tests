@@ -9,7 +9,7 @@ class Fio_randrw_project2(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-64",
-        "endeavour:shared"
+        "endeavour:qcb"
     ]
     valid_prog_environs = [
         "env-fio"
@@ -21,10 +21,16 @@ class Fio_randrw_project2(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "*": {
-            "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
-            "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
+            "avg_write_speed": (320.00, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (320.00, -0.1, None, "MiB/sec")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--constraint=epyc-7513"
+        ]
 
     @sanity_function
     def assert_sanity(self):

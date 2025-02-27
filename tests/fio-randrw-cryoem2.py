@@ -9,13 +9,13 @@ class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-64",
-        "endeavour:shared"
+        "endeavour:qcb"
     ]
     valid_prog_environs = [
         "env-fio"
     ]
-    sourcesdir = "./src/fio-randrw"
-    executable = "bash fio-randrw.sh /cryoem2/osinski_703/rfm/"
+    sourcesdir = "src/fio-randrw"
+    executable = "bash fio-randrw.sh /cryoem2/osinski_703/rfm/tmp"
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"
@@ -25,6 +25,12 @@ class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
             "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--constraint=epyc-7513"
+        ]
 
     @sanity_function
     def assert_sanity(self):
