@@ -21,7 +21,7 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-matlab"
     ]
-    sourcesdir = "./src/matlab-pi"
+    sourcesdir = "src/matlab-pi"
     executable = "matlab -batch \"pi\""
     num_tasks = 1
     num_cpus_per_task = 8
