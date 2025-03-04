@@ -21,7 +21,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-r"
     ]
-    sourcesdir = "./src/r-bootstrap"
+    sourcesdir = "src/r-bootstrap"
     executable = "Rscript bootstrap.R"
     num_tasks = 1
     num_cpus_per_task = 8
