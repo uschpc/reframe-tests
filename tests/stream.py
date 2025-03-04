@@ -23,9 +23,9 @@ class STREAM(rfm.RunOnlyRegressionTest):
         "OMP_SCHEDULE": "static",
         "OMP_DYNAMIC": "false",
         "OMP_NESTED": "false",
-        "OMP_STACKSIZE": "256M",
-        "GOMP_CPU_AFFINITY": "0-63:4",
         "OMP_PROC_BIND": "true",
+        "OMP_PLACES": "0:16:4",
+        "OMP_STACKSIZE": "256M",
         "OMP_NUM_THREADS": "16"
     }
     prerun_cmds = [
@@ -33,10 +33,10 @@ class STREAM(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "*": {
-            "copy_best": (300000, -0.10, None, "MB/s"),
-            "scale_best": (190000, -0.10, None, "MB/s"),
-            "add_best": (210000, -0.10, None, "MB/s"),
-            "triad_best": (210000, -0.10, None, "MB/s")
+            "copy_best": (300000, -0.1, None, "MB/s"),
+            "scale_best": (190000, -0.1, None, "MB/s"),
+            "add_best": (210000, -0.1, None, "MB/s"),
+            "triad_best": (210000, -0.1, None, "MB/s")
         }
     }
 
