@@ -21,7 +21,7 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-python"
     ]
-    sourcesdir = "./src/python-pi"
+    sourcesdir = "src/python-pi"
     executable = "python3 pi.py"
     num_tasks = 1
     num_cpus_per_task = 8
