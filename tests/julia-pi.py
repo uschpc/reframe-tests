@@ -21,7 +21,7 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-julia"
     ]
-    sourcesdir = "./src/julia-pi"
+    sourcesdir = "src/julia-pi"
     executable = "julia --threads 8 pi.jl"
     num_tasks = 1
     num_cpus_per_task = 8
