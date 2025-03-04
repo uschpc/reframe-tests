@@ -14,8 +14,8 @@ class STREAM(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-gcc-13.3.0"
     ]
-    sourcesdir = None
-    executable = "/project/hpcroot/rfm/resources/STREAM/stream_c.exe"
+    sourcesdir = "src/stream"
+    executable = "STREAM/stream_c.exe"
     num_tasks = 1
     num_cpus_per_task = 64
     time_limit = "5m"
@@ -28,6 +28,9 @@ class STREAM(rfm.RunOnlyRegressionTest):
         "OMP_PROC_BIND": "true",
         "OMP_NUM_THREADS": "16"
     }
+    prerun_cmds = [
+        "bash make-stream.sh"
+    ]
     reference = {
         "*": {
             "copy_best": (300000, -0.10, None, "MB/s"),
