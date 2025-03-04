@@ -144,6 +144,32 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "qcbgpu",
+                    "descr": "Endeavour qcbgpu partition",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=qcbgpu"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-curl",
+                        "env-fio",
+                        "env-ior"
+                    ]
+                },
+                {
                     "name": "scec",
                     "descr": "Endeavour scec partition",
                     "scheduler": "slurm",
@@ -164,6 +190,32 @@ site_configuration = {
                         "env-matlab",
                         "env-qchem",
                         "env-curl"
+                    ]
+                },
+                {
+                    "name": "warshel",
+                    "descr": "Endeavour warshel partition",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=warshel"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-curl",
+                        "env-fio",
+                        "env-ior"
                     ]
                 }
             ]
