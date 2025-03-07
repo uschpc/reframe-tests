@@ -2,7 +2,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class HPCG_Discovery_Epyc-64(rfm.RunOnlyRegressionTest):
+class HPCG_Discovery_Epyc(rfm.RunOnlyRegressionTest):
     descr = "HPCG benchmark for the Discovery epyc-64 partition"
     valid_systems = [
         "discovery:epyc-64"
