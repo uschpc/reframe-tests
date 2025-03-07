@@ -5,7 +5,6 @@ import reframe.utility.sanity as sn
 class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
     descr = "Apptainer GPU access"
     valid_systems = [
-        "discovery:main",
         "discovery:gpu",
         "discovery:debug",
         "endeavour:cryoem",
