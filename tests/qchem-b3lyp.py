@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class QChem_B3LYP(rfm.RunOnlyRegressionTest):
     descr = "Q-Chem B3LYP functional"
     tags = {
-        "daily"
+        "maintenance"
     }
     valid_systems = [
         "discovery:main",

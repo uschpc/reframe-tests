@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class File_Download(rfm.RunOnlyRegressionTest):
     descr = "File download"
     tags = {
-        "daily"
+        "maintenance"
     }
     valid_systems = [
         "discovery:main",

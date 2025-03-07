@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class IOR_cryoem2(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /cryoem2 file system"
     tags = {
-        "daily"
+        "maintenance"
     }
     valid_systems = [
         "discovery:epyc-64",

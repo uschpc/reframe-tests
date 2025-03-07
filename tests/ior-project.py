@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class IOR_project(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /project file system"
     tags = {
-        "daily"
+        "maintenance"
     }
     valid_systems = [
         "discovery:epyc-64",

@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class Fio_randrw_project(rfm.RunOnlyRegressionTest):
     descr = "Fio random read/write benchmark for /project file system"
     tags = {
-        "daily"
+        "maintenance"
     }
     valid_systems = [
         "discovery:epyc-64",

@@ -4,6 +4,9 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class NPB_MPI_MG(rfm.RunOnlyRegressionTest):
     descr = "NPB MPI MG benchmark"
+    tags = {
+        "maintenance"
+    }
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",

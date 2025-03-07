@@ -4,6 +4,9 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class NPB_CUDA_LU_RTX5000(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark for NVIDIA RTX5000"
+    tags = {
+        "maintenance"
+    }
     valid_systems = [
         "endeavour:qcbgpu"
     ]

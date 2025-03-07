@@ -4,6 +4,9 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class Apptainer_Hello(rfm.RunOnlyRegressionTest):
     descr = "Apptainer hello world"
+    tags = {
+        "maintenance"
+    }
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",

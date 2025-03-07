@@ -4,6 +4,9 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class Matlab_Pi(rfm.RunOnlyRegressionTest):
     descr = "Estimate pi using a Matlab parpool"
+    tags = {
+        "maintenance"
+    }
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",

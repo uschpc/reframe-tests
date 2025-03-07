@@ -4,6 +4,9 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class R_Bootstrap(rfm.RunOnlyRegressionTest):
     descr = "Bootstrapping a GLM in parallel using R"
+    tags = {
+        "maintenance"
+    }
     valid_systems = [
         "discovery:main",
         "discovery:epyc-64",
