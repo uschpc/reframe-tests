@@ -2,12 +2,10 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class HPCG(rfm.RunOnlyRegressionTest):
-    descr = "HPCG benchmark using 10 epyc-7513 nodes"
+class HPCG_Discovery_Epyc-64(rfm.RunOnlyRegressionTest):
+    descr = "HPCG benchmark for the Discovery epyc-64 partition"
     valid_systems = [
-        "discovery:epyc-64",
-        "discovery:main",
-        "endeavour:priya"
+        "discovery:epyc-64"
     ]
     valid_prog_environs = [
         "env-hpcg"
@@ -15,7 +13,7 @@ class HPCG(rfm.RunOnlyRegressionTest):
     sourcesdir = None
     executable = "xhpcg"
     executable_opts = ["--nx=128", "--ny=128", "--nz=128", "--rt=120"]
-    num_tasks = 640
+    num_tasks = 4992
     num_tasks_per_node = 64
     num_cpus_per_task = 1
     time_limit = "10m"
@@ -24,21 +22,19 @@ class HPCG(rfm.RunOnlyRegressionTest):
         "ulimit -s unlimited"
     ]
     env_vars = {
-        "OMP_NUM_THREADS": "1",
-        "SLURM_MPI_TYPE": "pmix_v5",
-        "SLURM_CPU_BIND": "verbose"
+        "OMP_NUM_THREADS": "1"
     }
     reference = {
         "*": {
-            "gflops": (330, -0.1, None, "gflops")
+            "gflops": (2500, -0.1, None, "gflops")
         }
     }
 
     @run_before("run")
     def set_job_options(self):
         self.job.options += [
-            "--constraint=epyc-7513",
-            "--mem=0"
+            "--mem=0",
+            "--qos=hpcroot"
         ]
 
     @sanity_function

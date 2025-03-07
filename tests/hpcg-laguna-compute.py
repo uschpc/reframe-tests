@@ -3,7 +3,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class HPCG_Laguna_Compute(rfm.RunOnlyRegressionTest):
-    descr = "HPCG benchmark using all Laguna compute partition nodes"
+    descr = "HPCG benchmark for the Laguna compute partition"
     valid_systems = [
         "laguna:compute"
     ]
