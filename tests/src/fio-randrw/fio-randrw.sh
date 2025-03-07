@@ -2,9 +2,31 @@
 
 set -e
 
-cd "$1"
+if [[ "$1" == "home1" ]]; then
+    dir="/home1/$USER"
+elif [[ "$1" == "scratch1" ]]; then
+    dir="/scratch1/$USER"
+elif [[ "$1" == "project" ]]; then
+    if [[ "$SLURM_SUBMIT_HOST" == "discovery"* ]] || [[ "$SLURM_SUBMIT_HOST" == "endeavour"* ]]; then
+        dir="/project/wjendrze_120/rfm/tmp"
+    elif [[ "$SLURM_SUBMIT_HOST" == "laguna"* ]]; then
+        dir="/project/jkhong_1307/rfm/tmp"
+    else
+        echo "Error: Project file system not yet supported for ReFrame fio test"
+        exit 1
+    fi
+elif [[ "$1" == "project2" ]]; then
+    dir="/project2/wjendrze_120/rfm/tmp"
+elif [[ "$1" == "cryoem2" ]]; then
+    dir="/cryoem2/osinski_703/rfm/tmp"
+else
+    echo "Error: File system not yet supported for ReFrame fio test"
+    exit 1
+fi
 
-if [[ "$1" == "/home"* ]]; then
+cd "$dir"
+
+if [[ "$1" == "/home1" ]]; then
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
 else
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=16G --numjobs=8 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1

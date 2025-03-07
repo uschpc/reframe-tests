@@ -9,7 +9,8 @@ class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
         "discovery:gpu",
         "discovery:debug",
         "endeavour:cryoem",
-        "endeavour:isi"
+        "endeavour:isi",
+        "laguna:gpu"
     ]
     valid_prog_environs = [
         "env-apptainer"

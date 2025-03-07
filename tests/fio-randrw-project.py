@@ -9,13 +9,14 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-64",
-        "endeavour:qcb"
+        "endeavour:qcb",
+        "laguna:compute"
     ]
     valid_prog_environs = [
         "env-fio"
     ]
     sourcesdir = "src/fio-randrw"
-    executable = "bash fio-randrw.sh /project/wjendrze_120/rfm/tmp"
+    executable = "bash fio-randrw.sh project"
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"
@@ -23,14 +24,23 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
         "*": {
             "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
             "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
+        },
+        "laguna:compute": {
+            "avg_write_speed": (260.00, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (260.00, -0.25, None, "MiB/sec")
         }
     }
 
     @run_before("run")
     def set_job_options(self):
-        self.job.options += [
-            "--constraint=epyc-7513"
-        ]
+        if self.current_partition.name in ["epyc-64", "qcb"]:
+            self.job.options += [
+                "--constraint=epyc-7513"
+            ]
+        elif self.current_partition.name == "compute":
+            self.job.options += [
+                "--constraint=epyc-9554"
+            ]
 
     @sanity_function
     def assert_sanity(self):

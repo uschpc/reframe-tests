@@ -2,14 +2,10 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class STREAM(rfm.RunOnlyRegressionTest):
-    descr = "STREAM benchmark"
+class STREAM_EPYC_9554(rfm.RunOnlyRegressionTest):
+    descr = "STREAM benchmark for EPYC 9554 nodes"
     valid_systems = [
-        "discovery:epyc-64",
-        "discovery:gpu",
-        "discovery:largemem",
-        "endeavour:priya",
-        "endeavour:qcb"
+        "laguna:compute"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"
@@ -17,33 +13,32 @@ class STREAM(rfm.RunOnlyRegressionTest):
     sourcesdir = "src/stream"
     executable = "STREAM/stream_c.exe"
     num_tasks = 1
-    num_cpus_per_task = 64
+    num_cpus_per_task = 128
     time_limit = "5m"
     env_vars = {
         "OMP_SCHEDULE": "static",
         "OMP_DYNAMIC": "false",
         "OMP_NESTED": "false",
         "OMP_PROC_BIND": "true",
-        "OMP_PLACES": "0:16:4",
-        "OMP_STACKSIZE": "256M",
-        "OMP_NUM_THREADS": "16"
+        "OMP_PLACES": "0:64:2",
+        "OMP_NUM_THREADS": "64"
     }
     prerun_cmds = [
         "bash make-stream.sh"
     ]
     reference = {
         "*": {
-            "copy_best": (300000, -0.1, None, "MB/s"),
-            "scale_best": (190000, -0.1, None, "MB/s"),
-            "add_best": (210000, -0.1, None, "MB/s"),
-            "triad_best": (210000, -0.1, None, "MB/s")
+            "copy_best": (617000, -0.1, None, "MB/s"),
+            "scale_best": (418000, -0.1, None, "MB/s"),
+            "add_best": (473000, -0.1, None, "MB/s"),
+            "triad_best": (474000, -0.1, None, "MB/s")
         }
     }
 
     @run_before("run")
     def set_job_options(self):
         self.job.options += [
-            "--constraint=epyc-7513",
+            "--constraint=epyc-9554",
             "--mem=0"
         ]
 

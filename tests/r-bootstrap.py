@@ -16,7 +16,9 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "endeavour:isi",
         "endeavour:priya",
         "endeavour:qcb",
-        "endeavour:scec"
+        "endeavour:scec",
+        "laguna:compute",
+        "laguna:gpu"
     ]
     valid_prog_environs = [
         "env-r"

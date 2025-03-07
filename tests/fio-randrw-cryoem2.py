@@ -15,7 +15,7 @@ class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
         "env-fio"
     ]
     sourcesdir = "src/fio-randrw"
-    executable = "bash fio-randrw.sh /cryoem2/osinski_703/rfm/tmp"
+    executable = "bash fio-randrw.sh cryoem2"
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"

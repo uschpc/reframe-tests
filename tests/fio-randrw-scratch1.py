@@ -15,7 +15,7 @@ class Fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
         "env-fio"
     ]
     sourcesdir = "src/fio-randrw"
-    executable = "bash fio-randrw.sh /scratch1/$USER"
+    executable = "bash fio-randrw.sh scratch1"
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"

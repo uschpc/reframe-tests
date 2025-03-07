@@ -14,8 +14,8 @@ class IOR_scratch1(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-ior"
     ]
-    sourcesdir = None
-    executable = "ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /scratch1/$USER/reframe-$SLURM_JOB_ID.tmp"
+    sourcesdir = "src/ior"
+    executable = "bash ior.sh scratch1"
     num_tasks = 16
     num_tasks_per_node = 4
     num_cpus_per_task = 1

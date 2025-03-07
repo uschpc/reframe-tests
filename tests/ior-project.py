@@ -9,13 +9,14 @@ class IOR_project(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-64",
-        "endeavour:qcb"
+        "endeavour:qcb",
+        "laguna:compute"
     ]
     valid_prog_environs = [
         "env-ior"
     ]
-    sourcesdir = None
-    executable = "ior -vvv -t 4m -b 64m -s 16 -F -C -e -o /project/hpcroot/rfm/tmp/reframe-$SLURM_JOB_ID.tmp"
+    sourcesdir = "src/ior"
+    executable = "bash ior.sh project"
     num_tasks = 16
     num_tasks_per_node = 4
     num_cpus_per_task = 1
@@ -24,14 +25,23 @@ class IOR_project(rfm.RunOnlyRegressionTest):
         "*": {
             "max_write_speed": (8000.00, -0.25, None, "MiB/sec"),
             "max_read_speed": (18000.00, -0.25, None, "MiB/sec")
+        },
+        "laguna:compute": {
+            "max_write_speed": (7000.00, -0.25, None, "MiB/sec"),
+            "max_read_speed": (40000.00, -0.25, None, "MiB/sec")
         }
     }
 
     @run_before("run")
     def set_job_options(self):
-        self.job.options += [
-            "--constraint=epyc-7513"
-        ]
+        if self.current_partition.name in ["epyc-64", "qcb"]:
+            self.job.options += [
+                "--constraint=epyc-7513"
+            ]
+        elif self.current_partition.name == "compute":
+            self.job.options += [
+                "--constraint=epyc-9554"
+            ]
 
     @sanity_function
     def assert_sanity(self):
