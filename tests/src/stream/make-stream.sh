@@ -1,3 +1,4 @@
+cd "$TMPDIR"
 tar -xf /apps/reframe/resources/STREAM/STREAM-6703f75.tar.gz
 cd STREAM
 if scontrol show node "$(hostname -s)" | grep "epyc-7513"; then
@@ -11,3 +12,4 @@ else
     exit 1
 fi
 make stream_c.exe
+mv stream_c.exe "$SLURM_SUBMIT_DIR"

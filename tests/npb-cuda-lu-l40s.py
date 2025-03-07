@@ -15,7 +15,7 @@ class NPB_CUDA_LU_L40S(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0-cuda-12.6.3"
     ]
     sourcesdir = "src/npb-cuda-lu"
-    executable = "NPB-GPU/CUDA/bin/lu.D"
+    executable = "lu.D"
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = "5m"

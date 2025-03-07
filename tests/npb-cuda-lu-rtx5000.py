@@ -14,7 +14,7 @@ class NPB_CUDA_LU_RTX5000(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0-cuda-12.6.3"
     ]
     sourcesdir = "src/npb-cuda-lu"
-    executable = "NPB-GPU/CUDA/bin/lu.C"
+    executable = "lu.C"
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = "5m"

@@ -26,7 +26,7 @@ class NPB_MPI_MG(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0-mpich-4.2.2"
     ]
     sourcesdir = "src/npb-mpi-mg"
-    executable = "NPB3.4.3/NPB3.4-MPI/bin/mg.D.x"
+    executable = "mg.D.x"
     num_tasks = 32
     num_tasks_per_node = 16
     num_cpus_per_task = 1

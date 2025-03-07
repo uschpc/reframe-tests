@@ -16,7 +16,7 @@ class STREAM_EPYC_7513(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0"
     ]
     sourcesdir = "src/stream"
-    executable = "STREAM/stream_c.exe"
+    executable = "stream_c.exe"
     num_tasks = 1
     num_cpus_per_task = 64
     time_limit = "5m"
