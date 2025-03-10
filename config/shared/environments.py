@@ -36,9 +36,6 @@ site_configuration = {
             "cc": "mpicc",
             "cxx": "mpic++",
             "ftn": "mpif90",
-            "env_vars": [
-                ["SLURM_MPI_TYPE", "pmix_v5"]
-            ]
         },
         {
             "name": "env-gcc-13.3.0-mpich-4.2.2",
@@ -49,9 +46,6 @@ site_configuration = {
             "cc": "mpicc",
             "cxx": "mpic++",
             "ftn": "mpif90",
-            "env_vars": [
-                ["SLURM_MPI_TYPE", "pmi2"]
-            ]
         },
         {
             "name": "env-hpcg",
@@ -59,9 +53,6 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "hpcg/3.1"
-            ],
-            "env_vars": [
-                ["SLURM_MPI_TYPE", "pmix_v5"]
             ]
         },
         {
@@ -116,9 +107,6 @@ site_configuration = {
                 "gcc/13.3.0",
                 "openmpi/5.0.5",
                 "ior/3.3.0"
-            ],
-            "env_vars": [
-                ["SLURM_MPI_TYPE", "pmix_v5"]
             ]
         }
     ]
