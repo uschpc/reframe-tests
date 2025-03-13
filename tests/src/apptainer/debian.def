@@ -1,0 +1,10 @@
+Bootstrap: docker
+From: debian:latest
+
+%post
+
+apt-get -y clean
+
+%test
+
+cat /etc/os-release
