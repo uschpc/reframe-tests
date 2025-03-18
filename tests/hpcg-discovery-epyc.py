@@ -26,15 +26,14 @@ class HPCG_Discovery_Epyc(rfm.RunOnlyRegressionTest):
     }
     reference = {
         "*": {
-            "gflops": (2500, -0.1, None, "gflops")
+            "gflops": (2600, -0.1, None, "gflops")
         }
     }
 
     @run_before("run")
     def set_job_options(self):
         self.job.options += [
-            "--mem=0",
-            "--qos=hpcroot"
+            "--mem=0"
         ]
 
     @sanity_function
