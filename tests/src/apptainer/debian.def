@@ -1,5 +1,5 @@
-Bootstrap: docker
-From: debian:latest
+Bootstrap: localimage
+From: /apps/reframe/resources/containers/debian.sif
 
 %post
 
