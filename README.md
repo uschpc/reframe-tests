@@ -9,9 +9,9 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - Parallel programming (e.g., OpenMP, MPI, CUDA)
 - Popular applications (e.g., Python, R, Julia)
 - Software license server (e.g., MATLAB, Q-Chem)
+- Apptainer container engine
 - I/O on various file systems
 - File downloads
-- Apptainer container engine
 - Single-node and multi-node jobs
 
 ## License
