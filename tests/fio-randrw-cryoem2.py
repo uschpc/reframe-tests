@@ -18,11 +18,11 @@ class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
     executable = "bash fio-randrw.sh cryoem2"
     num_tasks = 1
     num_cpus_per_task = 8
-    time_limit = "5m"
+    time_limit = "10m"
     reference = {
         "*": {
-            "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
-            "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
+            "avg_write_speed": (740.00, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (740.00, -0.25, None, "MiB/sec")
         }
     }
 

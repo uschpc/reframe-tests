@@ -26,7 +26,7 @@ fi
 
 cd "$dir"
 
-if [[ "$1" == "/home1" ]]; then
+if [[ "$1" == "home1" ]]; then
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
 else
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=16G --numjobs=8 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1

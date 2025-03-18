@@ -22,8 +22,8 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "*": {
-            "avg_write_speed": (30.00, -0.25, None, "MiB/sec"),
-            "avg_read_speed": (30.00, -0.25, None, "MiB/sec")
+            "avg_write_speed": (75.00, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (75.00, -0.25, None, "MiB/sec")
         },
         "laguna:compute": {
             "avg_write_speed": (260.00, -0.25, None, "MiB/sec"),
