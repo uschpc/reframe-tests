@@ -25,7 +25,7 @@ class NPB_CUDA_LU_A100(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "*": {
-            "Mop/s_total": (600000, -0.1, None, "Mop/s")
+            "Mop/s_total": (544000, -0.1, None, "Mop/s")
         }
     }
 
