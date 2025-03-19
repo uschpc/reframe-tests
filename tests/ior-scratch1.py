@@ -5,8 +5,8 @@ import reframe.utility.sanity as sn
 class IOR_scratch1(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /scratch1 file system"
     valid_systems = [
-        "discovery:epyc-64",
-        "endeavour:qcb"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-ior"

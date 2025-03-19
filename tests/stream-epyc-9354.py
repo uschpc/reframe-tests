@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class STREAM_EPYC_9354(rfm.RunOnlyRegressionTest):
     descr = "STREAM benchmark for EPYC 9354 nodes"
     valid_systems = [
-        "discovery:largemem",
+        "discovery:allnodes",
         "laguna:gpu"
     ]
     valid_prog_environs = [

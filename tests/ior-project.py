@@ -5,8 +5,8 @@ import reframe.utility.sanity as sn
 class IOR_project(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /project file system"
     valid_systems = [
-        "discovery:epyc-64",
-        "endeavour:qcb",
+        "discovery:allnodes",
+        "endeavour:allnodes",
         "laguna:compute"
     ]
     valid_prog_environs = [

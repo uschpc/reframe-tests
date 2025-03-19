@@ -8,8 +8,8 @@ class NPB_CUDA_LU_V100(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:gpu",
-        "endeavour:isi"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-cuda-12.6.3"

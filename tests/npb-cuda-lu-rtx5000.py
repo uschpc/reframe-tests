@@ -8,7 +8,7 @@ class NPB_CUDA_LU_RTX5000(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "endeavour:qcbgpu"
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-cuda-12.6.3"

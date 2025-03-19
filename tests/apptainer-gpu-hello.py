@@ -8,10 +8,8 @@ class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:gpu",
-        "discovery:debug",
-        "endeavour:cryoem",
-        "endeavour:isi",
+        "discovery:allnodes",
+        "endeavour:allnodes",
         "laguna:gpu"
     ]
     valid_prog_environs = [

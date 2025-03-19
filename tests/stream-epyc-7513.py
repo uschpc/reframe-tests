@@ -5,12 +5,8 @@ import reframe.utility.sanity as sn
 class STREAM_EPYC_7513(rfm.RunOnlyRegressionTest):
     descr = "STREAM benchmark for EPYC 7513 nodes"
     valid_systems = [
-        "discovery:main",
-        "discovery:epyc-64",
-        "discovery:gpu",
-        "discovery:largemem",
-        "endeavour:priya",
-        "endeavour:qcb"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"

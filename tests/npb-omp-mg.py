@@ -8,18 +8,8 @@ class NPB_OMP_MG(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:main",
-        "discovery:epyc-64",
-        "discovery:gpu",
-        "discovery:largemem",
-        "discovery:debug",
-        "discovery:oneweek",
-        "endeavour:shared",
-        "endeavour:cryoem",
-        "endeavour:isi",
-        "endeavour:priya",
-        "endeavour:qcb",
-        "endeavour:scec"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"
@@ -34,41 +24,8 @@ class NPB_OMP_MG(rfm.RunOnlyRegressionTest):
         "bash make-npb-omp-mg.sh"
     ]
     reference = {
-        "discovery:main": {
-            "Mop/s_total": (30000, -0.1, None, "Mop/s")
-        },
-        "discovery:epyc-64": {
-            "Mop/s_total": (70000, -0.1, None, "Mop/s")
-        },
-        "discovery:gpu": {
-            "Mop/s_total": (21000, -0.1, None, "Mop/s")
-        },
-        "discovery:largemem": {
-            "Mop/s_total": (70000, -0.1, None, "Mop/s")
-        },
-        "discovery:debug": {
-            "Mop/s_total": (21000, -0.1, None, "Mop/s")
-        },
-        "discovery:oneweek": {
-            "Mop/s_total": (30000, -0.1, None, "Mop/s")
-        },
-        "endeavour:shared": {
-            "Mop/s_total": (30000, -0.1, None, "Mop/s")
-        },
-        "endeavour:cryoem": {
-            "Mop/s_total": (21000, -0.1, None, "Mop/s")
-        },
-        "endeavour:isi": {
-            "Mop/s_total": (21000, -0.1, None, "Mop/s")
-        },
-        "endeavour:priya": {
-            "Mop/s_total": (70000, -0.1, None, "Mop/s")
-        },
-        "endeavour:qcb": {
-            "Mop/s_total": (30000, -0.1, None, "Mop/s")
-        },
-        "endeavour:scec": {
-            "Mop/s_total": (21000, -0.1, None, "Mop/s")
+        "*": {
+            "Mop/s_total": (26000, -0.1, None, "Mop/s")
         }
     }
 

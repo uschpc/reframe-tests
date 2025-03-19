@@ -8,8 +8,8 @@ class Fio_randrw_project2(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:epyc-64",
-        "endeavour:qcb"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-fio"

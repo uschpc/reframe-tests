@@ -8,18 +8,8 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:main",
-        "discovery:epyc-64",
-        "discovery:gpu",
-        "discovery:largemem",
-        "discovery:debug",
-        "discovery:oneweek",
-        "endeavour:shared",
-        "endeavour:cryoem",
-        "endeavour:isi",
-        "endeavour:priya",
-        "endeavour:qcb",
-        "endeavour:scec",
+        "discovery:allnodes",
+        "endeavour:allnodes",
         "laguna:compute",
         "laguna:gpu"
     ]
@@ -35,40 +25,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "OMP_NUM_THREADS": "1"
     }
     reference = {
-        "discovery:main": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "discovery:epyc-64": {
-            "elapsed_time": (115.0, None, 0.25, "seconds")
-        },
-        "discovery:gpu": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "discovery:largemem": {
-            "elapsed_time": (90.0, None, 0.25, "seconds")
-        },
-        "discovery:debug": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "discovery:oneweek": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:shared": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:cryoem": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:isi": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:priya": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:qcb": {
-            "elapsed_time": (170.0, None, 0.25, "seconds")
-        },
-        "endeavour:scec": {
+        "*": {
             "elapsed_time": (170.0, None, 0.25, "seconds")
         }
     }

@@ -5,8 +5,8 @@ import reframe.utility.sanity as sn
 class IOR_cryoem2(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /cryoem2 file system"
     valid_systems = [
-        "discovery:epyc-64",
-        "endeavour:qcb"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-ior"

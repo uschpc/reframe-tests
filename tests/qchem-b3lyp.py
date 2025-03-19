@@ -8,18 +8,8 @@ class QChem_B3LYP(rfm.RunOnlyRegressionTest):
         "maintenance"
     }
     valid_systems = [
-        "discovery:main",
-        "discovery:epyc-64",
-        "discovery:gpu",
-        "discovery:largemem",
-        "discovery:debug",
-        "discovery:oneweek",
-        "endeavour:shared",
-        "endeavour:cryoem",
-        "endeavour:isi",
-        "endeavour:priya",
-        "endeavour:qcb",
-        "endeavour:scec"
+        "discovery:allnodes",
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-qchem"
