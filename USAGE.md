@@ -114,13 +114,21 @@ The reservation option will then be added to the ReFrame Slurm job scripts and a
 
 ### Constraints
 
-Tests can be run with constraints by adding certain job options with the `-J` option. For example:
+Tests can be run with constraints by adding certain job options with the `-J` option. One use case is to constrain by CPU model:
 
 ```
 reframe -c reframe-tests/tests/julia-pi.py -J constraint=epyc-7513 -r
 ```
 
 The constraint option will then be added to the ReFrame Slurm job scripts.
+
+Another use case is to run a test on a specific node or set of nodes:
+
+```
+reframe -c reframe-tests/tests/julia-pi.py -J nodelist=a01-03 -r
+```
+
+The nodelist option will then be added to the ReFrame Slurm job scripts.
 
 ## Reference guide for test suite
 
@@ -151,4 +159,5 @@ reframe -c reframe-tests/tests/npb-cuda-lu-a100.py -J reservation="$res" -J cons
 reframe -c reframe-tests/tests/npb-cuda-lu-a40.py -J reservation="$res" -J constraint=a40 --distribute=all --repeat=2 -r
 reframe -c reframe-tests/tests/npb-cuda-lu-v100.py -J reservation="$res" -J constraint=v100 --distribute=all --repeat=2 -r
 reframe -c reframe-tests/tests/npb-cuda-lu-p100.py -J reservation="$res" -J constraint=p100 --distribute=all --repeat=2 -r
+reframe -c reframe-tests/tests/npb-cuda-lu-rtx5000.py -J reservation="$res" -J constraint=rtx5000 --distribute=all --repeat=4 -r
 ```
