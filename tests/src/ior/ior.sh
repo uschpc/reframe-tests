@@ -6,17 +6,17 @@ if [[ "$1" == "scratch1" ]]; then
     dir="/scratch1/$USER"
 elif [[ "$1" == "project" ]]; then
     if [[ "$SLURM_SUBMIT_HOST" == "discovery"* ]] || [[ "$SLURM_SUBMIT_HOST" == "endeavour"* ]]; then
-        dir="/project/wjendrze_120/rfm/tmp"
+        dir="/project/wjendrze_120/reframe/tmp"
     elif [[ "$SLURM_SUBMIT_HOST" == "laguna"* ]]; then
-        dir="/project/jkhong_1307/rfm/tmp"
+        dir="/project/jkhong_1307/reframe/tmp"
     else
         echo "Error: Project file system not yet supported for ReFrame IOR test"
         exit 1
     fi
 elif [[ "$1" == "project2" ]]; then
-    dir="/project2/wjendrze_120/rfm/tmp"
+    dir="/project2/wjendrze_120/reframe/tmp"
 elif [[ "$1" == "cryoem2" ]]; then
-    dir="/cryoem2/osinski_703/rfm/tmp"
+    dir="/cryoem2/osinski_703/reframe/tmp"
 else
     echo "Error: File system not yet supported for ReFrame IOR test"
     exit 1

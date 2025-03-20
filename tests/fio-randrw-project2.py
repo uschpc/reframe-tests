@@ -14,7 +14,7 @@ class Fio_randrw_project2(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-fio"
     ]
-    sourcesdir = "./src/fio-randrw"
+    sourcesdir = "src/fio-randrw"
     executable = "bash fio-randrw.sh project2"
     num_tasks = 1
     num_cpus_per_task = 8
