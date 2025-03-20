@@ -159,4 +159,10 @@ reframe -c tests/npb-cuda-lu-a40.py -J reservation="$res" -J constraint=a40 --di
 reframe -c tests/npb-cuda-lu-v100.py -J reservation="$res" -J constraint=v100 --distribute=all --repeat=2 -r
 reframe -c tests/npb-cuda-lu-p100.py -J reservation="$res" -J constraint=p100 --distribute=all --repeat=2 -r
 reframe -c tests/npb-cuda-lu-rtx5000.py -J reservation="$res" -J constraint=rtx5000 --distribute=all --repeat=4 -r
+
+# Test InfiniBand performance using OMB bandwidth tests
+reframe -c tests/omb-bw-ndr200.py -J reservation="$res" -J constraint=ndr200 --distribute=all --exec-policy=serial -r
+reframe -c tests/omb-bw-hdr200.py -J reservation="$res" -J constraint=hdr200 --distribute=all --exec-policy=serial -r
+reframe -c tests/omb-bw-hdr100.py -J reservation="$res" -J constraint=hdr100 --distribute=all --exec-policy=serial -r
+reframe -c tests/omb-bw-fdr56.py -J reservation="$res" -J constraint=fdr56 --distribute=all --exec-policy=serial -r
 ```

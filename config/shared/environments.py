@@ -56,6 +56,14 @@ site_configuration = {
             ]
         },
         {
+            "name": "env-omb",
+            "modules": [
+                "gcc/13.3.0",
+                "openmpi/5.0.5",
+                "osu-micro-benchmarks/7.5"
+            ]
+        },
+        {
             "name": "env-julia",
             "modules": [
                 "julia/1.11.3"

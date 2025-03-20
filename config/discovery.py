@@ -41,7 +41,8 @@ site_configuration = {
                         "env-qchem",
                         "env-curl",
                         "env-fio",
-                        "env-ior"
+                        "env-ior",
+                        "env-omb"
                     ]
                 },
                 {
