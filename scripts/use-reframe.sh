@@ -1,7 +1,7 @@
 # Set up current shell to use ReFrame
 # e.g., source use-reframe.sh $PWD
 
-if [[ $# -eq 0 ]]; then
+if [[ "$#" -eq 0 ]]; then
     echo "Error: no argument given"
     echo "Argument should be path to reframe-tests repo"
     return 1 2> /dev/null
