@@ -1,9 +1,15 @@
+# MATLAB parallel pi estimation test
+# Purpose of test
+# - Test MATLAB module access
+# - Test MATLAB license access
+# - Test MATLAB performance
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Matlab_Pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimate pi using a Matlab parpool"
+    descr = "Estimate pi in parallel using MATLAB with parpool"
     tags = {
         "maintenance"
     }

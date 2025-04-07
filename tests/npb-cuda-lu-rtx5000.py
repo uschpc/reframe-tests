@@ -1,3 +1,13 @@
+# NAS Parallel Benchmarks LU benchmark test
+# Translated to CUDA
+# For NVIDIA RTX5000 GPU
+# Purpose of test
+# - Test CUDA module access
+# - Test building CUDA program
+# - Test running CUDA program
+# - Test node and NVIDIA RTX5000 GPU performance for flow solver
+#   using Lower-Upper Symmetric-Gauss-Seidel method
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

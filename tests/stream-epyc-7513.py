@@ -1,3 +1,11 @@
+# STREAM benchmark test
+# For EPYC 7513 nodes
+# Purpose of test
+# - Test compiler module access
+# - Test building C/OpenMP program
+# - Test running C/OpenMP program
+# - Test memory bandwidth performance for EPYC 7513 nodes
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

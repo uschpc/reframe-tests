@@ -1,3 +1,14 @@
+# NAS Parallel Benchmarks OpenMP MG (multigrid) benchmark test
+# Translated to C++
+# Purpose of test
+# - Test compiler module access
+# - Test building C++/OpenMP program
+# - Test running C++/OpenMP program
+# - Test node performance for differential equations solver
+#   using multigrid method
+# Notes
+# - Requires a power-of-two number of CPU cores
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

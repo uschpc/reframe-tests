@@ -1,3 +1,13 @@
+# Fio random read/write benchmark test
+# For /project file system
+# Purpose of test
+# - Test fio module access
+# - Test /project file system access
+# - Test /project file system performance
+# Notes
+# - Other I/O tests for this file system should not be run at the same time
+#   because performance results will be negatively impacted
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

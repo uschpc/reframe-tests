@@ -1,3 +1,11 @@
+# NAS Parallel Benchmarks Multi-Zone LU benchmark test
+# Purpose of test
+# - Test MPI module access
+# - Test building hybrid Fortran/MPI/OpenMP program
+# - Test running hybrid Fortran/MPI/OpenMP program
+# - Test collective node performance for flow solver
+#   using Lower-Upper Symmetric-Gauss-Seidel method
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

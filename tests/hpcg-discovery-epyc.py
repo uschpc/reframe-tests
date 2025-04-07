@@ -1,9 +1,16 @@
+# HPCG benchmark test
+# For Discovery epyc-64 partition
+# Purpose of test
+# - Test HPCG module access
+# - Test MPI library
+# - Test collective performance of Discovery epyc-64 partition
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class HPCG_Discovery_Epyc(rfm.RunOnlyRegressionTest):
-    descr = "HPCG benchmark for the Discovery epyc-64 partition"
+    descr = "HPCG benchmark for Discovery epyc-64 partition"
     valid_systems = [
         "discovery:epyc-64"
     ]

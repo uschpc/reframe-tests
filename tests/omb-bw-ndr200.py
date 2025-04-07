@@ -1,3 +1,13 @@
+# OSU Micro Benchmarks bandwidth benchmark test
+# For nodes with InfiniBand NDR200
+# Purpose of test
+# - Test OSU Micro Benchmarks module access
+# - Test running MPI program
+# - Test InfiniBand NDR200 network performance
+# Notes
+# - Requires exclusive access to nodes in order to
+#   have exclusive access to network bandwidth
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

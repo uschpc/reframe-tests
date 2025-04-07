@@ -1,3 +1,10 @@
+# NAS Parallel Benchmarks OpenMP IS (integer sort) benchmark test
+# Purpose of test
+# - Test compiler module access
+# - Test building C/OpenMP program
+# - Test running C/OpenMP program
+# - Test node performance for integer sort algorithm
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

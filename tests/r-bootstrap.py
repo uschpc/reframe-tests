@@ -1,9 +1,14 @@
+# R parallel bootstrap test
+# Purpose of test
+# - Test R module access
+# - Test R performance
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class R_Bootstrap(rfm.RunOnlyRegressionTest):
-    descr = "Bootstrapping a GLM in parallel using R"
+    descr = "Bootstrapping a GLM in parallel using R with mclapply"
     tags = {
         "maintenance"
     }

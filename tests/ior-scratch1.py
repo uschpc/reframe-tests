@@ -1,3 +1,13 @@
+# IOR benchmark test
+# For /scratch1 file system
+# Purpose of test
+# - Test IOR module access
+# - Test MPI library
+# - Test /scratch1 file system parallel performance
+# Notes
+# - Other I/O tests for this file system should not be run at the same time
+#   because performance results will be negatively impacted
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

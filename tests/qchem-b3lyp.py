@@ -1,9 +1,15 @@
+# Q-Chem B3LYP-D3 functional parallel test
+# Purpose of test
+# - Test Q-Chem module access
+# - Test Q-Chem license access
+# - Test Q-Chem performance
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class QChem_B3LYP(rfm.RunOnlyRegressionTest):
-    descr = "Q-Chem B3LYP functional"
+    descr = "Q-Chem B3LYP-D3 functional"
     tags = {
         "maintenance"
     }

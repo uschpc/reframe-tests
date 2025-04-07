@@ -1,3 +1,13 @@
+# OSU Micro Benchmarks bandwidth benchmark test
+# For nodes with InfiniBand FDR56
+# Purpose of test
+# - Test OSU Micro Benchmarks module access
+# - Test running MPI program
+# - Test InfiniBand FDR56 network performance
+# Notes
+# - Requires exclusive access to nodes in order to
+#   have exclusive access to network bandwidth
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

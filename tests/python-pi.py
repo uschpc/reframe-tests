@@ -1,9 +1,14 @@
+# Python parallel pi estimation test
+# Purpose of test
+# - Test Python module access
+# - Test Python performance
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Python_Pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimating pi in parallel using Python"
+    descr = "Estimating pi in parallel using Python with multiprocessing"
     tags = {
         "maintenance"
     }

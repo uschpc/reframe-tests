@@ -1,3 +1,10 @@
+# NAS Parallel Benchmarks MPI IS (integer sort) benchmark test
+# Purpose of test
+# - Test MPI module access
+# - Test building C/MPI program
+# - Test running C/MPI program
+# - Test collective node performance for integer sort algorithm
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

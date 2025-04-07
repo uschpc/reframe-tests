@@ -1,3 +1,13 @@
+# NAS Parallel Benchmarks OpenMP MG (multigrid) benchmark test
+# Purpose of test
+# - Test compiler module access
+# - Test building Fortran/OpenMP program
+# - Test running Fortran/OpenMP program
+# - Test node performance for differential equations solver
+#   using multigrid method
+# Notes
+# - Requires a power-of-two number of CPU cores
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

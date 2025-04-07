@@ -1,9 +1,14 @@
+# Julia parallel pi estimation test
+# Purpose of test
+# - Test Julia module access
+# - Test Julia performance
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class Julia_Pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimating pi using Julia with multiple threads"
+    descr = "Estimating pi in parallel using Julia with multiple threads"
     tags = {
         "maintenance"
     }

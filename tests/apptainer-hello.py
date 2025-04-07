@@ -1,3 +1,11 @@
+# Apptainer test
+# Purpose of test
+# - Test Apptainer module access
+# - Test Apptainer build
+# - Test Apptainer exec
+# Notes
+# - Build from local image file in order to avoid download limits
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

@@ -1,9 +1,17 @@
+# NAS Parallel Benchmarks MPI EP (embarrassingly parallel) benchmark test
+# Purpose of test
+# - Test MPI module access
+# - Test building Fortran/MPI program
+# - Test running Fortran/MPI program
+# - Test collective performance of Discovery epyc-64 partition
+#   targeting maximum flop/s
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class NPB_MPI_EP_Discovery_Epyc(rfm.RunOnlyRegressionTest):
-    descr = "NPB MPI EP benchmark for the Discovery epyc-64 partition"
+    descr = "NPB MPI EP benchmark for Discovery epyc-64 partition"
     valid_systems = [
         "discovery:epyc-64"
     ]

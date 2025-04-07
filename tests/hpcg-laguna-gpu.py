@@ -1,9 +1,16 @@
+# HPCG benchmark test
+# For Laguna gpu partition
+# Purpose of test
+# - Test HPCG module access
+# - Test MPI library
+# - Test collective performance of Laguna gpu partition
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class HPCG_Laguna_Gpu(rfm.RunOnlyRegressionTest):
-    descr = "HPCG benchmark for the Laguna gpu partition"
+    descr = "HPCG benchmark for Laguna gpu partition"
     valid_systems = [
         "laguna:gpu"
     ]

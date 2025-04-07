@@ -1,3 +1,8 @@
+# File download test
+# Purpose of test
+# - Test curl module access
+# - Test public internet access via download
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 

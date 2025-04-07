@@ -1,3 +1,13 @@
+# NAS Parallel Benchmarks MPI MG (multigrid) benchmark test
+# Purpose of test
+# - Test MPI module access
+# - Test building Fortran/MPI program
+# - Test running Fortran/MPI program
+# - Test collective node performance for differential equations solver
+#   using multigrid method
+# Notes
+# - Requires a power-of-two number of CPU cores
+
 import reframe as rfm
 import reframe.utility.sanity as sn
 
