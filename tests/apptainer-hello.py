@@ -13,7 +13,8 @@ import reframe.utility.sanity as sn
 class Apptainer_Hello(rfm.RunOnlyRegressionTest):
     descr = "Apptainer hello world"
     tags = {
-        "maintenance"
+        "maintenance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

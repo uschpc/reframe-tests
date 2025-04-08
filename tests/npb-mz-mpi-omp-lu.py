@@ -13,7 +13,9 @@ import reframe.utility.sanity as sn
 class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
     descr = "NPB MZ MPI/OMP LU benchmark"
     tags = {
-        "maintenance"
+        "maintenance",
+        "multinode",
+        "performance"
     }
     valid_systems = [
         "discovery:allnodes",

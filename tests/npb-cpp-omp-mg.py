@@ -16,7 +16,9 @@ import reframe.utility.sanity as sn
 class NPB_CPP_OMP_MG(rfm.RunOnlyRegressionTest):
     descr = "NPB CPP OpenMP MG benchmark"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

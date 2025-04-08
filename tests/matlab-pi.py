@@ -11,7 +11,8 @@ import reframe.utility.sanity as sn
 class Matlab_Pi(rfm.RunOnlyRegressionTest):
     descr = "Estimate pi in parallel using MATLAB with parpool"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance"
     }
     valid_systems = [
         "discovery:allnodes",

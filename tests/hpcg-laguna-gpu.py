@@ -11,6 +11,10 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class HPCG_Laguna_Gpu(rfm.RunOnlyRegressionTest):
     descr = "HPCG benchmark for Laguna gpu partition"
+    tags = {
+        "multinode",
+        "performance"
+    }
     valid_systems = [
         "laguna:gpu"
     ]

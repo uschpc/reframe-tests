@@ -12,6 +12,10 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class STREAM_EPYC_9554(rfm.RunOnlyRegressionTest):
     descr = "STREAM benchmark for EPYC 9554 nodes"
+    tags = {
+        "performance",
+        "singlenode"
+    }
     valid_systems = [
         "laguna:compute"
     ]

@@ -10,7 +10,8 @@ import reframe.utility.sanity as sn
 class File_Download(rfm.RunOnlyRegressionTest):
     descr = "File download"
     tags = {
-        "maintenance"
+        "maintenance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

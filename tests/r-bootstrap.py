@@ -10,7 +10,9 @@ import reframe.utility.sanity as sn
 class R_Bootstrap(rfm.RunOnlyRegressionTest):
     descr = "Bootstrapping a GLM in parallel using R with mclapply"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

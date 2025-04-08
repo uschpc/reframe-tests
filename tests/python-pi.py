@@ -10,7 +10,9 @@ import reframe.utility.sanity as sn
 class Python_Pi(rfm.RunOnlyRegressionTest):
     descr = "Estimating pi in parallel using Python with multiprocessing"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

@@ -15,7 +15,9 @@ import reframe.utility.sanity as sn
 class NPB_CUDA_LU_RTX5000(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark for NVIDIA RTX5000"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "endeavour:allnodes"

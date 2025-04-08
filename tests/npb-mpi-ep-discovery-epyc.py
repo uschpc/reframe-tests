@@ -12,6 +12,10 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class NPB_MPI_EP_Discovery_Epyc(rfm.RunOnlyRegressionTest):
     descr = "NPB MPI EP benchmark for Discovery epyc-64 partition"
+    tags = {
+        "multinode",
+        "performance"
+    }
     valid_systems = [
         "discovery:epyc-64"
     ]

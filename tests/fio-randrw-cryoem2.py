@@ -15,7 +15,9 @@ import reframe.utility.sanity as sn
 class Fio_randrw_cryoem2(rfm.RunOnlyRegressionTest):
     descr = "Fio random read/write benchmark for /cryoem2 file system"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

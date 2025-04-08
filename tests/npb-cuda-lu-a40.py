@@ -15,7 +15,9 @@ import reframe.utility.sanity as sn
 class NPB_CUDA_LU_A40(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark for NVIDIA A40"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance",
+        "singlenode"
     }
     valid_systems = [
         "discovery:allnodes",

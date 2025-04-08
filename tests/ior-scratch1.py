@@ -14,6 +14,10 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class IOR_scratch1(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /scratch1 file system"
+    tags = {
+        "multinode",
+        "performance"
+    }
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes"

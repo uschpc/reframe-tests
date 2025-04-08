@@ -10,7 +10,8 @@ import reframe.utility.sanity as sn
 class Julia_Pi(rfm.RunOnlyRegressionTest):
     descr = "Estimating pi in parallel using Julia with multiple threads"
     tags = {
-        "maintenance"
+        "maintenance",
+        "performance"
     }
     valid_systems = [
         "discovery:allnodes",

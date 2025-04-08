@@ -14,6 +14,10 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class OMB_BW_FDR56(rfm.RunOnlyRegressionTest):
     descr = "OMB bandwidth benchmark using IB FDR56"
+    tags = {
+        "multinode",
+        "performance"
+    }
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes"

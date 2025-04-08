@@ -12,7 +12,9 @@ import reframe.utility.sanity as sn
 class NPB_MPI_IS(rfm.RunOnlyRegressionTest):
     descr = "NPB MPI IS benchmark"
     tags = {
-        "maintenance"
+        "maintenance",
+        "multinode",
+        "performance"
     }
     valid_systems = [
         "discovery:allnodes",
