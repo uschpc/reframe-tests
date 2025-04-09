@@ -5,7 +5,7 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project/jkhong_1307/reframe/logs/reports/run-report-$(date --iso-8601=seconds).json",
+            "report_file": "/project/jkhong_1307/reframe/logs/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
@@ -65,6 +65,7 @@ site_configuration = {
                         "env-r",
                         "env-curl",
                         "env-git",
+                        "env-fio",
                         "env-omb"
                     ]
                 }
