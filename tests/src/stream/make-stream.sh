@@ -1,3 +1,7 @@
+# Build STREAM program
+
+set -e
+
 cd "$TMPDIR"
 tar -xf /apps/reframe/resources/STREAM/STREAM-6703f75.tar.gz
 cd STREAM
