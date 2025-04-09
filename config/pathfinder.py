@@ -38,6 +38,7 @@ site_configuration = {
                         "env-python",
                         "env-r",
                         "env-curl",
+                        "env-git",
                         "env-fio"
                     ]
                 }

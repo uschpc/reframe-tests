@@ -103,6 +103,13 @@ site_configuration = {
             ]
         },
         {
+            "name": "env-git",
+            "modules": [
+                "gcc/13.3.0",
+                "git/2.45.2"
+            ]
+        },
+        {
             "name": "env-fio",
             "modules": [
                 "gcc/13.3.0",
