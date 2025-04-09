@@ -35,7 +35,7 @@ site_configuration = {
             ],
             "cc": "mpicc",
             "cxx": "mpic++",
-            "ftn": "mpif90",
+            "ftn": "mpif90"
         },
         {
             "name": "env-gcc-13.3.0-mpich-4.2.2",
@@ -45,7 +45,7 @@ site_configuration = {
             ],
             "cc": "mpicc",
             "cxx": "mpic++",
-            "ftn": "mpif90",
+            "ftn": "mpif90"
         },
         {
             "name": "env-hpcg",
@@ -113,7 +113,7 @@ site_configuration = {
             "name": "env-fio",
             "modules": [
                 "gcc/13.3.0",
-                "fio/3.37",
+                "fio/3.37"
             ]
         },
         {
