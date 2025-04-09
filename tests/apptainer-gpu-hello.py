@@ -20,6 +20,7 @@ class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes",
+        "pathfinder:allnodes",
         "laguna:gpu"
     ]
     valid_prog_environs = [

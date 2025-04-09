@@ -19,6 +19,8 @@ if [[ "$h" == "discovery"* ]]; then
     export RFM_CONFIG_FILES="$dir"/config/discovery.py
 elif [[ "$h" == "endeavour"* ]]; then
     export RFM_CONFIG_FILES="$dir"/config/endeavour.py
+elif [[ "$h" == "wolf-test" ]]; then
+    export RFM_CONFIG_FILES="$dir"/config/pathfinder.py
 elif [[ "$h" == "laguna"* ]]; then
     export RFM_CONFIG_FILES="$dir"/config/laguna.py
 else

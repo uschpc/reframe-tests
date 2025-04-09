@@ -2,7 +2,9 @@
 
 set -e
 
-if [[ "$1" == "home1" ]]; then
+if [[ "$1" == "home" ]]; then
+    dir="/home/hpcroot/reframe/tmp"
+elif [[ "$1" == "home1" ]]; then
     dir="/home1/$USER"
 elif [[ "$1" == "scratch1" ]]; then
     dir="/scratch1/$USER"
@@ -26,7 +28,7 @@ fi
 
 cd "$dir"
 
-if [[ "$1" == "home1" ]]; then
+if [[ "$1" == "home" ]] || [[ "$1" == "home1"  ]]; then
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
 else
     fio --name=fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=16G --numjobs=8 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1

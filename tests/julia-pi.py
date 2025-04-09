@@ -16,6 +16,7 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes",
+        "pathfinder:allnodes",
         "laguna:compute",
         "laguna:gpu"
     ]

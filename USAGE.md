@@ -30,6 +30,7 @@ The configuration files are stored in `config`:
 - shared/environments.py > for defining software environments
 - discovery.py > for the Discovery cluster
 - endeavour.py > for the Endeavour cluster
+- pathfinder.py > for the Pathfinder cluster
 - laguna.py > for the Laguna cluster
 
 The test files are stored in `tests`, and test dependency files are stored in `tests/src`.

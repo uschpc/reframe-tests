@@ -18,7 +18,8 @@ class NPB_MPI_IS(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:allnodes",
-        "endeavour:allnodes"
+        "endeavour:allnodes",
+        "pathfinder:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-openmpi-5.0.5",
