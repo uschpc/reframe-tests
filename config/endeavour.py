@@ -5,7 +5,7 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project2/wjendrze_120/reframe/logs/endeavour/reports/run-report-$(date --iso-8601=seconds).json",
+            "report_file": "/project2/wjendrze_120/reframe/logs/endeavour/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
