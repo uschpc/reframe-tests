@@ -1,4 +1,7 @@
-# Compile program with class size dependent on GPU model
+# Build NPB-GPU CUDA LU program with class size dependent on GPU model
+
+set -e
+
 cd "$TMPDIR"
 tar -xf /apps/reframe/resources/NPB/NPB-GPU-dc70cf1.tar.gz
 cd NPB-GPU/CUDA
