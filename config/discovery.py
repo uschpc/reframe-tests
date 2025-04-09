@@ -5,7 +5,7 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project2/wjendrze_120/reframe/logs/discovery/reports/run-report-$(date --iso-8601=seconds).json",
+            "report_file": "/project2/wjendrze_120/reframe/logs/discovery/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
@@ -66,7 +66,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-git",
+                        "env-fio"
                     ]
                 },
                 {
@@ -90,6 +92,7 @@ site_configuration = {
                         "env-matlab",
                         "env-qchem",
                         "env-curl",
+                        "env-git",
                         "env-fio",
                         "env-ior"
                     ]
@@ -114,7 +117,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-git",
+                        "env-fio"
                     ]
                 },
                 {
@@ -136,7 +141,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-git",
+                        "env-fio"
                     ]
                 },
                 {
@@ -159,7 +166,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-git",
+                        "env-fio"
                     ]
                 },
                 {
@@ -181,7 +190,9 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl"
+                        "env-curl",
+                        "env-git",
+                        "env-fio"
                     ]
                 }
             ]
