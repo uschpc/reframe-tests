@@ -22,14 +22,14 @@ class NPB_MPI_EP_Discovery_Epyc(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-gcc-13.3.0-openmpi-5.0.5"
     ]
-    sourcesdir = "src/npb-mpi-ep"
+    sourcesdir = "src/npb-mpi"
     executable = "ep.E.x"
     num_tasks = 4992
     num_tasks_per_node = 64
     num_cpus_per_task = 1
     time_limit = "5m"
     prerun_cmds = [
-        "bash make-npb-mpi-ep.sh"
+        "bash make-npb-mpi.sh ep E"
     ]
     reference = {
         "*": {

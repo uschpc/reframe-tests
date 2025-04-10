@@ -24,14 +24,14 @@ class NPB_OMP_IS(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-gcc-13.3.0"
     ]
-    sourcesdir = "src/npb-omp-is"
+    sourcesdir = "src/npb-omp"
     executable = "is.C.x"
     time_limit = "5m"
     env_vars = {
         "OMP_NUM_THREADS": "$SLURM_CPUS_ON_NODE"
     }
     prerun_cmds = [
-        "bash make-npb-omp-is.sh"
+        "bash make-npb-omp.sh is C"
     ]
     reference = {
         "*": {

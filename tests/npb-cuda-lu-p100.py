@@ -26,13 +26,13 @@ class NPB_CUDA_LU_P100(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "env-gcc-13.3.0-cuda-12.6.3"
     ]
-    sourcesdir = "src/npb-cuda-lu"
+    sourcesdir = "src/npb-cuda"
     executable = "lu.C"
     num_tasks = 1
     num_cpus_per_task = 1
     time_limit = "5m"
     prerun_cmds = [
-        "bash make-npb-cuda-lu.sh"
+        "bash make-npb-cuda.sh lu C"
     ]
     reference = {
         "*": {

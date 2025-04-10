@@ -25,14 +25,14 @@ class NPB_MPI_IS(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0-openmpi-5.0.5",
         "env-gcc-13.3.0-mpich-4.2.2"
     ]
-    sourcesdir = "src/npb-mpi-is"
+    sourcesdir = "src/npb-mpi"
     executable = "is.D.x"
     num_tasks = 32
     num_tasks_per_node = 16
     num_cpus_per_task = 1
     time_limit = "5m"
     prerun_cmds = [
-        "bash make-npb-mpi-is.sh"
+        "bash make-npb-mpi.sh is D"
     ]
     reference = {
         "*": {

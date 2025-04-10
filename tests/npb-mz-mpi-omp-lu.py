@@ -25,7 +25,7 @@ class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0-openmpi-5.0.5",
         "env-gcc-13.3.0-mpich-4.2.2"
     ]
-    sourcesdir = "src/npb-mz-mpi-omp-lu"
+    sourcesdir = "src/npb-mz-mpi-omp"
     executable = "lu-mz.D.x"
     num_tasks = 8
     num_tasks_per_node = 2
@@ -35,7 +35,7 @@ class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
         "OMP_NUM_THREADS": "$SLURM_CPUS_PER_TASK"
     }
     prerun_cmds = [
-        "bash make-npb-mz-mpi-omp-lu.sh"
+        "bash make-npb-mz-mpi-omp.sh lu-mz D"
     ]
     reference = {
         "*": {
