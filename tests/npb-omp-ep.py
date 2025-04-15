@@ -21,7 +21,9 @@ class NPB_OMP_EP(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes",
-        "pathfinder:allnodes"
+        "pathfinder:allnodes",
+        "laguna:compute",
+        "laguna:gpu"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"
