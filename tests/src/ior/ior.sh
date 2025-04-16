@@ -22,4 +22,4 @@ else
     exit 1
 fi
 
-ior -vvv -t 4m -b 64m -s 16 -F -C -e -o "$dir/ior-$SLURM_JOB_ID.tmp"
+ior -vvv -t 4m -b 64m -s 16 -F -C -e -o "$dir/reframe-ior-$SLURM_JOB_ID.tmp"
