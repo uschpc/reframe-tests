@@ -32,9 +32,6 @@ class HPCG_Laguna_Compute(rfm.RunOnlyRegressionTest):
     env_vars = {
         "OMP_NUM_THREADS": "1"
     }
-    prerun_cmds = [
-        "ulimit -s unlimited"
-    ]
     reference = {
         "*": {
             "gflops": (1000, -0.1, None, "gflops")

@@ -29,9 +29,6 @@ class HPCG_Discovery_Epyc(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 1
     time_limit = "10m"
     output_file = sn.getitem(sn.glob("HPCG-Benchmark*.txt"), 0)
-    prerun_cmds = [
-        "ulimit -s unlimited"
-    ]
     env_vars = {
         "OMP_NUM_THREADS": "1"
     }
