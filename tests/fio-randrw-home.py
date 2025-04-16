@@ -31,7 +31,7 @@ class Fio_randrw_home(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 4
     time_limit = "5m"
     reference = {
-        "pathfinder:allnodes": {
+        "*": {
             "avg_write_speed": (75.00, -0.1, None, "MiB/sec"),
             "avg_read_speed": (75.00, -0.1, None, "MiB/sec")
         }

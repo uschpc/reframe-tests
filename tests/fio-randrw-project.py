@@ -33,7 +33,11 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 8
     time_limit = "5m"
     reference = {
-        "*": {
+        "discovery:allnodes": {
+            "avg_write_speed": (75.00, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (75.00, -0.25, None, "MiB/sec")
+        },
+        "endeavour:allnodes": {
             "avg_write_speed": (75.00, -0.25, None, "MiB/sec"),
             "avg_read_speed": (75.00, -0.25, None, "MiB/sec")
         },
@@ -45,11 +49,11 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
 
     @run_before("run")
     def set_job_options(self):
-        if self.current_partition.name in ["epyc-64", "qcb"]:
+        if self.current_system.name in ["discovery", "endeavour"]:
             self.job.options += [
                 "--constraint=epyc-7513"
             ]
-        elif self.current_partition.name == "compute":
+        elif self.current_system.name == "laguna":
             self.job.options += [
                 "--constraint=epyc-9554"
             ]
