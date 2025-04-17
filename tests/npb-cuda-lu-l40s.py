@@ -49,7 +49,7 @@ class NPB_CUDA_LU_L40S(rfm.RunOnlyRegressionTest):
 
     @sanity_function
     def assert_sanity(self):
-        return sn.assert_found(r"Verification Successful", self.stdout)
+        return sn.assert_found(r"Verification\s+=\s+SUCCESSFUL", self.stdout)
 
     @performance_function("Mop/s", perf_key = "Mop/s_total")
     def extract_perf(self):

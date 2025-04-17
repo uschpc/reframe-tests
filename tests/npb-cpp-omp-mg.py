@@ -54,7 +54,7 @@ class NPB_CPP_OMP_MG(rfm.RunOnlyRegressionTest):
 
     @sanity_function
     def assert_sanity(self):
-        return sn.assert_found(r"VERIFICATION SUCCESSFUL", self.stdout)
+        return sn.assert_found(r"Verification\s+=\s+SUCCESSFUL", self.stdout)
 
     @performance_function("Mop/s", perf_key = "Mop/s_total")
     def extract_perf(self):
