@@ -5,15 +5,15 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project/jkhong_1307/reframe/logs/reports/run-report-$(date --iso-8601=seconds).json"
+            "report_file": "logs/laguna/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
         {
             "name": "laguna",
             "descr": "Laguna regional cluster",
-            "stagedir": "/project/jkhong_1307/reframe/logs/stage/stage-$(date --iso-8601=seconds)",
-            "outputdir": "/project/jkhong_1307/reframe/logs/output/output-$(date --iso-8601=seconds)",
+            "stagedir": "logs/laguna/stage/stage-$(date --iso-8601=seconds)",
+            "outputdir": "logs/laguna/output/output-$(date --iso-8601=seconds)",
             "modules_system": "lmod",
             "hostnames": [
                 "laguna1.carc.usc.edu"
@@ -78,7 +78,7 @@ site_configuration = {
                 {
                     "type": "file",
                     "level": "debug",
-                    "name": "/project/jkhong_1307/reframe/logs/run/reframe.log",
+                    "name": "logs/laguna/run/reframe.log",
                     "timestamp": "%FT%T",
                     "format": "[%(asctime)s] %(levelname)s: %(check_info)s: %(message)s",
                     "append": True
@@ -88,7 +88,7 @@ site_configuration = {
                 {
                     "type": "filelog",
                     "level": "info",
-                    "basedir": "/project/jkhong_1307/reframe/logs/perf",
+                    "basedir": "logs/laguna/perf",
                     "prefix": "%(check_system)s/%(check_partition)s",
                     "format": (
                         "%(check_job_completion_time)s,%(version)s,"

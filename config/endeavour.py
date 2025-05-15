@@ -5,15 +5,15 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project2/wjendrze_120/reframe/logs/endeavour/reports/run-report-$(date --iso-8601=seconds).json"
+            "report_file": "logs/endeavour/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
         {
             "name": "endeavour",
             "descr": "Endeavour cluster",
-            "stagedir": "/project2/wjendrze_120/reframe/logs/endeavour/stage/stage-$(date --iso-8601=seconds)",
-            "outputdir": "/project2/wjendrze_120/reframe/logs/endeavour/output/output-$(date --iso-8601=seconds)",
+            "stagedir": "logs/endeavour/stage/stage-$(date --iso-8601=seconds)",
+            "outputdir": "logs/endeavour/output/output-$(date --iso-8601=seconds)",
             "modules_system": "lmod",
             "hostnames": [
                 "endeavour.*"
@@ -55,7 +55,7 @@ site_configuration = {
                 {
                     "type": "file",
                     "level": "debug",
-                    "name": "/project2/wjendrze_120/reframe/logs/endeavour/run/reframe.log",
+                    "name": "logs/endeavour/run/reframe.log",
                     "timestamp": "%FT%T",
                     "format": "[%(asctime)s] %(levelname)s: %(check_info)s: %(message)s",
                     "append": True
@@ -65,7 +65,7 @@ site_configuration = {
                 {
                     "type": "filelog",
                     "level": "info",
-                    "basedir": "/project2/wjendrze_120/reframe/logs/endeavour/perf",
+                    "basedir": "logs/endeavour/perf",
                     "prefix": "%(check_system)s/%(check_partition)s",
                     "format": (
                         "%(check_job_completion_time)s,%(version)s,"

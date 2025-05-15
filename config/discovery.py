@@ -5,15 +5,15 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/project2/wjendrze_120/reframe/logs/discovery/reports/run-report-$(date --iso-8601=seconds).json"
+            "report_file": "logs/discovery/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
         {
             "name": "discovery",
             "descr": "Discovery cluster",
-            "stagedir": "/project2/wjendrze_120/reframe/logs/discovery/stage/stage-$(date --iso-8601=seconds)",
-            "outputdir": "/project2/wjendrze_120/reframe/logs/discovery/output/output-$(date --iso-8601=seconds)",
+            "stagedir": "logs/discovery/stage/stage-$(date --iso-8601=seconds)",
+            "outputdir": "logs/discovery/output/output-$(date --iso-8601=seconds)",
             "modules_system": "lmod",
             "hostnames": [
                 "discovery.*"
@@ -204,7 +204,7 @@ site_configuration = {
                 {
                     "type": "file",
                     "level": "debug",
-                    "name": "/project2/wjendrze_120/reframe/logs/discovery/run/reframe.log",
+                    "name": "logs/discovery/run/reframe.log",
                     "timestamp": "%FT%T",
                     "format": "[%(asctime)s] %(levelname)s: %(check_info)s: %(message)s",
                     "append": True
@@ -214,7 +214,7 @@ site_configuration = {
                 {
                     "type": "filelog",
                     "level": "info",
-                    "basedir": "/project2/wjendrze_120/reframe/logs/discovery/perf",
+                    "basedir": "logs/discovery/perf",
                     "prefix": "%(check_system)s/%(check_partition)s",
                     "format": (
                         "%(check_job_completion_time)s,%(version)s,"

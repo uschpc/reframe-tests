@@ -5,15 +5,15 @@ site_configuration = {
         {
             "check_search_recursive": True,
             "purge_environment": True,
-            "report_file": "/home/hpcroot/reframe/logs/reports/run-report-$(date --iso-8601=seconds).json"
+            "report_file": "logs/pathfinder/reports/run-report-$(date --iso-8601=seconds).json"
         }
     ],
     "systems": [
         {
             "name": "pathfinder",
             "descr": "Pathfinder cluster",
-            "stagedir": "/home/hpcroot/reframe/logs/stage/stage-$(date --iso-8601=seconds)",
-            "outputdir": "/home/hpcroot/reframe/logs/output/output-$(date --iso-8601=seconds)",
+            "stagedir": "logs/pathfinder/stage/stage-$(date --iso-8601=seconds)",
+            "outputdir": "logs/pathfinder/output/output-$(date --iso-8601=seconds)",
             "modules_system": "lmod",
             "hostnames": [
                 "wolf-test"
@@ -51,7 +51,7 @@ site_configuration = {
                 {
                     "type": "file",
                     "level": "debug",
-                    "name": "/home/hpcroot/reframe/logs/run/reframe.log",
+                    "name": "logs/pathfinder/run/reframe.log",
                     "timestamp": "%FT%T",
                     "format": "[%(asctime)s] %(levelname)s: %(check_info)s: %(message)s",
                     "append": True
@@ -61,7 +61,7 @@ site_configuration = {
                 {
                     "type": "filelog",
                     "level": "info",
-                    "basedir": "/home/hpcroot/reframe/logs/perf",
+                    "basedir": "logs/pathfinder/perf",
                     "prefix": "%(check_system)s/%(check_partition)s",
                     "format": (
                         "%(check_job_completion_time)s,%(version)s,"
