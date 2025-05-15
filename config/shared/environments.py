@@ -80,7 +80,7 @@ site_configuration = {
             "name": "env-r",
             "modules": [
                 "gcc/13.3.0",
-                "r/4.4.2"
+                "r/4.4.3"
             ]
         },
         {
