@@ -1,33 +1,36 @@
 # Set up current shell to use ReFrame
-# e.g., source use-reframe.sh $PWD
+# e.g., source scripts/use-reframe.sh
 
-if [[ "$#" -eq 0 ]]; then
-    echo "Error: no argument given"
-    echo "Argument should be path to reframe-tests repo"
-    return 1 2> /dev/null
-fi
+# Specify configuration files
 
-if [[ ! -d "$1" ]]; then
-    echo "Error: given directory does not exist"
-    return 1 2> /dev/null
-fi
-
-dir="$1"
 h="$(hostname -s)"
 
 if [[ "$h" == "discovery"* ]]; then
-    export RFM_CONFIG_FILES="$dir"/config/discovery.py
+    cl="discovery"
 elif [[ "$h" == "endeavour"* ]]; then
-    export RFM_CONFIG_FILES="$dir"/config/endeavour.py
+    cl="endeavour"
 elif [[ "$h" == "wolf-test" ]]; then
-    export RFM_CONFIG_FILES="$dir"/config/pathfinder.py
+    cl="pathfinder"
 elif [[ "$h" == "laguna"* ]]; then
-    export RFM_CONFIG_FILES="$dir"/config/laguna.py
+    cl="laguna"
 else
-    echo "Error: Hostname not recognized"
+    echo "Error: hostname not recognized for ReFrame configuration"
     return 1 2> /dev/null
 fi
 
-export RFM_CONFIG_FILES="$dir"/config/shared/environments.py:"$RFM_CONFIG_FILES"
+export RFM_CONFIG_FILES="$PWD"/config/shared/environments.py:"$PWD"/config/"$cl".py
+
+# Create logs directory structure if needed
+
+if [[ ! -d "$PWD"/logs/"$cl" ]]; then
+    mkdir -p "$PWD"/logs/"$cl"
+    mkdir "$PWD"/logs/"$cl"/output
+    mkdir "$PWD"/logs/"$cl"/perf
+    mkdir "$PWD"/logs/"$cl"/reports
+    mkdir "$PWD"/logs/"$cl"/run
+    mkdir "$PWD"/logs/"$cl"/stage
+fi
+
+# Load ReFrame
 
 export PATH=/apps/reframe/reframe-4.7.4/bin:"$PATH"
