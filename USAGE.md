@@ -14,16 +14,16 @@ To install the CARC test suite, simply clone the Git repo:
 git clone https://github.com/uschpc/reframe-tests.git
 ```
 
-A shared installation of the test suite is available in `/apps/reframe/reframe-tests`.
-
-To use the test suite, source the [use-reframe.sh](scripts/use-reframe.sh) script. For example:
+To use the test suite, source the [use-reframe.sh](scripts/use-reframe.sh) script from within the Git repo:
 
 ```
 cd reframe-tests
-source scripts/use-reframe.sh $PWD
+source scripts/use-reframe.sh
 ```
 
-This script will load ReFrame and the required configuration files for the cluster that you are logged into. Of course, you can manually load ReFrame and the configuration files as needed, such as for development purposes.
+This script will load ReFrame and the required configuration files for the cluster that you are logged into. Of course, you can also manually load ReFrame and the configuration files as needed, such as for development purposes.
+
+Note that this setup assumes you are running commands from within the `reframe-tests` Git repo directory, using it as the working directory with relative paths.
 
 The configuration files are stored in `config`:
 
@@ -33,9 +33,11 @@ The configuration files are stored in `config`:
 - pathfinder.py > for the Pathfinder cluster
 - laguna.py > for the Laguna cluster
 
-The test files are stored in `tests`, and test dependency files are stored in `tests/src`.
+The test files are stored in `tests`, and some test dependency resources are stored in `tests/src`. Other test dependency resources not suitable for a Git repo, like data files or container images, are stored in `/apps/reframe/resources`.
 
-Note that the ReFrame commands demonstrated below are run from within the `reframe-tests` repo directory.
+Utility scripts for installing and using ReFrame are stored in `scripts`.
+
+In addition, log files will be stored in `logs`, but this directory is ignored by Git (included in `.gitignore`).
 
 ## Listing and validating tests
 
@@ -67,6 +69,8 @@ To run a set of tests based on test names, use the `-n` option with grep-like sy
 reframe -c tests -n "Julia|Python" -r
 ```
 
+Test names are defined in the test files as the class name.
+
 ### Tagged tests
 
 To run a set of tests with a specific tag, use the `-t` option and specify the tag name. For example:
@@ -91,11 +95,11 @@ To run tests for every node in a specific partition, use the `--system` option c
 reframe -c tests/julia-pi.py --system=discovery:debug --distribute=all -r
 ```
 
-Note that currently the `--distribute` option is only designed for single-node tests; multi-node tests can work too but will be repeated.
+Note that currently the `--distribute` option is only designed for single-node tests; multi-node tests can work too but will be repeated on some nodes.
 
 ### Entire test suite
 
-It is not recommended to run the entire test suite at once, because some tests are not meant to be run at the same time as other tests and some tests are designed to be run on an entire partition or on each node in a partition. Tests will likely fail for performance reasons.
+It is not recommended to run the entire test suite at once, because some tests are not meant to be run at the same time as other tests and some tests are designed to be run on an entire partition or on each node in a partition. Some tests, like the I/O tests, will likely fail for performance reasons in this case.
 
 ### Reservations
 
@@ -140,9 +144,10 @@ The nodelist option will then be added to the ReFrame Slurm job scripts.
 A reference guide for specific tests to run during testing or maintenance periods.
 
 ```
-export res=<reservation name>
-
+cd reframe-tests
 source scripts/use-reframe.sh
+
+export res=<reservation name>
 
 # Run all tests tagged for maintenance once
 reframe -c tests -J reservation="$res" -t maintenance -r
