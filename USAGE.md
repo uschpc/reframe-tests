@@ -153,7 +153,8 @@ export res=<reservation name>
 reframe -c tests -J reservation="$res" -t maintenance -r
 
 # Test every node using Apptainer tests
-reframe -c tests -n "Apptainer" -J reservation="$res" --distribute=all -r
+reframe -c tests/apptainer-hello.py -J reservation="$res" --distribute=all -r
+reframe -c tests/apptainer-gpu-hello.py -J reservation="$res" -J constraint="l40s|a100|a40|v100|p100" --distribute=all -r
 
 # Test every node using NPB OMP MG test
 reframe -c tests/npb-omp-mg.py -J reservation="$res" --distribute=all -r
