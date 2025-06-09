@@ -28,6 +28,7 @@ site_configuration = {
                         "--account=jkhong_1307",
                         "--partition=compute"
                     ],
+                    "max_jobs": 1000,
                     "environs": [
                         "env-apptainer",
                         "env-gcc-13.3.0",
@@ -53,6 +54,7 @@ site_configuration = {
                         "--account=jkhong_1307",
                         "--partition=gpu"
                     ],
+                    "max_jobs": 1000,
                     "environs": [
                         "env-apptainer",
                         "env-gcc-13.3.0",

@@ -28,6 +28,7 @@ site_configuration = {
                         "--account=hpcroot",
                         "--partition=allnodes"
                     ],
+                    "max_jobs": 5000,
                     "environs": [
                         "env-apptainer",
                         "env-gcc-13.3.0",

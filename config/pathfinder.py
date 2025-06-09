@@ -28,6 +28,7 @@ site_configuration = {
                         "--account=wjendrze_1",
                         "--partition=allnodes"
                     ],
+                    "max_jobs": 1000,
                     "environs": [
                         "env-apptainer",
                         "env-gcc-13.3.0",
