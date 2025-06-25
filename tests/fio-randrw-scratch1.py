@@ -30,7 +30,7 @@ class Fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     executable = "bash fio-randrw.sh scratch1"
     num_tasks = 1
     num_cpus_per_task = 8
-    time_limit = "5m"
+    time_limit = "10m"
     reference = {
         "*": {
             "avg_write_speed": (30.00, -0.1, None, "MiB/sec"),

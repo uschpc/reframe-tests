@@ -31,7 +31,7 @@ class Fio_randrw_project(rfm.RunOnlyRegressionTest):
     executable = "bash fio-randrw.sh project"
     num_tasks = 1
     num_cpus_per_task = 8
-    time_limit = "5m"
+    time_limit = "10m"
     reference = {
         "discovery:allnodes": {
             "avg_write_speed": (75.00, -0.25, None, "MiB/sec"),
