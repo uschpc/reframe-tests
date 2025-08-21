@@ -16,9 +16,7 @@ class Git_clone_scratch1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:allnodes",
-        "endeavour:allnodes",
-        "laguna:compute",
-        "laguna:gpu"
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-git"
