@@ -20,12 +20,38 @@ site_configuration = {
             ],
             "partitions": [
                 {
+                    "name": "allnodes",
+                    "descr": "Laguna allnodes partition",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes"
+                    ],
+                    "max_jobs": 1000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-hpcg",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-curl",
+                        "env-git",
+                        "env-fio",
+                        "env-omb"
+                    ]
+                },
+                {
                     "name": "compute",
                     "descr": "Laguna compute partition",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
-                        "--account=jkhong_1307",
+                        "--account=hpcroot",
                         "--partition=compute"
                     ],
                     "max_jobs": 1000,
@@ -51,7 +77,7 @@ site_configuration = {
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
-                        "--account=jkhong_1307",
+                        "--account=hpcroot",
                         "--partition=gpu"
                     ],
                     "max_jobs": 1000,

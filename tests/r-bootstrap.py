@@ -18,8 +18,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "discovery:allnodes",
         "endeavour:allnodes",
         "pathfinder:allnodes",
-        "laguna:compute",
-        "laguna:gpu"
+        "laguna:allnodes"
     ]
     valid_prog_environs = [
         "env-r"

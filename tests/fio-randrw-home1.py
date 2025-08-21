@@ -22,7 +22,7 @@ class Fio_randrw_home1(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes",
-        "laguna:compute"
+        "laguna:allnodes"
     ]
     valid_prog_environs = [
         "env-fio"

@@ -24,8 +24,7 @@ class NPB_CPP_OMP_MG(rfm.RunOnlyRegressionTest):
         "discovery:allnodes",
         "endeavour:allnodes",
         "pathfinder:allnodes",
-        "laguna:compute",
-        "laguna:gpu"
+        "laguna:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"

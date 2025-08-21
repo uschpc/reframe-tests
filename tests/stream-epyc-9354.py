@@ -18,7 +18,7 @@ class STREAM_EPYC_9354(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:allnodes",
-        "laguna:gpu"
+        "laguna:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"

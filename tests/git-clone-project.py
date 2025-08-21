@@ -17,8 +17,7 @@ class Git_clone_project(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:allnodes",
         "endeavour:allnodes",
-        "laguna:compute",
-        "laguna:gpu"
+        "laguna:allnodes"
     ]
     valid_prog_environs = [
         "env-git"
