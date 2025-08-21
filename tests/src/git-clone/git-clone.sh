@@ -19,8 +19,6 @@ elif [[ "$1" == "project" ]]; then
     fi
 elif [[ "$1" == "project2" ]]; then
     dir="/project2/wjendrze_120/reframe/tmp"
-elif [[ "$1" == "cryoem2" ]]; then
-    dir="/cryoem2/osinski_703/reframe/tmp"
 else
     echo "Error: File system not yet supported for ReFrame git clone test"
     exit 1
