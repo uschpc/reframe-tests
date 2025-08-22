@@ -3,6 +3,11 @@
 site_configuration = {
     "environments": [
         {
+             "name": "env-none",
+             "modules": [
+             ]
+        },
+        {
              "name": "env-apptainer",
              "modules": [
                  "apptainer/1.3.6"

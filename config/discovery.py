@@ -20,6 +20,16 @@ site_configuration = {
             ],
             "partitions": [
                 {
+                    "name": "login",
+                    "descr": "Discovery login nodes",
+                    "scheduler": "local",
+                    "launcher": "local",
+                    "max_jobs": 5,
+                    "environs": [
+                        "env-none"
+                    ]
+                },
+                {
                     "name": "allnodes",
                     "descr": "Discovery allnodes partition",
                     "scheduler": "slurm",

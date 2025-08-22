@@ -20,6 +20,16 @@ site_configuration = {
             ],
             "partitions": [
                 {
+                    "name": "login",
+                    "descr": "Endeavour login nodes",
+                    "scheduler": "local",
+                    "launcher": "local",
+                    "max_jobs": 5,
+                    "environs": [
+                        "env-none"
+                    ]
+                },
+                {
                     "name": "allnodes",
                     "descr": "Endeavour allnodes partition",
                     "scheduler": "slurm",

@@ -20,6 +20,16 @@ site_configuration = {
             ],
             "partitions": [
                 {
+                    "name": "login",
+                    "descr": "Pathfinder login node",
+                    "scheduler": "local",
+                    "launcher": "local",
+                    "max_jobs": 5,
+                    "environs": [
+                        "env-none"
+                    ]
+                },
+                {
                     "name": "allnodes",
                     "descr": "Pathfinder allnodes partition",
                     "scheduler": "slurm",
