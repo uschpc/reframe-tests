@@ -16,7 +16,8 @@ site_configuration = {
         {
             "name": "env-gcc-13.3.0",
             "modules": [
-                "gcc/13.3.0"
+                "gcc/13.3.0",
+                "gmake/4.4.1"
             ],
             "cc": "gcc",
             "cxx": "g++",
@@ -26,6 +27,7 @@ site_configuration = {
             "name": "env-gcc-13.3.0-cuda-12.6.3",
             "modules": [
                 "gcc/13.3.0",
+                "gmake/4.4.1",
                 "cuda/12.6.3"
             ],
             "cc": "gcc",
@@ -36,6 +38,7 @@ site_configuration = {
             "name": "env-gcc-13.3.0-openmpi-5.0.5",
             "modules": [
                 "gcc/13.3.0",
+                "gmake/4.4.1",
                 "openmpi/5.0.5"
             ],
             "cc": "mpicc",
@@ -46,6 +49,7 @@ site_configuration = {
             "name": "env-gcc-13.3.0-mpich-4.2.2",
             "modules": [
                 "gcc/13.3.0",
+                "gmake/4.4.1",
                 "mpich/4.2.2"
             ],
             "cc": "mpicc",
