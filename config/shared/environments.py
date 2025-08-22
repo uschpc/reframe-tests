@@ -84,8 +84,7 @@ site_configuration = {
         {
             "name": "env-r",
             "modules": [
-                "gcc/13.3.0",
-                "r/4.4.3"
+                "rstats/4.5.1"
             ]
         },
         {
