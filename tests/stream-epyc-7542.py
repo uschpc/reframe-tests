@@ -17,7 +17,7 @@ class STREAM_EPYC_7542(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:main",
+        "discovery:allnodes",
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
