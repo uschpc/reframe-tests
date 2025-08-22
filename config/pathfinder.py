@@ -35,7 +35,7 @@ site_configuration = {
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
-                        "--account=wjendrze_1",
+                        "--account=hpcroot",
                         "--partition=allnodes"
                     ],
                     "max_jobs": 1000,
