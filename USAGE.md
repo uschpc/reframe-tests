@@ -1,6 +1,6 @@
 # Using ReFrame on CARC clusters
 
-Some guidance for CARC staff.
+Some guidance for running tests.
 
 ## Installing ReFrame
 
@@ -70,6 +70,14 @@ reframe -c tests -n "Julia|Python" -r
 ```
 
 Test names are defined in the test files as the class name.
+
+### Tests by software environment
+
+To run a set of tests based on software environments, use the `-p` option. For example:
+
+```
+reframe -c tests -p "env-julia" -r
+```
 
 ### Tagged tests
 
