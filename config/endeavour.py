@@ -50,7 +50,6 @@ site_configuration = {
                         "env-r",
                         "env-matlab",
                         "env-qchem",
-                        "env-curl",
                         "env-git",
                         "env-fio",
                         "env-ior",

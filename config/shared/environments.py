@@ -101,13 +101,6 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-curl",
-            "modules": [
-                "gcc/13.3.0",
-                "curl/8.8.0"
-            ]
-        },
-        {
             "name": "env-git",
             "modules": [
                 "gcc/13.3.0",

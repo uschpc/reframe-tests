@@ -49,7 +49,6 @@ site_configuration = {
                         "env-julia",
                         "env-python",
                         "env-r",
-                        "env-curl",
                         "env-git",
                         "env-fio",
                         "env-omb"
@@ -74,7 +73,6 @@ site_configuration = {
                         "env-julia",
                         "env-python",
                         "env-r",
-                        "env-curl",
                         "env-git",
                         "env-fio",
                         "env-ior",
@@ -101,7 +99,6 @@ site_configuration = {
                         "env-julia",
                         "env-python",
                         "env-r",
-                        "env-curl",
                         "env-git",
                         "env-fio",
                         "env-omb"

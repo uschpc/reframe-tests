@@ -48,7 +48,6 @@ site_configuration = {
                         "env-julia",
                         "env-python",
                         "env-r",
-                        "env-curl",
                         "env-git",
                         "env-fio"
                     ]
