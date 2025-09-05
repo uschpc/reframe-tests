@@ -12,6 +12,7 @@ The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) syst
 - Apptainer container engine
 - I/O on various file systems
 - File downloads (via git clone)
+- InfiniBand network
 - Single-node and multi-node jobs
 
 ## License
