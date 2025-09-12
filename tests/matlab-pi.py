@@ -15,7 +15,7 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7542",
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
@@ -27,6 +27,9 @@ class Matlab_Pi(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 8
     time_limit = "5m"
     reference = {
+        "discovery:epyc-7542": {
+            "elapsed_time": (65.2, None, 0.1, "seconds")
+        },
         "*": {
             "elapsed_time": (95.0, None, 0.10, "seconds")
         }
