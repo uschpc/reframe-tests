@@ -19,7 +19,7 @@ class IOR_project(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7513",
         "endeavour:allnodes",
         "laguna:allnodes"
     ]
@@ -33,6 +33,10 @@ class IOR_project(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 1
     time_limit = "5m"
     reference = {
+        "discovery:epyc-7513": {
+            "max_write_speed": (8000.0, -0.25, None, "MiB/sec"),
+            "max_read_speed": (18000.0, -0.25, None, "MiB/sec")
+        },
         "*": {
             "max_write_speed": (8000.00, -0.25, None, "MiB/sec"),
             "max_read_speed": (18000.00, -0.25, None, "MiB/sec")
@@ -42,17 +46,6 @@ class IOR_project(rfm.RunOnlyRegressionTest):
             "max_read_speed": (40000.00, -0.25, None, "MiB/sec")
         }
     }
-
-    @run_before("run")
-    def set_job_options(self):
-        if self.current_partition.name in ["epyc-64", "qcb"]:
-            self.job.options += [
-                "--constraint=epyc-7513"
-            ]
-        elif self.current_partition.name == "compute":
-            self.job.options += [
-                "--constraint=epyc-9554"
-            ]
 
     @sanity_function
     def assert_sanity(self):
