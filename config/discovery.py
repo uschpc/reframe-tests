@@ -57,6 +57,255 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "epyc-9534",
+                    "descr": "Discovery epyc-9534 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-9534"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-9354",
+                    "descr": "Discovery epyc-9354 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-9354"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-7513",
+                    "descr": "Discovery epyc-7513 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-7513"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-7313",
+                    "descr": "Discovery epyc-7313 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-7313"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-7542",
+                    "descr": "Discovery epyc-7542 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-7542"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-7282",
+                    "descr": "Discovery epyc-7282 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-7282"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "xeon-6130",
+                    "descr": "Discovery xeon-6130 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=xeon-6130"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "xeon-4116",
+                    "descr": "Discovery xeon-4116 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=xeon-4116"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "xeon-2640v4",
+                    "descr": "Discovery xeon-2640v4 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=xeon-2640v4"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-matlab",
+                        "env-qchem",
+                        "env-git",
+                        "env-fio",
+                        "env-ior",
+                        "env-omb"
+                    ]
+                },
+                {
                     "name": "main",
                     "descr": "Discovery main partition",
                     "scheduler": "slurm",
