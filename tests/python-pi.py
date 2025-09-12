@@ -15,7 +15,7 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7542",
         "endeavour:allnodes",
         "pathfinder:allnodes",
         "laguna:allnodes"
@@ -29,6 +29,9 @@ class Python_Pi(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 8
     time_limit = "5m"
     reference = {
+        "discovery:epyc-7542": {
+            "elapsed_time": (86.8, None, 0.1, "seconds")
+        },
         "*": {
             "elapsed_time": (130.0, None, 0.10, "seconds")
         }
