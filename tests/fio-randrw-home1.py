@@ -20,7 +20,7 @@ class Fio_randrw_home1(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7513",
         "endeavour:allnodes",
         "laguna:allnodes"
     ]
@@ -33,9 +33,9 @@ class Fio_randrw_home1(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 4
     time_limit = "5m"
     reference = {
-        "discovery:allnodes": {
-            "avg_write_speed": (75.00, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (75.00, -0.1, None, "MiB/sec")
+        "discovery:epyc-7513": {
+            "avg_write_speed": (75.0, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (75.0, -0.1, None, "MiB/sec")
         },
         "endeavour:allnodes": {
             "avg_write_speed": (75.00, -0.1, None, "MiB/sec"),
@@ -46,17 +46,6 @@ class Fio_randrw_home1(rfm.RunOnlyRegressionTest):
             "avg_read_speed": (72.00, -0.1, None, "MiB/sec")
         }
     }
-
-    @run_before("run")
-    def set_job_options(self):
-        if self.current_system.name in ["discovery", "endeavour"]:
-            self.job.options += [
-                "--constraint=epyc-7513"
-            ]
-        elif self.current_system.name == "laguna":
-            self.job.options += [
-                "--constraint=epyc-9554"
-            ]
 
     @sanity_function
     def assert_sanity(self):
