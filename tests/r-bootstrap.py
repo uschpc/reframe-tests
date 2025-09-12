@@ -15,7 +15,7 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7542",
         "endeavour:allnodes",
         "pathfinder:allnodes",
         "laguna:allnodes"
@@ -28,10 +28,10 @@ class R_Bootstrap(rfm.RunOnlyRegressionTest):
     num_tasks = 1
     num_cpus_per_task = 8
     time_limit = "5m"
-    env_vars = {
-        "OMP_NUM_THREADS": "1"
-    }
     reference = {
+        "discovery:epyc-7542": {
+            "elapsed_time": (95.9, None, 0.1, "seconds")
+        },
         "*": {
             "elapsed_time": (170.0, None, 0.25, "seconds")
         }
