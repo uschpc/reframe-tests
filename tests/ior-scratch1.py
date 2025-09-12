@@ -19,7 +19,7 @@ class IOR_scratch1(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7513",
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
@@ -32,17 +32,15 @@ class IOR_scratch1(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 1
     time_limit = "5m"
     reference = {
+        "discovery:epyc-7513": {
+            "max_write_speed": (3000.0, -0.25, None, "MiB/sec"),
+            "max_read_speed": (15000.0, -0.25, None, "MiB/sec")
+        },
         "*": {
             "max_write_speed": (3000.00, -0.25, None, "MiB/sec"),
             "max_read_speed": (15000.00, -0.25, None, "MiB/sec")
         }
     }
-
-    @run_before("run")
-    def set_job_options(self):
-        self.job.options += [
-            "--constraint=epyc-7513"
-        ]
 
     @sanity_function
     def assert_sanity(self):
