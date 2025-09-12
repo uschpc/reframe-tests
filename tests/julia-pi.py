@@ -14,7 +14,7 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7542",
         "endeavour:allnodes",
         "pathfinder:allnodes",
         "laguna:allnodes"
@@ -28,6 +28,9 @@ class Julia_Pi(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 8
     time_limit = "1m"
     reference = {
+        "discovery:epyc-7542": {
+            "elapsed_time": (2.9, None, 0.1, "seconds")
+        },
         "*": {
             "elapsed_time": (7.0, None, 0.10, "seconds")
         }
