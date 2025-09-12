@@ -18,7 +18,7 @@ class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7513",
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
@@ -38,16 +38,13 @@ class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
         "bash make-npb-mz-mpi-omp.sh lu-mz D"
     ]
     reference = {
+        "discovery:epyc-7513": {
+            "Mop/s_total": (600000, -0.1, None, "Mop/s")
+        },
         "*": {
             "Mop/s_total": (600000, -0.1, None, "Mop/s")
         }
     }
-
-    @run_before("run")
-    def set_job_options(self):
-        self.job.options += [
-            "--constraint=epyc-7513"
-        ]
 
     @sanity_function
     def assert_sanity(self):
