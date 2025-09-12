@@ -9,7 +9,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class HPCG_Discovery_Epyc(rfm.RunOnlyRegressionTest):
+class hpcg_discovery_epyc(rfm.RunOnlyRegressionTest):
     descr = "HPCG benchmark for Discovery epyc-64 partition"
     tags = {
         "multinode",

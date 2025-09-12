@@ -12,7 +12,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_OMP_MG(rfm.RunOnlyRegressionTest):
+class npb_omp_mg(rfm.RunOnlyRegressionTest):
     descr = "NPB OpenMP MG benchmark"
     tags = {
         "maintenance",

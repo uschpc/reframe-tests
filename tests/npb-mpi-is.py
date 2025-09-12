@@ -9,7 +9,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_MPI_IS(rfm.RunOnlyRegressionTest):
+class npb_mpi_is(rfm.RunOnlyRegressionTest):
     descr = "NPB MPI IS benchmark"
     tags = {
         "maintenance",

@@ -6,7 +6,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Salloc_Hello(rfm.RunOnlyRegressionTest):
+class salloc_hello(rfm.RunOnlyRegressionTest):
     descr = "Run salloc and exit"
     tags = {
         "local",

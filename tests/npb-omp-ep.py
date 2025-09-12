@@ -11,7 +11,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_OMP_EP(rfm.RunOnlyRegressionTest):
+class npb_omp_ep(rfm.RunOnlyRegressionTest):
     descr = "NPB OpenMP EP benchmark"
     tags = {
         "maintenance",

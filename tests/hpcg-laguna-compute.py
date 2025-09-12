@@ -9,7 +9,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class HPCG_Laguna_Compute(rfm.RunOnlyRegressionTest):
+class hpcg_laguna_compute(rfm.RunOnlyRegressionTest):
     descr = "HPCG benchmark for Laguna compute partition"
     tags = {
         "multinode",

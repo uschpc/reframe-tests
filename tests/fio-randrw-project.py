@@ -12,7 +12,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Fio_randrw_project(rfm.RunOnlyRegressionTest):
+class fio_randrw_project(rfm.RunOnlyRegressionTest):
     descr = "Fio random read/write benchmark for /project file system"
     tags = {
         "maintenance",

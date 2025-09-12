@@ -11,7 +11,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Apptainer_GPU_Hello(rfm.RunOnlyRegressionTest):
+class apptainer_gpu_hello(rfm.RunOnlyRegressionTest):
     descr = "Apptainer GPU access"
     tags = {
         "maintenance",

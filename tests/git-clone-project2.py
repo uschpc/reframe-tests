@@ -8,7 +8,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Git_clone_project2(rfm.RunOnlyRegressionTest):
+class git_clone_project2(rfm.RunOnlyRegressionTest):
     descr = "Git clone on /project2 file system"
     tags = {
         "maintenance",

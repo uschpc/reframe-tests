@@ -10,7 +10,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_MPI_EP_Discovery_Epyc(rfm.RunOnlyRegressionTest):
+class npb_mpi_ep_discovery_epyc(rfm.RunOnlyRegressionTest):
     descr = "NPB MPI EP benchmark for Discovery epyc-64 partition"
     tags = {
         "multinode",

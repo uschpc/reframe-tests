@@ -12,7 +12,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class OMB_BW_HDR100(rfm.RunOnlyRegressionTest):
+class omb_bw_hdr100(rfm.RunOnlyRegressionTest):
     descr = "OMB bandwidth benchmark using IB HDR100"
     tags = {
         "multinode",

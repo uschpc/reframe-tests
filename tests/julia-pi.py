@@ -7,7 +7,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Julia_Pi(rfm.RunOnlyRegressionTest):
+class julia_pi(rfm.RunOnlyRegressionTest):
     descr = "Estimating pi in parallel using Julia with multiple threads"
     tags = {
         "maintenance",

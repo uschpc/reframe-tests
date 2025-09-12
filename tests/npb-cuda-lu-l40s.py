@@ -12,7 +12,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_CUDA_LU_L40S(rfm.RunOnlyRegressionTest):
+class npb_cuda_lu_l40s(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark for NVIDIA L40S"
     tags = {
         "maintenance",

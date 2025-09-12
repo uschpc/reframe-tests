@@ -7,7 +7,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class R_Bootstrap(rfm.RunOnlyRegressionTest):
+class r_bootstrap(rfm.RunOnlyRegressionTest):
     descr = "Bootstrapping a GLM in parallel using R with mclapply"
     tags = {
         "maintenance",

@@ -10,7 +10,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Apptainer_Hello(rfm.RunOnlyRegressionTest):
+class apptainer_hello(rfm.RunOnlyRegressionTest):
     descr = "Apptainer hello world"
     tags = {
         "maintenance",

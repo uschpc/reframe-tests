@@ -7,7 +7,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Python_Pi(rfm.RunOnlyRegressionTest):
+class python_pi(rfm.RunOnlyRegressionTest):
     descr = "Estimating pi in parallel using Python with multiprocessing"
     tags = {
         "maintenance",

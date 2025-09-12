@@ -10,7 +10,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class STREAM_EPYC_7542(rfm.RunOnlyRegressionTest):
+class stream_epyc_7542(rfm.RunOnlyRegressionTest):
     descr = "STREAM benchmark for EPYC 7542 nodes"
     tags = {
         "performance",

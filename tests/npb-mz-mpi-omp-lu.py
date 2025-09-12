@@ -10,7 +10,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class NPB_MZ_MPI_OMP_LU(rfm.RunOnlyRegressionTest):
+class npb_mz_mpi_omp_lu(rfm.RunOnlyRegressionTest):
     descr = "NPB MZ MPI/OMP LU benchmark"
     tags = {
         "maintenance",

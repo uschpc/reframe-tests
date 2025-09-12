@@ -8,7 +8,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class Matlab_Pi(rfm.RunOnlyRegressionTest):
+class matlab_pi(rfm.RunOnlyRegressionTest):
     descr = "Estimate pi in parallel using MATLAB with parpool"
     tags = {
         "maintenance",

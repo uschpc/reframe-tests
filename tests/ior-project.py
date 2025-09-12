@@ -12,7 +12,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class IOR_project(rfm.RunOnlyRegressionTest):
+class ior_project(rfm.RunOnlyRegressionTest):
     descr = "IOR benchmark for /project file system"
     tags = {
         "multinode",
