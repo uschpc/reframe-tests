@@ -20,7 +20,7 @@ class NPB_MPI_MG(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-7513",
         "endeavour:allnodes",
         "pathfinder:allnodes",
         "laguna:allnodes"
@@ -39,6 +39,9 @@ class NPB_MPI_MG(rfm.RunOnlyRegressionTest):
         "bash make-npb-mpi.sh mg D"
     ]
     reference = {
+        "discovery:epyc-7513": {
+            "Mop/s_total": (50000, -0.1, None, "Mop/s")
+        },
         "*": {
             "Mop/s_total": (40000, -0.1, None, "Mop/s")
         }
