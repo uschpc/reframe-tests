@@ -66,7 +66,7 @@ reframe -c tests/julia-pi.py -r
 To run a set of tests based on test names, use the `-n` option with grep-like syntax. For example:
 
 ```
-reframe -c tests -n "Julia|Python" -r
+reframe -c tests -n "julia|python" -r
 ```
 
 Test names are defined in the test files as the class name.
