@@ -20,7 +20,15 @@ class NPB_OMP_MG(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
+        "discovery:epyc-9534",
+        "discovery:epyc-9354",
+        "discovery:epyc-7513",
+        "discovery:epyc-7313",
+        "discovery:epyc-7542",
+        "discovery:epyc-7282",
+        "discovery:xeon-6130",
+        "discovery:xeon-4116",
+        "discovery:xeon-2640v4",
         "endeavour:allnodes",
         "pathfinder:allnodes",
         "laguna:allnodes"
@@ -38,6 +46,33 @@ class NPB_OMP_MG(rfm.RunOnlyRegressionTest):
         "bash make-npb-omp.sh mg D"
     ]
     reference = {
+        "discovery:epyc-9534": {
+            "Mop/s_total": (83238, -0.1, None, "Mop/s")
+        },
+        "discovery:epyc-9354": {
+            "Mop/s_total": (83238, -0.1, None, "Mop/s")
+        },
+        "discovery:epyc-7513": {
+            "Mop/s_total": (83238, -0.1, None, "Mop/s")
+        },
+        "discovery:epyc-7313": {
+            "Mop/s_total": (27000, -0.1, None, "Mop/s")
+        },
+        "discovery:epyc-7542": {
+            "Mop/s_total": (70619, -0.1, None, "Mop/s")
+        },
+        "discovery:epyc-7282": {
+            "Mop/s_total": (27000, -0.1, None, "Mop/s")
+        },
+        "discovery:xeon-6130": {
+            "Mop/s_total": (26000, -0.1, None, "Mop/s")
+        },
+        "discovery:xeon-4116": {
+            "Mop/s_total": (30835, -0.1, None, "Mop/s")
+        },
+        "discovery:xeon-2640v4": {
+            "Mop/s_total": (23916, -0.1, None, "Mop/s")
+        },
         "*": {
             "Mop/s_total": (26000, -0.1, None, "Mop/s")
         }
