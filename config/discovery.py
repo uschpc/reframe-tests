@@ -40,6 +40,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -68,6 +69,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -96,6 +98,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -123,6 +126,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -151,6 +155,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -179,6 +184,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -206,6 +212,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -234,6 +241,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -262,6 +270,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -289,6 +298,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -316,6 +326,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -341,6 +352,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -367,6 +379,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -392,6 +405,7 @@ site_configuration = {
                     ],
                     "max_jobs": 100,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -416,6 +430,7 @@ site_configuration = {
                     ],
                     "max_jobs": 100,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -441,6 +456,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
