@@ -20,7 +20,7 @@ class ior_project(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:allnodes",
+        "endeavour:epyc-9554",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
@@ -37,9 +37,9 @@ class ior_project(rfm.RunOnlyRegressionTest):
             "max_write_speed": (8000.0, -0.25, None, "MiB/sec"),
             "max_read_speed": (18000.0, -0.25, None, "MiB/sec")
         },
-        "*": {
-            "max_write_speed": (8000.00, -0.25, None, "MiB/sec"),
-            "max_read_speed": (18000.00, -0.25, None, "MiB/sec")
+        "endeavour:epyc-9554": {
+            "max_write_speed": (8000.0, -0.25, None, "MiB/sec"),
+            "max_read_speed": (18000.0, -0.25, None, "MiB/sec")
         },
         "laguna:compute": {
             "max_write_speed": (7000.00, -0.25, None, "MiB/sec"),
