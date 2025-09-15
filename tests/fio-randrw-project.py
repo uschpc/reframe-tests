@@ -21,7 +21,7 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:allnodes",
+        "endeavour:epyc-9554",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
@@ -37,9 +37,9 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (75.0, -0.25, None, "MiB/sec"),
             "avg_read_speed": (75.0, -0.25, None, "MiB/sec")
         },
-        "endeavour:allnodes": {
-            "avg_write_speed": (75.00, -0.25, None, "MiB/sec"),
-            "avg_read_speed": (75.00, -0.25, None, "MiB/sec")
+        "endeavour:epyc-9554": {
+            "avg_write_speed": (80.0, -0.25, None, "MiB/sec"),
+            "avg_read_speed": (80.0, -0.25, None, "MiB/sec")
         },
         "laguna:compute": {
             "avg_write_speed": (260.00, -0.25, None, "MiB/sec"),
