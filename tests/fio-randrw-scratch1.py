@@ -21,7 +21,7 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:allnodes"
+        "endeavour:epyc-9554"
     ]
     valid_prog_environs = [
         "env-fio"
@@ -36,9 +36,9 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (30.0, -0.1, None, "MiB/sec"),
             "avg_read_speed": (30.0, -0.1, None, "MiB/sec")
         },
-        "*": {
-            "avg_write_speed": (30.00, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (30.00, -0.1, None, "MiB/sec")
+        "endeavour:epyc-9554": {
+            "avg_write_speed": (30.0, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (30.0, -0.1, None, "MiB/sec")
         }
     }
 
