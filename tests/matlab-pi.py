@@ -16,7 +16,7 @@ class matlab_pi(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7542",
-        "endeavour:allnodes"
+        "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
         "env-matlab"
@@ -30,8 +30,8 @@ class matlab_pi(rfm.RunOnlyRegressionTest):
         "discovery:epyc-7542": {
             "elapsed_time": (65.2, None, 0.1, "seconds")
         },
-        "*": {
-            "elapsed_time": (95.0, None, 0.10, "seconds")
+        "endeavour:epyc-7513": {
+            "elapsed_time": (52.4, None, 0.1, "seconds")
         }
     }
 
