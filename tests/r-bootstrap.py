@@ -16,7 +16,7 @@ class r_bootstrap(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7542",
-        "endeavour:allnodes",
+        "endeavour:epyc-7513",
         "pathfinder:allnodes",
         "laguna:allnodes"
     ]
@@ -31,6 +31,9 @@ class r_bootstrap(rfm.RunOnlyRegressionTest):
     reference = {
         "discovery:epyc-7542": {
             "elapsed_time": (95.9, None, 0.1, "seconds")
+        },
+        "endeavour:epyc-7513": {
+            "elapsed_time": (79.9, None, 0.1, "seconds")
         },
         "*": {
             "elapsed_time": (170.0, None, 0.25, "seconds")
