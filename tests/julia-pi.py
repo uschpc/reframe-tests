@@ -15,7 +15,7 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7542",
-        "endeavour:allnodes",
+        "endeavour:epyc-7513",
         "pathfinder:allnodes",
         "laguna:allnodes"
     ]
@@ -30,6 +30,9 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     reference = {
         "discovery:epyc-7542": {
             "elapsed_time": (2.9, None, 0.1, "seconds")
+        },
+        "endeavour:epyc-7513": {
+            "elapsed_time": (2.1, None, 0.1, "seconds")
         },
         "*": {
             "elapsed_time": (7.0, None, 0.10, "seconds")
