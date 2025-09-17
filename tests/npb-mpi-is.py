@@ -18,7 +18,7 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:allnodes",
+        "endeavour:epyc-9554",
         "pathfinder:allnodes",
         "laguna:allnodes"
     ]
@@ -38,6 +38,9 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
     reference = {
         "discovery:epyc-7513": {
             "Mop/s_total": (1500, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-9554": {
+            "Mop/s_total": (3650, -0.1, None, "Mop/s")
         },
         "*": {
             "Mop/s_total": (1300, -0.1, None, "Mop/s")
