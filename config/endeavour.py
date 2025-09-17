@@ -545,7 +545,7 @@ site_configuration = {
                         "env-ior",
                         "env-omb"
                     ]
-                },
+                }
             ]
         }
     ],
