@@ -28,7 +28,23 @@ class npb_omp_ep(rfm.RunOnlyRegressionTest):
         "discovery:xeon-6130",
         "discovery:xeon-4116",
         "discovery:xeon-2640v4",
-        "endeavour:allnodes",
+        "endeavour:epyc-9554",
+        "endeavour:epyc-9354",
+        "endeavour:epyc-9124",
+        "endeavour:epyc-7643",
+        "endeavour:epyc-7513",
+        "endeavour:epyc-7313",
+        "endeavour:epyc-7502p",
+        "endeavour:epyc-7502",
+        "endeavour:xeon-8358",
+        "endeavour:xeon-6348",
+        "endeavour:xeon-6338",
+        "endeavour:xeon-6226r",
+        "endeavour:xeon-6148",
+        "endeavour:xeon-6130",
+        "endeavour:xeon-5118",
+        "endeavour:xeon-4116",
+        "endeavour:xeon-2640v4",
         "pathfinder:allnodes",
         "laguna:allnodes"
     ]
@@ -70,6 +86,57 @@ class npb_omp_ep(rfm.RunOnlyRegressionTest):
             "Mop/s_total": (1174, -0.1, None, "Mop/s")
         },
         "discovery:xeon-2640v4": {
+            "Mop/s_total": (1092, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-9554": {
+            "Mop/s_total": (9926, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-9354": {
+            "Mop/s_total": (5073, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-9124": {
+            "Mop/s_total": (2487, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-7643": {
+            "Mop/s_total": (4035, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-7513": {
+            "Mop/s_total": (4035, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-7313": {
+            "Mop/s_total": (2049, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-7502p": {
+            "Mop/s_total": (1552, -0.1, None, "Mop/s")
+        },
+        "endeavour:epyc-7502": {
+            "Mop/s_total": (1552, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-8358": {
+            "Mop/s_total": (6000, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-6348": {
+            "Mop/s_total": (5223, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-6338": {
+            "Mop/s_total": (2255, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-6226r": {
+            "Mop/s_total": (2255, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-6148": {
+            "Mop/s_total": (2350, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-6130": {
+            "Mop/s_total": (1503, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-5118": {
+            "Mop/s_total": (1400, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-4116": {
+            "Mop/s_total": (1161, -0.1, None, "Mop/s")
+        },
+        "endeavour:xeon-2640v4": {
             "Mop/s_total": (1092, -0.1, None, "Mop/s")
         },
         "*": {
