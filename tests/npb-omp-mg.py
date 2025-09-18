@@ -46,7 +46,7 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         "endeavour:xeon-5118",
         "endeavour:xeon-4116",
         "endeavour:xeon-2640v4",
-        "pathfinder:allnodes",
+        "pathfinder:xeon-2640v3",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
@@ -139,6 +139,9 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         },
         "endeavour:xeon-2640v4": {
             "Mop/s_total": (27874, -0.1, None, "Mop/s")
+        },
+        "pathfinder:xeon-2640v3": {
+            "Mop/s_total": (21410, -0.1, None, "Mop/s")
         },
         "*": {
             "Mop/s_total": (26000, -0.1, None, "Mop/s")
