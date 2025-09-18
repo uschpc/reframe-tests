@@ -20,7 +20,7 @@ class fio_randrw_home(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "pathfinder:allnodes"
+        "pathfinder:xeon-2640v3"
     ]
     valid_prog_environs = [
         "env-fio"
@@ -31,17 +31,11 @@ class fio_randrw_home(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 4
     time_limit = "5m"
     reference = {
-        "*": {
-            "avg_write_speed": (75.00, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (75.00, -0.1, None, "MiB/sec")
+        "pathfinder:xeon-2640v3": {
+            "avg_write_speed": (73.5, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (73.5, -0.1, None, "MiB/sec")
         }
     }
-
-    @run_before("run")
-    def set_job_options(self):
-        self.job.options += [
-            "--constraint=epyc-7513"
-        ]
 
     @sanity_function
     def assert_sanity(self):
