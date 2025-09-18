@@ -17,7 +17,7 @@ class python_pi(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:epyc-7542",
         "endeavour:epyc-7513",
-        "pathfinder:allnodes",
+        "pathfinder:xeon-2640v3",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
@@ -34,6 +34,9 @@ class python_pi(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-7513": {
             "elapsed_time": (70.2, None, 0.1, "seconds")
+        },
+        "pathfinder:xeon-2640v3": {
+            "elapsed_time": (127.2, None, 0.1, "seconds")
         },
         "*": {
             "elapsed_time": (130.0, None, 0.10, "seconds")
