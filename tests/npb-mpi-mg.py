@@ -22,7 +22,7 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:epyc-7513",
         "endeavour:epyc-9554",
-        "pathfinder:allnodes",
+        "pathfinder:xeon-2640v3",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
@@ -44,6 +44,9 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-9554": {
             "Mop/s_total": (76765, -0.1, None, "Mop/s")
+        },
+        "pathfinder:xeon-2640v3": {
+            "Mop/s_total": (37500, -0.1, None, "Mop/s")
         },
         "*": {
             "Mop/s_total": (40000, -0.1, None, "Mop/s")
