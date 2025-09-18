@@ -21,8 +21,7 @@ class npb_cuda_lu_a40(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:allnodes",
-        "endeavour:allnodes",
-        "pathfinder:allnodes"
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-cuda-12.6.3"
