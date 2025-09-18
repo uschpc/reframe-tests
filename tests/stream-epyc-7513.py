@@ -18,8 +18,7 @@ class stream_epyc_7513(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:allnodes",
-        "endeavour:allnodes",
-        "pathfinder:allnodes"
+        "endeavour:allnodes"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"
