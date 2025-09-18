@@ -40,6 +40,60 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-cuda-12.6.3",
+                        "env-hpcg",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-git",
+                        "env-fio",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-9554",
+                    "descr": "Laguna epyc-9554 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-9554"
+                    ],
+                    "max_jobs": 1000,
+                    "environs": [
+                        "env-none",
+                        "env-apptainer",
+                        "env-gcc-13.3.0",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-hpcg",
+                        "env-julia",
+                        "env-python",
+                        "env-r",
+                        "env-git",
+                        "env-fio",
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "epyc-9354",
+                    "descr": "Laguna epyc-9354 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=epyc-9354"
+                    ],
+                    "max_jobs": 1000,
+                    "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -65,6 +119,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
+                        "env-none",
                         "env-apptainer",
                         "env-gcc-13.3.0",
                         "env-gcc-13.3.0-openmpi-5.0.5",
