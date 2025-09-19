@@ -6,10 +6,10 @@ if [[ "$1" == "home" ]]; then
     dir="/home/hpcroot/reframe/tmp"
 elif [[ "$1" == "home1" ]]; then
     dir="/home1/$USER"
-elif [[ "$1" == "scratch1" ]]; then
-    dir="/scratch1/$USER"
 elif [[ "$1" == "scratch" ]]; then
     dir="/scratch/$USER"
+elif [[ "$1" == "scratch1" ]]; then
+    dir="/scratch1/$USER"
 elif [[ "$1" == "project" ]]; then
     if [[ "$SLURM_SUBMIT_HOST" == "discovery"* ]] || [[ "$SLURM_SUBMIT_HOST" == "endeavour"* ]]; then
         dir="/project/wjendrze_120/reframe/tmp"
