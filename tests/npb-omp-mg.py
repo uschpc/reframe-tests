@@ -47,7 +47,8 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         "endeavour:xeon-4116",
         "endeavour:xeon-2640v4",
         "pathfinder:xeon-2640v3",
-        "laguna:allnodes"
+        "laguna:epyc-9554",
+        "laguna:epyc-9354"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0"
@@ -143,8 +144,11 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         "pathfinder:xeon-2640v3": {
             "Mop/s_total": (21410, -0.1, None, "Mop/s")
         },
-        "*": {
-            "Mop/s_total": (26000, -0.1, None, "Mop/s")
+        "laguna:epyc-9554": {
+            "Mop/s_total": (179870, -0.1, None, "Mop/s")
+        },
+        "laguna:epyc-9354": {
+            "Mop/s_total": (193734, -0.1, None, "Mop/s")
         }
     }
 
