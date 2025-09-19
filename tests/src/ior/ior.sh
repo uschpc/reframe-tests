@@ -2,7 +2,9 @@
 
 set -e
 
-if [[ "$1" == "scratch1" ]]; then
+if [[ "$1" == "scratch" ]]; then
+    dir="/scratch/$USER"
+elif [[ "$1" == "scratch1" ]]; then
     dir="/scratch1/$USER"
 elif [[ "$1" == "project" ]]; then
     if [[ "$SLURM_SUBMIT_HOST" == "discovery"* ]] || [[ "$SLURM_SUBMIT_HOST" == "endeavour"* ]]; then
@@ -20,4 +22,6 @@ else
     exit 1
 fi
 
-ior -vvv -t 4m -b 64m -s 16 -F -C -e -o "$dir/reframe-ior-$SLURM_JOB_ID.tmp"
+cd "$dir"
+
+ior -vvv -t 4m -b 64m -s 16 -F -C -e -o "reframe-ior-$SLURM_JOB_ID.tmp"

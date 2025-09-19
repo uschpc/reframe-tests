@@ -52,6 +52,7 @@ site_configuration = {
                         "env-r",
                         "env-git",
                         "env-fio",
+                        "env-ior",
                         "env-omb"
                     ]
                 },
@@ -78,6 +79,7 @@ site_configuration = {
                         "env-r",
                         "env-git",
                         "env-fio",
+                        "env-ior",
                         "env-omb"
                     ]
                 },
@@ -105,6 +107,7 @@ site_configuration = {
                         "env-r",
                         "env-git",
                         "env-fio",
+                        "env-ior",
                         "env-omb"
                     ]
                 },
@@ -156,6 +159,7 @@ site_configuration = {
                         "env-r",
                         "env-git",
                         "env-fio",
+                        "env-ior",
                         "env-omb"
                     ]
                 }
