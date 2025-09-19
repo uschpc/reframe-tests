@@ -20,7 +20,7 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
         "discovery:epyc-7513",
         "endeavour:epyc-9554",
         "pathfinder:xeon-2640v3",
-        "laguna:allnodes"
+        "laguna:epyc-9554"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -45,8 +45,8 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
         "pathfinder:xeon-2640v3": {
             "Mop/s_total": (930, -0.1, None, "Mop/s")
         },
-        "*": {
-            "Mop/s_total": (1300, -0.1, None, "Mop/s")
+        "laguna:epyc-9554": {
+            "Mop/s_total": (3650, -0.1, None, "Mop/s")
         }
     }
 
