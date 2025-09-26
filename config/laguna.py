@@ -112,6 +112,21 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "ndr200",
+                    "descr": "Laguna ndr200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=ndr200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
                     "name": "compute",
                     "descr": "Laguna compute partition",
                     "scheduler": "slurm",

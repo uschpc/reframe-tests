@@ -545,6 +545,66 @@ site_configuration = {
                         "env-ior",
                         "env-omb"
                     ]
+                },
+                {
+                    "name": "ndr200",
+                    "descr": "Endeavour ndr200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=ndr200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "hdr200",
+                    "descr": "Endeavour hdr200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=hdr200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "hdr100",
+                    "descr": "Endeavour hdr100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=hdr100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "fdr56",
+                    "descr": "Endeavour fdr56 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=fdr56"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
                 }
             ]
         }

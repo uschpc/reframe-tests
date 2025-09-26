@@ -316,6 +316,66 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "ndr200",
+                    "descr": "Discovery ndr200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=ndr200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "hdr200",
+                    "descr": "Discovery hdr200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=hdr200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "hdr100",
+                    "descr": "Discovery hdr100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=hdr100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
+                    "name": "fdr56",
+                    "descr": "Discovery fdr56 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=fdr56"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-omb"
+                    ]
+                },
+                {
                     "name": "main",
                     "descr": "Discovery main partition",
                     "scheduler": "slurm",
