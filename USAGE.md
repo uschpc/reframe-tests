@@ -33,6 +33,8 @@ The configuration files are stored in `config`:
 - pathfinder.py > for the Pathfinder cluster
 - laguna.py > for the Laguna cluster
 
+The system partitions defined in the cluster configuration files are flexible and do not have to be limited to actual Slurm partitions. For example, an epyc-7513 system partition is defined as nodes with epyc-7513 CPUs. Note that this requires adding an allnodes partition and node features (i.e., epyc-7513) to the Slurm configuration. Defining partitions by node type makes it easier to check test performance by node type and distribute tests to all nodes of a certain type.
+
 The test files are stored in `tests`, and some test dependency resources are stored in `tests/src`. Other test dependency resources not suitable for a Git repo, like data files or container images, are stored in `/apps/reframe/resources`.
 
 Utility scripts for installing and using ReFrame are stored in `scripts`.
@@ -92,7 +94,7 @@ reframe -c tests -t maintenance -r
 To run tests for a specific partition, use the `--system` option and specify the system and partition as defined in the configuration files. For example:
 
 ```
-reframe -c tests --system=discovery:gpu -r
+reframe -c tests --system=discovery:epyc-7513 -r
 ```
 
 ### Tests for every node in specific partition
@@ -100,7 +102,7 @@ reframe -c tests --system=discovery:gpu -r
 To run tests for every node in a specific partition, use the `--system` option combined with the `--distribute` option. For example:
 
 ```
-reframe -c tests/julia-pi.py --system=discovery:debug --distribute=all -r
+reframe -c tests/julia-pi.py --system=discovery:epyc-7513 --distribute=all -r
 ```
 
 Note that currently the `--distribute` option is only designed for single-node tests; multi-node tests can work too but will be repeated on some nodes.
@@ -134,7 +136,7 @@ Tests can be run with constraints by adding certain job options with the `-J` op
 One use case is to constrain by CPU model:
 
 ```
-reframe -c tests/julia-pi.py -J constraint=epyc-7513 -r
+reframe -c tests/apptainer-hello.py -J constraint=epyc-7513 -r
 ```
 
 The constraint option will then be added to the ReFrame Slurm job scripts.
@@ -175,9 +177,6 @@ reframe -c tests/npb-cuda-lu-v100.py -J reservation="$res" -J constraint=v100 --
 reframe -c tests/npb-cuda-lu-p100.py -J reservation="$res" -J constraint=p100 --distribute=all --repeat=2 -r
 reframe -c tests/npb-cuda-lu-rtx5000.py -J reservation="$res" -J constraint=rtx5000 --distribute=all --repeat=4 -r
 
-# Test InfiniBand performance using OMB bandwidth tests
-reframe -c tests/omb-bw-ndr200.py -J reservation="$res" -J constraint=ndr200 --distribute=all --exec-policy=serial -r
-reframe -c tests/omb-bw-hdr200.py -J reservation="$res" -J constraint=hdr200 --distribute=all --exec-policy=serial -r
-reframe -c tests/omb-bw-hdr100.py -J reservation="$res" -J constraint=hdr100 --distribute=all --exec-policy=serial -r
-reframe -c tests/omb-bw-fdr56.py -J reservation="$res" -J constraint=fdr56 --distribute=all --exec-policy=serial -r
+# Test InfiniBand performance using OMB bandwidth test
+reframe -c tests/omb-bw.py -J reservation="$res" --distribute=all --exec-policy=serial -r
 ```
