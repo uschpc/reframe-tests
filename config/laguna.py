@@ -128,7 +128,7 @@ site_configuration = {
                 },
                 {
                     "name": "ndr200",
-                    "descr": "Laguna ndr200 nodes",
+                    "descr": "Laguna NDR200 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -136,7 +136,7 @@ site_configuration = {
                         "--partition=allnodes",
                         "--constraint=ndr200"
                     ],
-                    "max_jobs": 5000,
+                    "max_jobs": 1000,
                     "environs": [
                         "env-omb"
                     ]
