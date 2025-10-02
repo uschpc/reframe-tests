@@ -392,7 +392,7 @@ site_configuration = {
                 },
                 {
                     "name": "ndr200",
-                    "descr": "Discovery ndr200 nodes",
+                    "descr": "Discovery NDR200 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -407,7 +407,7 @@ site_configuration = {
                 },
                 {
                     "name": "hdr200",
-                    "descr": "Discovery hdr200 nodes",
+                    "descr": "Discovery HDR200 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -422,13 +422,13 @@ site_configuration = {
                 },
                 {
                     "name": "hdr100",
-                    "descr": "Discovery hdr100 nodes",
+                    "descr": "Discovery HDR100 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
                         "--account=hpcroot",
                         "--partition=allnodes",
-                        "--constraint=hdr100"
+                        "--constraint=HDR100"
                     ],
                     "max_jobs": 5000,
                     "environs": [
@@ -437,7 +437,7 @@ site_configuration = {
                 },
                 {
                     "name": "fdr56",
-                    "descr": "Discovery fdr56 nodes",
+                    "descr": "Discovery FDR56 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
