@@ -33,12 +33,12 @@ class ior_scratch1(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7513": {
-            "max_write_speed": (3000.0, -0.25, None, "MiB/sec"),
-            "max_read_speed": (15000.0, -0.25, None, "MiB/sec")
+            "max_write_speed": (3000, -0.25, None, "MiB/sec"),
+            "max_read_speed": (15000, -0.25, None, "MiB/sec")
         },
         "endeavour:epyc-9554": {
-            "max_write_speed": (3000.0, -0.25, None, "MiB/sec"),
-            "max_read_speed": (15000.0, -0.25, None, "MiB/sec")
+            "max_write_speed": (3000, -0.25, None, "MiB/sec"),
+            "max_read_speed": (15000, -0.25, None, "MiB/sec")
         }
     }
 

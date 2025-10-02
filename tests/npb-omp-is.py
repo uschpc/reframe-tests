@@ -61,91 +61,91 @@ class npb_omp_is(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-9534": {
-            "Mop/s_total": (6653, -0.1, None, "Mop/s")
+            "Mop/s_total": (6653, -0.1, 0.1, "Mop/s")
         },
         "discovery:epyc-9354": {
-            "Mop/s_total": (6653, -0.1, None, "Mop/s")
+            "Mop/s_total": (6653, -0.1, 0.1, "Mop/s")
         },
         "discovery:epyc-7513": {
-            "Mop/s_total": (6653, -0.1, None, "Mop/s")
+            "Mop/s_total": (6653, -0.1, 0.1, "Mop/s")
         },
         "discovery:epyc-7313": {
-            "Mop/s_total": (2300, -0.1, None, "Mop/s")
+            "Mop/s_total": (2300, -0.1, 0.1, "Mop/s")
         },
         "discovery:epyc-7542": {
-            "Mop/s_total": (6994, -0.1, None, "Mop/s")
+            "Mop/s_total": (6994, -0.1, 0.1, "Mop/s")
         },
         "discovery:epyc-7282": {
-            "Mop/s_total": (2300, -0.1, None, "Mop/s")
+            "Mop/s_total": (2300, -0.1, 0.1, "Mop/s")
         },
         "discovery:xeon-6130": {
-            "Mop/s_total": (2200, -0.1, None, "Mop/s")
+            "Mop/s_total": (2200, -0.1, 0.1, "Mop/s")
         },
         "discovery:xeon-4116": {
-            "Mop/s_total": (2158, -0.1, None, "Mop/s")
+            "Mop/s_total": (2158, -0.1, 0.1, "Mop/s")
         },
         "discovery:xeon-2640v4": {
-            "Mop/s_total": (1289, -0.1, None, "Mop/s")
+            "Mop/s_total": (1289, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-9554": {
-            "Mop/s_total": (12453, -0.1, None, "Mop/s")
+            "Mop/s_total": (12453, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-9354": {
-            "Mop/s_total": (9258, -0.1, None, "Mop/s")
+            "Mop/s_total": (9258, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-9124": {
-            "Mop/s_total": (10378, -0.1, None, "Mop/s")
+            "Mop/s_total": (10378, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7643": {
-            "Mop/s_total": (6000, -0.1, None, "Mop/s")
+            "Mop/s_total": (6000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7513": {
-            "Mop/s_total": (6553, -0.1, None, "Mop/s")
+            "Mop/s_total": (6553, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7313": {
-            "Mop/s_total": (5393, -0.1, None, "Mop/s")
+            "Mop/s_total": (5393, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7502p": {
-            "Mop/s_total": (4369, -0.1, None, "Mop/s")
+            "Mop/s_total": (4369, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7502": {
-            "Mop/s_total": (4369, -0.1, None, "Mop/s")
+            "Mop/s_total": (4369, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-8358": {
-            "Mop/s_total": (7000, -0.1, None, "Mop/s")
+            "Mop/s_total": (7000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-6348": {
-            "Mop/s_total": (6267, -0.1, None, "Mop/s")
+            "Mop/s_total": (6267, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-6338": {
-            "Mop/s_total": (5000, -0.1, None, "Mop/s")
+            "Mop/s_total": (5000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-6226r": {
-            "Mop/s_total": (3587, -0.1, None, "Mop/s")
+            "Mop/s_total": (3587, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-6148": {
-            "Mop/s_total": (3285, -0.1, None, "Mop/s")
+            "Mop/s_total": (3285, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-6130": {
-            "Mop/s_total": (3243, -0.1, None, "Mop/s")
+            "Mop/s_total": (3243, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-5118": {
-            "Mop/s_total": (2807, -0.1, None, "Mop/s")
+            "Mop/s_total": (2807, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-4116": {
-            "Mop/s_total": (2259, -0.1, None, "Mop/s")
+            "Mop/s_total": (2259, -0.1, 0.1, "Mop/s")
         },
         "endeavour:xeon-2640v4": {
-            "Mop/s_total": (1295, -0.1, None, "Mop/s")
+            "Mop/s_total": (1295, -0.1, 0.1, "Mop/s")
         },
         "pathfinder:xeon-2640v3": {
-            "Mop/s_total": (883, -0.1, None, "Mop/s")
+            "Mop/s_total": (883, -0.1, 0.1, "Mop/s")
         },
         "laguna:epyc-9554": {
-            "Mop/s_total": (10016, -0.1, None, "Mop/s")
+            "Mop/s_total": (10016, -0.1, 0.1, "Mop/s")
         },
         "laguna:epyc-9354": {
-            "Mop/s_total": (13387, -0.1, None, "Mop/s")
+            "Mop/s_total": (13387, -0.1, 0.1, "Mop/s")
         }
     }
 

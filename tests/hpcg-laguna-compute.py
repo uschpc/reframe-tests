@@ -34,7 +34,7 @@ class hpcg_laguna_compute(rfm.RunOnlyRegressionTest):
     }
     reference = {
         "*": {
-            "gflops": (1000, -0.1, None, "gflops")
+            "gflops": (1000, -0.1, 0.1, "gflops")
         }
     }
 

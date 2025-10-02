@@ -29,16 +29,16 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     time_limit = "1m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (2.9, None, 0.1, "seconds")
+            "elapsed_time": (2.9, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (2.1, None, 0.1, "seconds")
+            "elapsed_time": (2.1, -0.1, 0.1, "seconds")
         },
         "pathfinder:xeon-2640v3": {
-            "elapsed_time": (3.6, None, 0.1, "seconds")
+            "elapsed_time": (3.6, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (1.3, None, 0.1, "seconds")
+            "elapsed_time": (1.3, -0.1, 0.1, "seconds")
         }
     }
 

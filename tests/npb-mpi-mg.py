@@ -40,16 +40,16 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-7513": {
-            "Mop/s_total": (50000, -0.1, None, "Mop/s")
+            "Mop/s_total": (50000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-9554": {
-            "Mop/s_total": (76765, -0.1, None, "Mop/s")
+            "Mop/s_total": (76765, -0.1, 0.1, "Mop/s")
         },
         "pathfinder:xeon-2640v3": {
-            "Mop/s_total": (37500, -0.1, None, "Mop/s")
+            "Mop/s_total": (37500, -0.1, 0.1, "Mop/s")
         },
         "laguna:epyc-9554": {
-            "Mop/s_total": (76765, -0.1, None, "Mop/s")
+            "Mop/s_total": (76765, -0.1, 0.1, "Mop/s")
         }
     }
 

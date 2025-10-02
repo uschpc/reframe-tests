@@ -39,10 +39,10 @@ class npb_mz_mpi_omp_lu(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-7513": {
-            "Mop/s_total": (600000, -0.1, None, "Mop/s")
+            "Mop/s_total": (600000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7513": {
-            "Mop/s_total": (622000, -0.1, None, "Mop/s")
+            "Mop/s_total": (622000, -0.1, 0.1, "Mop/s")
         }
     }
 

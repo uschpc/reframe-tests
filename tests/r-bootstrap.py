@@ -30,16 +30,16 @@ class r_bootstrap(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (95.9, None, 0.1, "seconds")
+            "elapsed_time": (95.9, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (79.9, None, 0.1, "seconds")
+            "elapsed_time": (79.9, -0.1, 0.1, "seconds")
         },
         "pathfinder:xeon-2640v3": {
-            "elapsed_time": (190.5, None, 0.1, "seconds")
+            "elapsed_time": (190.5, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (62.7, None, 0.1, "seconds")
+            "elapsed_time": (62.7, -0.1, 0.1, "seconds")
         }
     }
 

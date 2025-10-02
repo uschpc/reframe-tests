@@ -41,70 +41,70 @@ class stream(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-9534": {
-            "copy_best": (703000, -0.1, None, "MB/s"),
-            "scale_best": (472000, -0.1, None, "MB/s"),
-            "add_best": (527000, -0.1, None, "MB/s"),
-            "triad_best": (528000, -0.1, None, "MB/s")
+            "copy_best": (703000, -0.1, 0.1, "MB/s"),
+            "scale_best": (472000, -0.1, 0.1, "MB/s"),
+            "add_best": (527000, -0.1, 0.1, "MB/s"),
+            "triad_best": (528000, -0.1, 0.1, "MB/s")
         },
         "discovery:epyc-9354": {
-            "copy_best": (703000, -0.1, None, "MB/s"),
-            "scale_best": (472000, -0.1, None, "MB/s"),
-            "add_best": (527000, -0.1, None, "MB/s"),
-            "triad_best": (528000, -0.1, None, "MB/s")
+            "copy_best": (703000, -0.1, 0.1, "MB/s"),
+            "scale_best": (472000, -0.1, 0.1, "MB/s"),
+            "add_best": (527000, -0.1, 0.1, "MB/s"),
+            "triad_best": (528000, -0.1, 0.1, "MB/s")
         },
         "discovery:epyc-7513": {
-            "copy_best": (300000, -0.1, None, "MB/s"),
-            "scale_best": (190000, -0.1, None, "MB/s"),
-            "add_best": (210000, -0.1, None, "MB/s"),
-            "triad_best": (210000, -0.1, None, "MB/s")
+            "copy_best": (300000, -0.1, 0.1, "MB/s"),
+            "scale_best": (190000, -0.1, 0.1, "MB/s"),
+            "add_best": (210000, -0.1, 0.1, "MB/s"),
+            "triad_best": (210000, -0.1, 0.1, "MB/s")
         },
         "discovery:epyc-7313": {
-            "copy_best": (150000, -0.1, None, "MB/s"),
-            "scale_best": (100000, -0.1, None, "MB/s"),
-            "add_best": (110000, -0.1, None, "MB/s"),
-            "triad_best": (110000, -0.1, None, "MB/s")
+            "copy_best": (150000, -0.1, 0.1, "MB/s"),
+            "scale_best": (100000, -0.1, 0.1, "MB/s"),
+            "add_best": (110000, -0.1, 0.1, "MB/s"),
+            "triad_best": (110000, -0.1, 0.1, "MB/s")
         },
         "discovery:epyc-7542": {
-            "copy_best": (278000, -0.1, None, "MB/s"),
-            "scale_best": (172000, -0.1, None, "MB/s"),
-            "add_best": (190000, -0.1, None, "MB/s"),
-            "triad_best": (190000, -0.1, None, "MB/s")
+            "copy_best": (278000, -0.1, 0.1, "MB/s"),
+            "scale_best": (172000, -0.1, 0.1, "MB/s"),
+            "add_best": (190000, -0.1, 0.1, "MB/s"),
+            "triad_best": (190000, -0.1, 0.1, "MB/s")
         },
         "endeavour:epyc-9554": {
-            "copy_best": (617000, -0.1, None, "MB/s"),
-            "scale_best": (418000, -0.1, None, "MB/s"),
-            "add_best": (473000, -0.1, None, "MB/s"),
-            "triad_best": (474000, -0.1, None, "MB/s")
+            "copy_best": (617000, -0.1, 0.1, "MB/s"),
+            "scale_best": (418000, -0.1, 0.1, "MB/s"),
+            "add_best": (473000, -0.1, 0.1, "MB/s"),
+            "triad_best": (474000, -0.1, 0.1, "MB/s")
         },
         "endeavour:epyc-9354": {
-            "copy_best": (703000, -0.1, None, "MB/s"),
-            "scale_best": (472000, -0.1, None, "MB/s"),
-            "add_best": (527000, -0.1, None, "MB/s"),
-            "triad_best": (528000, -0.1, None, "MB/s")
+            "copy_best": (703000, -0.1, 0.1, "MB/s"),
+            "scale_best": (472000, -0.1, 0.1, "MB/s"),
+            "add_best": (527000, -0.1, 0.1, "MB/s"),
+            "triad_best": (528000, -0.1, 0.1, "MB/s")
         },
         "endeavour:epyc-7513": {
-            "copy_best": (300000, -0.1, None, "MB/s"),
-            "scale_best": (190000, -0.1, None, "MB/s"),
-            "add_best": (210000, -0.1, None, "MB/s"),
-            "triad_best": (210000, -0.1, None, "MB/s")
+            "copy_best": (300000, -0.1, 0.1, "MB/s"),
+            "scale_best": (190000, -0.1, 0.1, "MB/s"),
+            "add_best": (210000, -0.1, 0.1, "MB/s"),
+            "triad_best": (210000, -0.1, 0.1, "MB/s")
         },
         "discovery:epyc-7313": {
-            "copy_best": (150000, -0.1, None, "MB/s"),
-            "scale_best": (100000, -0.1, None, "MB/s"),
-            "add_best": (110000, -0.1, None, "MB/s"),
-            "triad_best": (110000, -0.1, None, "MB/s")
+            "copy_best": (150000, -0.1, 0.1, "MB/s"),
+            "scale_best": (100000, -0.1, 0.1, "MB/s"),
+            "add_best": (110000, -0.1, 0.1, "MB/s"),
+            "triad_best": (110000, -0.1, 0.1, "MB/s")
         },
         "laguna:epyc-9554": {
-            "copy_best": (617000, -0.1, None, "MB/s"),
-            "scale_best": (418000, -0.1, None, "MB/s"),
-            "add_best": (473000, -0.1, None, "MB/s"),
-            "triad_best": (474000, -0.1, None, "MB/s")
+            "copy_best": (617000, -0.1, 0.1, "MB/s"),
+            "scale_best": (418000, -0.1, 0.1, "MB/s"),
+            "add_best": (473000, -0.1, 0.1, "MB/s"),
+            "triad_best": (474000, -0.1, 0.1, "MB/s")
         },
         "laguna:epyc-9354": {
-            "copy_best": (703000, -0.1, None, "MB/s"),
-            "scale_best": (472000, -0.1, None, "MB/s"),
-            "add_best": (527000, -0.1, None, "MB/s"),
-            "triad_best": (528000, -0.1, None, "MB/s")
+            "copy_best": (703000, -0.1, 0.1, "MB/s"),
+            "scale_best": (472000, -0.1, 0.1, "MB/s"),
+            "add_best": (527000, -0.1, 0.1, "MB/s"),
+            "triad_best": (528000, -0.1, 0.1, "MB/s")
         }
     }
 

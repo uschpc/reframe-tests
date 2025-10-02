@@ -34,7 +34,7 @@ class hpcg_discovery_epyc(rfm.RunOnlyRegressionTest):
     }
     reference = {
         "*": {
-            "gflops": (2600, -0.1, None, "gflops")
+            "gflops": (2600, -0.1, 0.1, "gflops")
         }
     }
 

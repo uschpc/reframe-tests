@@ -32,8 +32,8 @@ class fio_randrw_home(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "pathfinder:xeon-2640v3": {
-            "avg_write_speed": (73.5, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (73.5, -0.1, None, "MiB/sec")
+            "avg_write_speed": (73, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (73, -0.1, None, "MiB/sec")
         }
     }
 

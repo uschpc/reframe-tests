@@ -34,7 +34,7 @@ class hpcg_laguna_gpu(rfm.RunOnlyRegressionTest):
     }
     reference = {
         "*": {
-            "gflops": (550, -0.1, None, "gflops")
+            "gflops": (550, -0.1, 0.1, "gflops")
         }
     }
 

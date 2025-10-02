@@ -49,40 +49,40 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:l40s": {
-            "Mop/s_total": (414000, -0.1, None, "Mop/s")
+            "Mop/s_total": (414000, -0.01, 0.01, "Mop/s")
         },
         "discovery:a100": {
-            "Mop/s_total": (544000, -0.1, None, "Mop/s")
+            "Mop/s_total": (544000, -0.01, 0.01, "Mop/s")
         },
         "discovery:a40": {
-            "Mop/s_total": (161000, -0.1, None, "Mop/s")
+            "Mop/s_total": (161000, -0.01, 0.01, "Mop/s")
         },
         "discovery:v100": {
-            "Mop/s_total": (179000, -0.1, None, "Mop/s")
+            "Mop/s_total": (179000, -0.01, 0.01, "Mop/s")
         },
         "discovery:p100": {
-            "Mop/s_total": (133000, -0.1, None, "Mop/s")
+            "Mop/s_total": (133000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:l40s": {
-            "Mop/s_total": (414000, -0.1, None, "Mop/s")
+            "Mop/s_total": (414000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:a100": {
-            "Mop/s_total": (544000, -0.1, None, "Mop/s")
+            "Mop/s_total": (544000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:a40": {
-            "Mop/s_total": (161000, -0.1, None, "Mop/s")
+            "Mop/s_total": (161000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:v100": {
-            "Mop/s_total": (179000, -0.1, None, "Mop/s")
+            "Mop/s_total": (179000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:p100": {
-            "Mop/s_total": (133000, -0.1, None, "Mop/s")
+            "Mop/s_total": (133000, -0.01, 0.01, "Mop/s")
         },
         "endeavour:rtx5000": {
-            "Mop/s_total": (75000, -0.1, None, "Mop/s")
+            "Mop/s_total": (75000, -0.01, 0.01, "Mop/s")
         },
         "laguna:l40s": {
-            "Mop/s_total": (414000, -0.1, None, "Mop/s")
+            "Mop/s_total": (414000, -0.01, 0.01, "Mop/s")
         }
     }
 
