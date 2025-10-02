@@ -438,7 +438,7 @@ site_configuration = {
                     "access": [
                         "--account=hpcroot",
                         "--partition=allnodes",
-                        "--constraint=HDR100"
+                        "--constraint=hdr100"
                     ],
                     "max_jobs": 5000,
                     "environs": [
