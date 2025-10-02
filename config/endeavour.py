@@ -638,7 +638,7 @@ site_configuration = {
                 },
                 {
                     "name": "ndr200",
-                    "descr": "Endeavour ndr200 nodes",
+                    "descr": "Endeavour NDR200 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -653,7 +653,7 @@ site_configuration = {
                 },
                 {
                     "name": "hdr200",
-                    "descr": "Endeavour hdr200 nodes",
+                    "descr": "Endeavour HDR200 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -668,7 +668,7 @@ site_configuration = {
                 },
                 {
                     "name": "hdr100",
-                    "descr": "Endeavour hdr100 nodes",
+                    "descr": "Endeavour HDR100 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -683,7 +683,7 @@ site_configuration = {
                 },
                 {
                     "name": "fdr56",
-                    "descr": "Endeavour fdr56 nodes",
+                    "descr": "Endeavour FDR56 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
