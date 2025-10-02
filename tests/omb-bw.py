@@ -2,10 +2,10 @@
 # Purpose of test
 # - Test OSU Micro Benchmarks module access
 # - Test running MPI program
-# - Test InfiniBand network performance
+# - Test InfiniBand network bandwidth performance
 # Notes
 # - Requires exclusive access to nodes in order to
-#   have exclusive access to network bandwidth
+#   have exclusive access to NICs
 
 import reframe as rfm
 import reframe.utility.sanity as sn
@@ -18,14 +18,14 @@ class omb_bw(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:fdr56",
-        "discovery:hdr100",
-        "discovery:hdr200",
         "discovery:ndr200",
-        "endeavour:fdr56",
-        "endeavour:hdr100",
-        "endeavour:hdr200",
+        "discovery:hdr200",
+        "discovery:hdr100",
+        "discovery:fdr56",
         "endeavour:ndr200",
+        "endeavour:hdr200",
+        "endeavour:hdr100",
+        "endeavour:fdr56",
         "laguna:ndr200"
     ]
     valid_prog_environs = [
@@ -38,32 +38,32 @@ class omb_bw(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 1
     time_limit = "5m"
     reference = {
-        "discovery:fdr56": {
-            "MB/s": (5700, -0.1, None, "MB/s")
-        },
-        "discovery:hdr100": {
-            "MB/s": (11200, -0.1, None, "MB/s")
+        "discovery:ndr200": {
+            "MB/s": (24600, -0.05, 0.05, "MB/s")
         },
         "discovery:hdr200": {
-            "MB/s": (24600, -0.1, None, "MB/s")
+            "MB/s": (24600, -0.05, 0.05, "MB/s")
         },
-        "discovery:ndr200": {
-            "MB/s": (24600, -0.1, None, "MB/s")
+        "discovery:hdr100": {
+            "MB/s": (11200, -0.05, 0.05, "MB/s")
         },
-        "endeavour:fdr56": {
-            "MB/s": (5700, -0.1, None, "MB/s")
-        },
-        "endeavour:hdr100": {
-            "MB/s": (11200, -0.1, None, "MB/s")
-        },
-        "endeavour:hdr200": {
-            "MB/s": (24600, -0.1, None, "MB/s")
+        "discovery:fdr56": {
+            "MB/s": (5700, -0.05, 0.05, "MB/s")
         },
         "endeavour:ndr200": {
-            "MB/s": (24600, -0.1, None, "MB/s")
+            "MB/s": (24600, -0.05, 0.05, "MB/s")
+        },
+        "endeavour:hdr200": {
+            "MB/s": (24600, -0.05, 0.05, "MB/s")
+        },
+        "endeavour:hdr100": {
+            "MB/s": (11200, -0.05, 0.05, "MB/s")
+        },
+        "endeavour:fdr56": {
+            "MB/s": (5700, -0.05, 0.05, "MB/s")
         },
         "laguna:ndr200": {
-            "MB/s": (24600, -0.1, None, "MB/s")
+            "MB/s": (24600, -0.05, 0.05, "MB/s")
         }
     }
 
