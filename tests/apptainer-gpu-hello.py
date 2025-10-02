@@ -18,9 +18,18 @@ class apptainer_gpu_hello(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
-        "endeavour:allnodes",
-        "laguna:allnodes"
+        "discovery:l40s",
+        "discovery:a100",
+        "discovery:a40",
+        "discovery:v100",
+        "discovery:p100",
+        "endeavour:l40s",
+        "endeavour:a100",
+        "endeavour:a40",
+        "endeavour:v100",
+        "endeavour:p100",
+        "endeavour:rtx5000",
+        "laguna:l40s"
     ]
     valid_prog_environs = [
         "env-apptainer"

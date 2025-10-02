@@ -558,6 +558,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
@@ -573,6 +575,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
@@ -588,6 +592,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
@@ -603,6 +609,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
@@ -618,6 +626,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
@@ -633,6 +643,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "env-none",
+                        "env-apptainer",
                         "env-gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
