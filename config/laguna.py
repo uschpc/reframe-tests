@@ -112,6 +112,21 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "l40s",
+                    "descr": "Laguna L40S nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=l40s"
+                    ],
+                    "max_jobs": 1000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
                     "name": "ndr200",
                     "descr": "Laguna ndr200 nodes",
                     "scheduler": "slurm",

@@ -316,6 +316,81 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "l40s",
+                    "descr": "Discovery L40S nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=l40s"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "a100",
+                    "descr": "Discovery A100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=a100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "a40",
+                    "descr": "Discovery A40 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=a40"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "v100",
+                    "descr": "Discovery V100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=v100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "p100",
+                    "descr": "Discovery P100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=p100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
                     "name": "ndr200",
                     "descr": "Discovery ndr200 nodes",
                     "scheduler": "slurm",

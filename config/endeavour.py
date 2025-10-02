@@ -547,6 +547,96 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "l40s",
+                    "descr": "Endeavour L40S nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=l40s"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "a100",
+                    "descr": "Endeavour A100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=a100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "a40",
+                    "descr": "Endeavour A40 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=a40"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "v100",
+                    "descr": "Endeavour V100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=v100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "p100",
+                    "descr": "Endeavour P100 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=p100"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
+                    "name": "rtx5000",
+                    "descr": "Endeavour RTX 5000 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=rtx5000"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
                     "name": "ndr200",
                     "descr": "Endeavour ndr200 nodes",
                     "scheduler": "slurm",
