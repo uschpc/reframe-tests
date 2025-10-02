@@ -14,6 +14,7 @@ import reframe.utility.sanity as sn
 class npb_cuda_lu(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark"
     tags = {
+        "gpu",
         "maintenance",
         "performance",
         "singlenode"
