@@ -19,7 +19,8 @@ class npb_mz_mpi_omp_lu(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-7513"
+        "endeavour:epyc-7513",
+        "laguna:epyc-9354"
     ]
     valid_prog_environs = [
         "env-gcc-13.3.0-openmpi-5.0.5",
@@ -43,6 +44,9 @@ class npb_mz_mpi_omp_lu(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-7513": {
             "Mop/s_total": (622000, -0.1, 0.1, "Mop/s")
+        },
+        "laguna:epyc-9354": {
+            "Mop/s_total": (1065811, -0.1, 0.1, "Mop/s")
         }
     }
 
