@@ -164,19 +164,15 @@ reframe -c tests -J reservation="$res" -t maintenance -r
 
 # Test every node using Apptainer tests
 reframe -c tests/apptainer-hello.py -J reservation="$res" --distribute=all -r
-reframe -c tests/apptainer-gpu-hello.py -J reservation="$res" -J constraint="l40s|a100|a40|v100|p100" --distribute=all -r
+reframe -c tests/apptainer-gpu-hello.py -J reservation="$res" --distribute=all -r
 
 # Test every node using NPB OMP MG test
 reframe -c tests/npb-omp-mg.py -J reservation="$res" --distribute=all -r
 
 # Test every GPU using NPB CUDA LU tests
-reframe -c tests/npb-cuda-lu-l40s.py -J reservation="$res" -J constraint=l40s --distribute=all --repeat=3 -r
-reframe -c tests/npb-cuda-lu-a100.py -J reservation="$res" -J constraint=a100 --distribute=all --repeat=2 -r
-reframe -c tests/npb-cuda-lu-a40.py -J reservation="$res" -J constraint=a40 --distribute=all --repeat=2 -r
-reframe -c tests/npb-cuda-lu-v100.py -J reservation="$res" -J constraint=v100 --distribute=all --repeat=2 -r
-reframe -c tests/npb-cuda-lu-p100.py -J reservation="$res" -J constraint=p100 --distribute=all --repeat=2 -r
-reframe -c tests/npb-cuda-lu-rtx5000.py -J reservation="$res" -J constraint=rtx5000 --distribute=all --repeat=4 -r
+reframe -c tests/npb-cuda-lu.py -J reservation="$res" --distribute=all -r
 
-# Test InfiniBand performance using OMB bandwidth test
+# Test InfiniBand performance using OMB tests
 reframe -c tests/omb-bw.py -J reservation="$res" --distribute=all --exec-policy=serial -r
+reframe -c tests/omb-latency.py -J reservation="$res" --distribute=all --exec-policy=serial -r
 ```
