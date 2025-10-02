@@ -6,6 +6,8 @@
 # - Test running CUDA program
 # - Test GPU performance for flow solver
 #   using Lower-Upper Symmetric-Gauss-Seidel method
+# Notes
+# - Assumes all GPUs on node are the same model
 
 import reframe as rfm
 import reframe.utility.sanity as sn
