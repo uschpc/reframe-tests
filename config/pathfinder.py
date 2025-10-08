@@ -42,14 +42,17 @@ site_configuration = {
                     "environs": [
                         "env-none",
                         "env-apptainer",
+                        "env-gcc-14.3.0",
+                        "env-gcc-14.3.0-mpich-4.3.1",
+                        "env-gcc-14.3.0-openmpi-5.0.8",
                         "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-fio",
+                        "env-git",
                         "env-julia",
                         "env-python",
-                        "env-r",
-                        "env-git",
-                        "env-fio"
+                        "env-r"
                     ]
                 },
                 {
@@ -66,14 +69,17 @@ site_configuration = {
                     "environs": [
                         "env-none",
                         "env-apptainer",
+                        "env-gcc-14.3.0",
+                        "env-gcc-14.3.0-mpich-4.3.1",
+                        "env-gcc-14.3.0-openmpi-5.0.8",
                         "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
                         "env-gcc-13.3.0-mpich-4.2.2",
+                        "env-gcc-13.3.0-openmpi-5.0.5",
+                        "env-fio",
+                        "env-git",
                         "env-julia",
                         "env-python",
-                        "env-r",
-                        "env-git",
-                        "env-fio"
+                        "env-r"
                     ]
                 }
             ]
