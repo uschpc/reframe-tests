@@ -167,10 +167,10 @@ reframe -c tests/apptainer-hello.py -J reservation="$res" --distribute=all -r
 reframe -c tests/apptainer-gpu-hello.py -J reservation="$res" --distribute=all -r
 
 # Test every node using NPB OMP MG test
-reframe -c tests/npb-omp-mg.py -J reservation="$res" --distribute=all -r
+reframe -c tests/npb-omp-mg.py -p "env-gcc-14.3.0" -J reservation="$res" --distribute=all -r
 
-# Test every GPU using NPB CUDA LU tests
-reframe -c tests/npb-cuda-lu.py -J reservation="$res" --distribute=all -r
+# Test every GPU using NPB CUDA LU test
+reframe -c tests/npb-cuda-lu.py -p "env-gcc-14.3.0-cuda-12.9.1" -J reservation="$res" --distribute=all -r
 
 # Test InfiniBand performance using OMB tests
 reframe -c tests/omb-bw.py -J reservation="$res" --distribute=all --exec-policy=serial -r
