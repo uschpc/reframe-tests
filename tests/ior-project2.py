@@ -20,7 +20,7 @@ class ior_project2(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554"
+        "endeavour:epyc-9554-128c"
     ]
     valid_prog_environs = [
         "env-ior"
@@ -36,7 +36,7 @@ class ior_project2(rfm.RunOnlyRegressionTest):
             "max_write_speed": (8000, -0.25, None, "MiB/sec"),
             "max_read_speed": (18000, -0.25, None, "MiB/sec")
         },
-        "endeavour:epyc-9554": {
+        "endeavour:epyc-9554-128c": {
             "max_write_speed": (8000, -0.25, None, "MiB/sec"),
             "max_read_speed": (18000, -0.25, None, "MiB/sec")
         }

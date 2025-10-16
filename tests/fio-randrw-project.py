@@ -21,7 +21,7 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554",
+        "endeavour:epyc-9554-128c",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -37,7 +37,7 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (75, -0.1, None, "MiB/sec"),
             "avg_read_speed": (75, -0.1, None, "MiB/sec")
         },
-        "endeavour:epyc-9554": {
+        "endeavour:epyc-9554-128c": {
             "avg_write_speed": (80, -0.1, None, "MiB/sec"),
             "avg_read_speed": (80, -0.1, None, "MiB/sec")
         },
