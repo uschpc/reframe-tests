@@ -681,6 +681,24 @@ site_configuration = {
                     ]
                 },
                 {
+                    "name": "h200",
+                    "descr": "Endeavour H200 nodes",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                        "--account=hpcroot",
+                        "--partition=allnodes",
+                        "--constraint=h200"
+                    ],
+                    "max_jobs": 5000,
+                    "environs": [
+                        "env-none",
+                        "env-apptainer",
+                        "env-gcc-14.3.0-cuda-12.9.1",
+                        "env-gcc-13.3.0-cuda-12.6.3"
+                    ]
+                },
+                {
                     "name": "l40s",
                     "descr": "Endeavour L40S nodes",
                     "scheduler": "slurm",

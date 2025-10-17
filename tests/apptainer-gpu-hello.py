@@ -24,6 +24,7 @@ class apptainer_gpu_hello(rfm.RunOnlyRegressionTest):
         "discovery:a40",
         "discovery:v100",
         "discovery:p100",
+        "endeavour:h200",
         "endeavour:l40s",
         "endeavour:a100",
         "endeavour:a40",

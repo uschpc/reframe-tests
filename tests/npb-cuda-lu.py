@@ -27,6 +27,7 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
         "discovery:a40",
         "discovery:v100",
         "discovery:p100",
+        "endeavour:h200",
         "endeavour:l40s",
         "endeavour:a100",
         "endeavour:a40",
@@ -63,6 +64,9 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
         },
         "discovery:p100": {
             "Mop/s_total": (133000, -0.05, 0.05, "Mop/s")
+        },
+        "endeavour:h200": {
+            "Mop/s_total": (1265289, -0.05, 0.05, "Mop/s")
         },
         "endeavour:l40s": {
             "Mop/s_total": (414000, -0.05, 0.05, "Mop/s")
