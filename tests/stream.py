@@ -22,6 +22,7 @@ class stream(rfm.RunOnlyRegressionTest):
         "discovery:epyc-7313",
         "discovery:epyc-7542",
         "endeavour:epyc-9554",
+        "endeavour:epyc-9355",
         "endeavour:epyc-9354",
         "endeavour:epyc-7513",
         "endeavour:epyc-7313",
@@ -76,6 +77,12 @@ class stream(rfm.RunOnlyRegressionTest):
             "scale_best": (418000, -0.1, 0.1, "MB/s"),
             "add_best": (473000, -0.1, 0.1, "MB/s"),
             "triad_best": (474000, -0.1, 0.1, "MB/s")
+        },
+        "endeavour:epyc-9355": {
+            "copy_best": (955000, -0.1, 0.1, "MB/s"),
+            "scale_best": (667000, -0.1, 0.1, "MB/s"),
+            "add_best": (755000, -0.1, 0.1, "MB/s"),
+            "triad_best": (756000, -0.1, 0.1, "MB/s")
         },
         "endeavour:epyc-9354": {
             "copy_best": (703000, -0.1, 0.1, "MB/s"),

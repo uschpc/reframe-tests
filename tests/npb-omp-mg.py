@@ -31,6 +31,7 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         "discovery:xeon-2640v4",
         "endeavour:epyc-9554-128c",
         "endeavour:epyc-9554-64c",
+        "endeavour:epyc-9355",
         "endeavour:epyc-9354",
         "endeavour:epyc-9124",
         "endeavour:epyc-7643",
@@ -97,6 +98,9 @@ class npb_omp_mg(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-9554-64c": {
             "Mop/s_total": (106989, -0.1, 0.1, "Mop/s")
+        },
+        "endeavour:epyc-9355": {
+            "Mop/s_total": (176959, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-9354": {
             "Mop/s_total": (215373, -0.1, 0.1, "Mop/s")
