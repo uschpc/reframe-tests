@@ -14,7 +14,7 @@ if scontrol show node "$(hostname -s)" | grep -q -E "epyc-9554"; then
         export OMP_PLACES=0:64:1
         export OMP_NUM_THREADS=64
     fi
-elif scontrol show node "$(hostname -s)" | grep -q -E "epyc-9534|epyc-9354"; then
+elif scontrol show node "$(hostname -s)" | grep -q -E "epyc-9534|epyc-9354|epyc-9355"; then
     export OMP_PLACES=0:64:1
     export OMP_NUM_THREADS=64
 elif scontrol show node "$(hostname -s)" | grep -q -E "epyc-7513|epyc-7542"; then

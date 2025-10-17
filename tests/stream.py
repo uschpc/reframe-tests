@@ -72,6 +72,12 @@ class stream(rfm.RunOnlyRegressionTest):
             "add_best": (190000, -0.1, 0.1, "MB/s"),
             "triad_best": (190000, -0.1, 0.1, "MB/s")
         },
+        "endeavour:epyc-9355": {
+            "copy_best": (974000, -0.1, 0.1, "MB/s"),
+            "scale_best": (667000, -0.1, 0.1, "MB/s"),
+            "add_best": (754000, -0.1, 0.1, "MB/s"),
+            "triad_best": (756000, -0.1, 0.1, "MB/s")
+        },
         "endeavour:epyc-9554": {
             "copy_best": (617000, -0.1, 0.1, "MB/s"),
             "scale_best": (418000, -0.1, 0.1, "MB/s"),
