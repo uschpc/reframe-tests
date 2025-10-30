@@ -11,9 +11,7 @@ elif [[ "$1" == "scratch1" ]]; then
 elif [[ "$1" == "scratch" ]]; then
     dir="/scratch/$USER"
 elif [[ "$1" == "project" ]]; then
-    if [[ "$SLURM_SUBMIT_HOST" == "discovery"* ]] || [[ "$SLURM_SUBMIT_HOST" == "endeavour"* ]]; then
-        dir="/project/wjendrze_120/reframe/tmp"
-    elif [[ "$SLURM_SUBMIT_HOST" == "laguna"* ]]; then
+    if [[ "$SLURM_SUBMIT_HOST" == "laguna"* ]]; then
         dir="/project/jkhong_1307/reframe/tmp"
     else
         echo "Error: Project file system not yet supported for ReFrame git clone test"

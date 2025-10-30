@@ -19,8 +19,6 @@ class ior_project(rfm.RunOnlyRegressionTest):
         "performance"
     }
     valid_systems = [
-        "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -33,14 +31,6 @@ class ior_project(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 1
     time_limit = "5m"
     reference = {
-        "discovery:epyc-7513": {
-            "max_write_speed": (8000, -0.25, None, "MiB/sec"),
-            "max_read_speed": (18000, -0.25, None, "MiB/sec")
-        },
-        "endeavour:epyc-9554-128c": {
-            "max_write_speed": (8000, -0.25, None, "MiB/sec"),
-            "max_read_speed": (18000, -0.25, None, "MiB/sec")
-        },
         "laguna:epyc-9554": {
             "max_write_speed": (7000, -0.25, None, "MiB/sec"),
             "max_read_speed": (40000, -0.25, None, "MiB/sec")

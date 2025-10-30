@@ -20,8 +20,6 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -33,14 +31,6 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
     num_cpus_per_task = 8
     time_limit = "10m"
     reference = {
-        "discovery:epyc-7513": {
-            "avg_write_speed": (75, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (75, -0.1, None, "MiB/sec")
-        },
-        "endeavour:epyc-9554-128c": {
-            "avg_write_speed": (80, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (80, -0.1, None, "MiB/sec")
-        },
         "laguna:epyc-9554": {
             "avg_write_speed": (260, -0.1, None, "MiB/sec"),
             "avg_read_speed": (260, -0.1, None, "MiB/sec")

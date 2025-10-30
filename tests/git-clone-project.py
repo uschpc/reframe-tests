@@ -15,8 +15,6 @@ class git_clone_project(rfm.RunOnlyRegressionTest):
         "singlenode"
     }
     valid_systems = [
-        "discovery:allnodes",
-        "endeavour:allnodes",
         "laguna:allnodes"
     ]
     valid_prog_environs = [
