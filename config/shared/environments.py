@@ -10,7 +10,7 @@ site_configuration = {
         {
              "name": "env-apptainer",
              "modules": [
-                 "apptainer/1.4.2"
+                 "apptainer/1.4.4"
              ]
         },
         {
