@@ -12,7 +12,7 @@ else
     res=""
 fi
 
-cmd="salloc -J rfm_Salloc_Hello -A hpcroot -p allnodes --reservation=$res srun bash -c 'echo \"Hello world from \$SLURM_NODELIST\"'"
+cmd="salloc -J rfm_salloc_hello -A hpcroot -p allnodes --reservation=$res srun bash -c 'echo \"Hello world from \$SLURM_NODELIST\"'"
 
 if [[ "$host" == "discovery"* ]]; then
     echo "discovery1"
