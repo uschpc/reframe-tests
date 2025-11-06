@@ -32,7 +32,7 @@ class omb_latency(rfm.RunOnlyRegressionTest):
         "env-omb"
     ]
     sourcesdir = None
-    executable = "osu_latency"
+    executable = "osu_get_latency"
     num_tasks = 2
     num_tasks_per_node = 1
     num_cpus_per_task = 1
@@ -48,7 +48,7 @@ class omb_latency(rfm.RunOnlyRegressionTest):
             "us": (352, -0.05, 0.05, "us")
         },
         "discovery:fdr56": {
-            "us": (664, -0.05, 0.05, "us")
+            "us": (650, -0.05, 0.05, "us")
         },
         "endeavour:ndr200": {
             "us": (173, -0.05, 0.05, "us")
@@ -60,7 +60,7 @@ class omb_latency(rfm.RunOnlyRegressionTest):
             "us": (352, -0.05, 0.05, "us")
         },
         "endeavour:fdr56": {
-            "us": (664, -0.05, 0.05, "us")
+            "us": (650, -0.05, 0.05, "us")
         },
         "laguna:ndr200": {
             "us": (173, -0.05, 0.05, "us")
