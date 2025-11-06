@@ -45,10 +45,10 @@ class omb_bw(rfm.RunOnlyRegressionTest):
             "MB/s": (24600, -0.05, 0.05, "MB/s")
         },
         "discovery:hdr100": {
-            "MB/s": (11200, -0.05, 0.05, "MB/s")
+            "MB/s": (12000, -0.05, 0.05, "MB/s")
         },
         "discovery:fdr56": {
-            "MB/s": (5700, -0.05, 0.05, "MB/s")
+            "MB/s": (6000, -0.05, 0.05, "MB/s")
         },
         "endeavour:ndr200": {
             "MB/s": (24600, -0.05, 0.05, "MB/s")
@@ -57,10 +57,10 @@ class omb_bw(rfm.RunOnlyRegressionTest):
             "MB/s": (24600, -0.05, 0.05, "MB/s")
         },
         "endeavour:hdr100": {
-            "MB/s": (11200, -0.05, 0.05, "MB/s")
+            "MB/s": (12000, -0.05, 0.05, "MB/s")
         },
         "endeavour:fdr56": {
-            "MB/s": (5700, -0.05, 0.05, "MB/s")
+            "MB/s": (6000, -0.05, 0.05, "MB/s")
         },
         "laguna:ndr200": {
             "MB/s": (24600, -0.05, 0.05, "MB/s")
