@@ -149,30 +149,15 @@ reframe -c tests/julia-pi.py -J nodelist=a01-03 -r
 
 The nodelist option will then be added to the ReFrame Slurm job scripts.
 
-## Reference guide for test suite
+## Reference guide for maintenance periods
 
-A reference guide for specific tests to run during testing or maintenance periods.
+Run the [maintenance.sh](scripts/maintenance.sh) script to launch test runs in multiple tmux sessions.
 
 ```
 cd reframe-tests
 source scripts/use-reframe.sh
-
 export res=<reservation name>
-
-# Run all tests tagged for maintenance once
-reframe -c tests -J reservation="$res" -t maintenance -r
-
-# Test every node using Apptainer tests
-reframe -c tests/apptainer-hello.py -J reservation="$res" --distribute=all -r
-reframe -c tests/apptainer-gpu-hello.py -J reservation="$res" --distribute=all -r
-
-# Test every node using NPB OMP MG test
-reframe -c tests/npb-omp-mg.py -p "env-gcc-14.3.0" -J reservation="$res" --distribute=all -r
-
-# Test every GPU using NPB CUDA LU test
-reframe -c tests/npb-cuda-lu.py -p "env-gcc-14.3.0-cuda-12.9.1" -J reservation="$res" --distribute=all -r
-
-# Test InfiniBand performance using OMB tests
-reframe -c tests/omb-bw.py -J reservation="$res" --distribute=all --exec-policy=serial -r
-reframe -c tests/omb-latency.py -J reservation="$res" --distribute=all --exec-policy=serial -r
+source scripts/maintenance.sh $res
 ```
+
+Then check tmux sessions with `tmux ls` and attach using the session name (e.g., `tmux a -t rfm-apptainer-hello`) to check results.
