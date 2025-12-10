@@ -15,7 +15,8 @@ class gpu_fryer(rfm.RunOnlyRegressionTest):
     descr = "GPU stress test with gpu-fryer"
     tags = {
         "gpu",
-        "singlenode"
+        "singlenode",
+        "stress"
     }
     valid_systems = [
         "discovery:l40s",

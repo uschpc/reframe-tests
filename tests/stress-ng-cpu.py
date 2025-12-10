@@ -13,7 +13,8 @@ import reframe.utility.sanity as sn
 class stress_ng_cpu(rfm.RunOnlyRegressionTest):
     descr = "Stress test CPU with stress-ng"
     tags = {
-        "singlenode"
+        "singlenode",
+        "stress"
     }
     valid_systems = [
         "discovery:allnodes",
