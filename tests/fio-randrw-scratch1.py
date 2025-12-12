@@ -5,6 +5,7 @@
 # - Test /scratch1 file system access
 # - Test /scratch1 file system performance
 # Notes
+# - https://github.com/axboe/fio
 # - Other I/O tests for this file system should not be run at the same time
 #   because performance results will be negatively impacted
 
@@ -21,7 +22,7 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c"
+        "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
         "env-fio"
@@ -36,7 +37,7 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (30, -0.1, None, "MiB/sec"),
             "avg_read_speed": (30, -0.1, None, "MiB/sec")
         },
-        "endeavour:epyc-9554-128c": {
+        "endeavour:epyc-7513": {
             "avg_write_speed": (30, -0.1, None, "MiB/sec"),
             "avg_read_speed": (30, -0.1, None, "MiB/sec")
         }

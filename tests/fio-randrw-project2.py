@@ -5,6 +5,7 @@
 # - Test /project2 file system access
 # - Test /project2 file system performance
 # Notes
+# - https://github.com/axboe/fio
 # - Other I/O tests for this file system should not be run at the same time
 #   because performance results will be negatively impacted
 
@@ -21,7 +22,7 @@ class fio_randrw_project2(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c"
+        "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
         "env-fio"
@@ -36,9 +37,9 @@ class fio_randrw_project2(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (320, -0.1, None, "MiB/sec"),
             "avg_read_speed": (320, -0.1, None, "MiB/sec")
         },
-        "endeavour:epyc-9554-128c": {
-            "avg_write_speed": (293, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (293, -0.1, None, "MiB/sec")
+        "endeavour:epyc-7513": {
+            "avg_write_speed": (320, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (320, -0.1, None, "MiB/sec")
         }
     }
 

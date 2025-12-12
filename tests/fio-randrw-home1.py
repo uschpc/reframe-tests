@@ -5,6 +5,7 @@
 # - Test /home1 file system access
 # - Test /home1 file system performance
 # Notes
+# - https://github.com/axboe/fio
 # - Other I/O tests for this file system should not be run at the same time
 #   because performance results will be negatively impacted
 
@@ -21,7 +22,7 @@ class fio_randrw_home1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c",
+        "endeavour:epyc-7513",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -37,9 +38,9 @@ class fio_randrw_home1(rfm.RunOnlyRegressionTest):
             "avg_write_speed": (75, -0.1, None, "MiB/sec"),
             "avg_read_speed": (75, -0.1, None, "MiB/sec")
         },
-        "endeavour:epyc-9554-128c": {
-            "avg_write_speed": (83, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (83, -0.1, None, "MiB/sec")
+        "endeavour:epyc-7513": {
+            "avg_write_speed": (75, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (75, -0.1, None, "MiB/sec")
         },
         "laguna:epyc-9554": {
             "avg_write_speed": (72, -0.1, None, "MiB/sec"),
