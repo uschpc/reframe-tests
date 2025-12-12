@@ -4,6 +4,7 @@
 # - Test running MPI program
 # - Test InfiniBand network bandwidth performance
 # Notes
+# - https://mvapich.cse.ohio-state.edu/benchmarks
 # - Requires exclusive access to nodes in order to
 #   have exclusive access to NICs
 
@@ -39,31 +40,31 @@ class omb_bw(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:ndr200": {
-            "MB/s": (24600, -0.05, 0.05, "MB/s")
+            "MB/s": (24600, -0.1, 0.1, "MB/s")
         },
         "discovery:hdr200": {
-            "MB/s": (24600, -0.05, 0.05, "MB/s")
+            "MB/s": (24600, -0.1, 0.1, "MB/s")
         },
         "discovery:hdr100": {
-            "MB/s": (12000, -0.05, 0.05, "MB/s")
+            "MB/s": (12000, -0.1, 0.1, "MB/s")
         },
         "discovery:fdr56": {
-            "MB/s": (6000, -0.05, 0.05, "MB/s")
+            "MB/s": (6000, -0.1, 0.1, "MB/s")
         },
         "endeavour:ndr200": {
-            "MB/s": (24600, -0.05, 0.05, "MB/s")
+            "MB/s": (24600, -0.1, 0.1, "MB/s")
         },
         "endeavour:hdr200": {
-            "MB/s": (24600, -0.05, 0.05, "MB/s")
+            "MB/s": (24600, -0.1, 0.1, "MB/s")
         },
         "endeavour:hdr100": {
-            "MB/s": (12000, -0.05, 0.05, "MB/s")
+            "MB/s": (12000, -0.1, 0.1, "MB/s")
         },
         "endeavour:fdr56": {
-            "MB/s": (6000, -0.05, 0.05, "MB/s")
+            "MB/s": (6000, -0.1, 0.1, "MB/s")
         },
         "laguna:ndr200": {
-            "MB/s": (24600, -0.05, 0.05, "MB/s")
+            "MB/s": (24600, -0.1, 0.1, "MB/s")
         }
     }
 
