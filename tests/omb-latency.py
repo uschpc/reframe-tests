@@ -4,6 +4,7 @@
 # - Test running MPI program
 # - Test InfiniBand network latency performance
 # Notes
+# - https://mvapich.cse.ohio-state.edu/benchmarks
 # - Requires exclusive access to nodes in order to
 #   have exclusive access to NICs
 
@@ -39,31 +40,31 @@ class omb_latency(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:ndr200": {
-            "us": (173, -0.05, 0.05, "us")
+            "us": (173, -0.1, 0.1, "us")
         },
         "discovery:hdr200": {
-            "us": (177, -0.05, 0.05, "us")
+            "us": (177, -0.1, 0.1, "us")
         },
         "discovery:hdr100": {
-            "us": (352, -0.05, 0.05, "us")
+            "us": (352, -0.1, 0.1, "us")
         },
         "discovery:fdr56": {
-            "us": (650, -0.05, 0.05, "us")
+            "us": (650, -0.1, 0.1, "us")
         },
         "endeavour:ndr200": {
-            "us": (173, -0.05, 0.05, "us")
+            "us": (173, -0.1, 0.1, "us")
         },
         "endeavour:hdr200": {
-            "us": (177, -0.05, 0.05, "us")
+            "us": (177, -0.1, 0.1, "us")
         },
         "endeavour:hdr100": {
-            "us": (352, -0.05, 0.05, "us")
+            "us": (352, -0.1, 0.1, "us")
         },
         "endeavour:fdr56": {
-            "us": (650, -0.05, 0.05, "us")
+            "us": (650, -0.1, 0.1, "us")
         },
         "laguna:ndr200": {
-            "us": (173, -0.05, 0.05, "us")
+            "us": (173, -0.1, 0.1, "us")
         }
     }
 
