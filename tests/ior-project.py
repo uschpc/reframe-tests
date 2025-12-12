@@ -5,6 +5,7 @@
 # - Test MPI library
 # - Test /project file system parallel performance
 # Notes
+# - https://github.com/hpc/ior
 # - Other I/O tests for this file system should not be run at the same time
 #   because performance results will be negatively impacted
 

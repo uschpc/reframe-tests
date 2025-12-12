@@ -5,6 +5,7 @@
 # - Test MPI library
 # - Test /scratch1 file system parallel performance
 # Notes
+# - https://github.com/hpc/ior
 # - Other I/O tests for this file system should not be run at the same time
 #   because performance results will be negatively impacted
 
@@ -20,7 +21,7 @@ class ior_scratch1(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c"
+        "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
         "env-ior"
@@ -36,7 +37,7 @@ class ior_scratch1(rfm.RunOnlyRegressionTest):
             "max_write_speed": (3000, -0.25, None, "MiB/sec"),
             "max_read_speed": (15000, -0.25, None, "MiB/sec")
         },
-        "endeavour:epyc-9554-128c": {
+        "endeavour:epyc-7513": {
             "max_write_speed": (3000, -0.25, None, "MiB/sec"),
             "max_read_speed": (15000, -0.25, None, "MiB/sec")
         }
