@@ -26,11 +26,8 @@ class stress_ng_mem(rfm.RunOnlyRegressionTest):
         "env-apptainer"
     ]
     sourcesdir = None
-    executable = "sleep 1s"
+    executable = "apptainer exec /apps/reframe/resources/containers/stress-ng.sif stress-ng --vm $SLURM_CPUS_ON_NODE --vm-bytes 95% --timeout 2m"
     time_limit = "5m"
-    prerun_cmds = [
-        "apptainer exec /apps/reframe/resources/containers/stress-ng.sif stress-ng --vm $SLURM_CPUS_ON_NODE --vm-bytes 95% --timeout 2m"
-    ]
 
     @run_before("run")
     def set_job_options(self):
