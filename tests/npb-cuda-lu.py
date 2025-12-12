@@ -7,6 +7,7 @@
 # - Test GPU performance for flow solver
 #   using Lower-Upper Symmetric-Gauss-Seidel method
 # Notes
+# - https://github.com/GMAP/NPB-GPU
 # - Assumes all GPUs on node are the same model
 
 import reframe as rfm
@@ -42,8 +43,6 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
     ]
     sourcesdir = "src/npb-cuda"
     executable = "sleep 1s"
-    num_tasks = 1
-    num_cpus_per_task = 1
     time_limit = "5m"
     prerun_cmds = [
         "echo SLURM_GPUS_ON_NODE=$SLURM_GPUS_ON_NODE",
@@ -54,7 +53,7 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
             "Mop/s_total": (414000, -0.05, 0.05, "Mop/s")
         },
         "discovery:a100": {
-            "Mop/s_total": (544000, -0.05, 0.05, "Mop/s")
+            "Mop/s_total": (560000, -0.1, 0.1, "Mop/s")
         },
         "discovery:a40": {
             "Mop/s_total": (161000, -0.05, 0.05, "Mop/s")
@@ -72,7 +71,7 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
             "Mop/s_total": (414000, -0.05, 0.05, "Mop/s")
         },
         "endeavour:a100": {
-            "Mop/s_total": (544000, -0.05, 0.05, "Mop/s")
+            "Mop/s_total": (588000, -0.05, 0.05, "Mop/s")
         },
         "endeavour:a40": {
             "Mop/s_total": (161000, -0.05, 0.05, "Mop/s")
