@@ -4,6 +4,8 @@
 # - Test HPCG module access
 # - Test MPI library
 # - Test collective performance of Discovery epyc-64 partition
+# Notes
+# - https://www.hpcg-benchmark.org/
 
 import reframe as rfm
 import reframe.utility.sanity as sn
