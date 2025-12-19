@@ -2,18 +2,19 @@
 
 ## Purpose
 
-The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) system tests for our various computing clusters are designed to be short-running and to cover broad functionality. The tests include:
+The CARC [ReFrame](https://reframe-hpc.readthedocs.io/en/stable/index.html) test suite is designed to cover broad functionality and performance for our various HPC clusters. The suite includes tests for the following areas:
 
+- Single-node and multi-node Slurm jobs
+- CPU, memory, and GPU performance
+- I/O performance on various storage systems
+- InfiniBand network performance
 - Lmod software modules
-- Programming environments (e.g., compilers, toolchains, MPI libraries)
+- Apptainer container engine
+- Programming environments (e.g., compilers, toolchains)
 - Parallel programming (e.g., OpenMP, MPI, CUDA)
 - Popular applications (e.g., Python, R, Julia)
 - Software license server (e.g., MATLAB, Q-Chem)
-- Apptainer container engine
-- I/O on various file systems
 - File downloads (via git clone)
-- InfiniBand network
-- Single-node and multi-node jobs
 
 ## License
 
