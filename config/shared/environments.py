@@ -149,7 +149,7 @@ site_configuration = {
         {
             "name": "env-julia",
             "modules": [
-                "julia/1.12.3"
+                "julia/1.12.4"
             ]
         },
         {
