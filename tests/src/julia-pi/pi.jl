@@ -7,7 +7,7 @@ using Random
 function monte_carlo_pi_part(n)
     rng = Xoshiro()
     # If within the unit circle
-    sum(rand(rng)^2 + rand(rng)^2 < 1 for i = 1:n)
+    return sum(rand(rng)^2 + rand(rng)^2 < 1 for i = 1:n)
 end
 
 # Estimate pi using n points
