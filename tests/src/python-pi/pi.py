@@ -1,6 +1,6 @@
 # Estimate pi in parallel using multiple cores
 
-from multiprocessing import Pool
+from multiprocessing import set_start_method, Pool
 import os
 import random
 import time
@@ -19,7 +19,9 @@ def monte_carlo_pi_part(n):
 
     return count
 
-if __name__=='__main__':
+if __name__=="__main__":
+    set_start_method("fork")
+
     cores = int(os.environ["SLURM_CPUS_PER_TASK"])
 
     start = time.time()
