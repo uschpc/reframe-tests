@@ -157,7 +157,7 @@ site_configuration = {
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
-                "python/3.11.13"
+                "python/3.13.11"
             ]
         },
         {
