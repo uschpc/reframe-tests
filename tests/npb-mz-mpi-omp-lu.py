@@ -5,6 +5,8 @@
 # - Test running hybrid Fortran/MPI/OpenMP program
 # - Test collective node performance for flow solver
 #   using Lower-Upper Symmetric-Gauss-Seidel method
+# Notes
+# - https://www.nas.nasa.gov/software/npb.html
 
 import reframe as rfm
 import reframe.utility.sanity as sn
@@ -42,15 +44,21 @@ class npb_mz_mpi_omp_lu(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-7513": {
-            "Mop/s_total": (600000, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (733000, -0.1, 0.1, "Mop/s")
         },
         "endeavour:epyc-7513": {
-            "Mop/s_total": (622000, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (733000, -0.1, 0.1, "Mop/s")
         },
         "laguna:epyc-9354": {
             "Mop/s_total": (1065811, -0.1, 0.1, "Mop/s")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--mem=0"
+        ]
 
     @sanity_function
     def assert_sanity(self):
