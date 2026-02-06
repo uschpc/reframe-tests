@@ -43,6 +43,12 @@ class ior_scratch1(rfm.RunOnlyRegressionTest):
         }
     }
 
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--mem=0"
+        ]
+
     @sanity_function
     def assert_sanity(self):
         return sn.assert_found(r"Finished", self.stdout)
