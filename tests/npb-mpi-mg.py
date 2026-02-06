@@ -6,6 +6,7 @@
 # - Test collective node performance for differential equations solver
 #   using multigrid method
 # Notes
+# - https://www.nas.nasa.gov/software/npb.html
 # - Requires a power-of-two number of CPU cores
 
 import reframe as rfm
@@ -21,7 +22,7 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c",
+        "endeavour:epyc-7513",
         "pathfinder:xeon-2640v3",
         "laguna:epyc-9554"
     ]
@@ -42,10 +43,10 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-7513": {
-            "Mop/s_total": (50000, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (57000, -0.1, 0.1, "Mop/s")
         },
-        "endeavour:epyc-9554-128c": {
-            "Mop/s_total": (76765, -0.1, 0.1, "Mop/s")
+        "endeavour:epyc-7513": {
+            "Mop/s_total": (57000, -0.1, 0.1, "Mop/s")
         },
         "pathfinder:xeon-2640v3": {
             "Mop/s_total": (37500, -0.1, 0.1, "Mop/s")
@@ -54,6 +55,12 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
             "Mop/s_total": (76765, -0.1, 0.1, "Mop/s")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--mem=0"
+        ]
 
     @sanity_function
     def assert_sanity(self):
