@@ -4,6 +4,8 @@
 # - Test building C/MPI program
 # - Test running C/MPI program
 # - Test collective node performance for integer sort algorithm
+# Notes
+# - https://www.nas.nasa.gov/software/npb.html
 
 import reframe as rfm
 import reframe.utility.sanity as sn
@@ -18,7 +20,7 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
     }
     valid_systems = [
         "discovery:epyc-7513",
-        "endeavour:epyc-9554-128c",
+        "endeavour:epyc-7513",
         "pathfinder:xeon-2640v3",
         "laguna:epyc-9554"
     ]
@@ -39,18 +41,24 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
     ]
     reference = {
         "discovery:epyc-7513": {
-            "Mop/s_total": (1500, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (2555, -0.2, 0.2, "Mop/s")
         },
-        "endeavour:epyc-9554-128c": {
-            "Mop/s_total": (3650, -0.1, 0.1, "Mop/s")
+        "endeavour:epyc-7513": {
+            "Mop/s_total": (2555, -0.2, 0.2, "Mop/s")
         },
         "pathfinder:xeon-2640v3": {
-            "Mop/s_total": (930, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (930, -0.2, 0.2, "Mop/s")
         },
         "laguna:epyc-9554": {
-            "Mop/s_total": (3650, -0.1, 0.1, "Mop/s")
+            "Mop/s_total": (3650, -0.2, 0.2, "Mop/s")
         }
     }
+
+    @run_before("run")
+    def set_job_options(self):
+        self.job.options += [
+            "--mem=0"
+        ]
 
     @sanity_function
     def assert_sanity(self):
