@@ -324,14 +324,14 @@ site_configuration = {
                     ]
                 },
                 {
-                    "name": "epyc-7502p",
-                    "descr": "Endeavour epyc-7502p nodes",
+                    "name": "epyc-7502",
+                    "descr": "Endeavour epyc-7502 nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
                         "--account=hpcroot",
                         "--partition=allnodes",
-                        "--constraint=epyc-7502p"
+                        "--constraint=epyc-7502"
                     ],
                     "max_jobs": 5000,
                     "environs": [
@@ -357,14 +357,14 @@ site_configuration = {
                     ]
                 },
                 {
-                    "name": "epyc-7502",
-                    "descr": "Endeavour epyc-7502 nodes",
+                    "name": "epyc-7502p",
+                    "descr": "Endeavour epyc-7502p nodes",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
                         "--account=hpcroot",
                         "--partition=allnodes",
-                        "--constraint=epyc-7502"
+                        "--constraint=epyc-7502p"
                     ],
                     "max_jobs": 5000,
                     "environs": [
