@@ -17,7 +17,6 @@ class r_bootstrap(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:epyc-7542",
         "endeavour:epyc-7513",
-        "pathfinder:xeon-2640v3",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -34,9 +33,6 @@ class r_bootstrap(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-7513": {
             "elapsed_time": (79.9, -0.1, 0.1, "seconds")
-        },
-        "pathfinder:xeon-2640v3": {
-            "elapsed_time": (190.5, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
             "elapsed_time": (62.7, -0.1, 0.1, "seconds")

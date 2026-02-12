@@ -46,7 +46,6 @@ class stream(rfm.RunOnlyRegressionTest):
         "endeavour:xeon-5118",
         "endeavour:xeon-4116",
         "endeavour:xeon-2640v4",
-        "pathfinder:xeon-2640v3",
         "laguna:epyc-9554",
         "laguna:epyc-9354"
     ]
@@ -226,12 +225,6 @@ class stream(rfm.RunOnlyRegressionTest):
             "triad_best": (106000, -0.1, 0.1, "MB/s")
         },
         "endeavour:xeon-2640v4": {
-            "copy_best": (77000, -0.1, 0.1, "MB/s"),
-            "scale_best": (65000, -0.1, 0.1, "MB/s"),
-            "add_best": (71000, -0.1, 0.1, "MB/s"),
-            "triad_best": (71000, -0.1, 0.1, "MB/s")
-        },
-        "pathfinder:xeon-2640v3": {
             "copy_best": (77000, -0.1, 0.1, "MB/s"),
             "scale_best": (65000, -0.1, 0.1, "MB/s"),
             "add_best": (71000, -0.1, 0.1, "MB/s"),

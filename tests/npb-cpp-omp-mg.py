@@ -24,7 +24,6 @@ class npb_cpp_omp_mg(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:epyc-7513",
         "endeavour:epyc-7513",
-        "pathfinder:xeon-2640v3",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -46,9 +45,6 @@ class npb_cpp_omp_mg(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-7513": {
             "Mop/s_total": (63000, -0.1, 0.1, "Mop/s")
-        },
-        "pathfinder:xeon-2640v3": {
-            "Mop/s_total": (22000, -0.1, 0.1, "Mop/s")
         },
         "laguna:epyc-9554": {
             "Mop/s_total": (166000, -0.1, 0.1, "Mop/s")

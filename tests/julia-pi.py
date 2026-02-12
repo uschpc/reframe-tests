@@ -16,7 +16,6 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     valid_systems = [
         "discovery:epyc-7542",
         "endeavour:epyc-7513",
-        "pathfinder:xeon-2640v3",
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
@@ -33,9 +32,6 @@ class julia_pi(rfm.RunOnlyRegressionTest):
         },
         "endeavour:epyc-7513": {
             "elapsed_time": (2.1, -0.1, 0.1, "seconds")
-        },
-        "pathfinder:xeon-2640v3": {
-            "elapsed_time": (3.6, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
             "elapsed_time": (1.5, -0.1, 0.1, "seconds")
