@@ -28,8 +28,8 @@ class stream(rfm.RunOnlyRegressionTest):
         "discovery:xeon-4116",
         "discovery:xeon-2640v4",
         "endeavour:epyc-9355",
-        "endeavour:epyc-9554-128c",
-        "endeavour:epyc-9554-64c",
+        "endeavour:epyc-9554-2s",
+        "endeavour:epyc-9554-1s",
         "endeavour:epyc-9354",
         "endeavour:epyc-9124",
         "endeavour:epyc-7643",
@@ -123,13 +123,13 @@ class stream(rfm.RunOnlyRegressionTest):
             "add_best": (755000, -0.1, 0.1, "MB/s"),
             "triad_best": (755000, -0.1, 0.1, "MB/s")
         },
-        "endeavour:epyc-9554-128c": {
+        "endeavour:epyc-9554-2s": {
             "copy_best": (617000, -0.1, 0.1, "MB/s"),
             "scale_best": (418000, -0.1, 0.1, "MB/s"),
             "add_best": (473000, -0.1, 0.1, "MB/s"),
             "triad_best": (474000, -0.1, 0.1, "MB/s")
         },
-        "endeavour:epyc-9554-64c": {
+        "endeavour:epyc-9554-1s": {
             "copy_best": (617000, -0.1, 0.1, "MB/s"),
             "scale_best": (418000, -0.1, 0.1, "MB/s"),
             "add_best": (473000, -0.1, 0.1, "MB/s"),

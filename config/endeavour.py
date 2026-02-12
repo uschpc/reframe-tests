@@ -95,8 +95,8 @@ site_configuration = {
                     ]
                 },
                 {
-                    "name": "epyc-9554-128c",
-                    "descr": "Endeavour epyc-9554 nodes (128 cores)",
+                    "name": "epyc-9554-2s",
+                    "descr": "Endeavour epyc-9554 nodes (dual socket)",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
@@ -127,8 +127,8 @@ site_configuration = {
                     ]
                 },
                 {
-                    "name": "epyc-9554-64c",
-                    "descr": "Endeavour epyc-9554 nodes (64 cores)",
+                    "name": "epyc-9554-1s",
+                    "descr": "Endeavour epyc-9554 nodes (single socket)",
                     "scheduler": "slurm",
                     "launcher": "srun",
                     "access": [
