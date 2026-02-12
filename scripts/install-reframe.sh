@@ -1,5 +1,5 @@
 # Install ReFrame in current directory
-# e.g., bash install-reframe.sh 4.7.4
+# e.g., bash install-reframe.sh 4.9.1
 
 set -eu
 
@@ -12,7 +12,7 @@ fi
 ver="$1"
 
 module purge
-module load gcc/13.3.0 python/3.11.9 curl tar gzip
+module load ver/2506 gcc/14.3.0 python/3.13.11 curl tar gzip
 
 url="https://github.com/reframe-hpc/reframe/archive/refs/tags/v$ver.tar.gz"
 code="$(curl -sILo /dev/null -w "%{http_code}" "$url")"

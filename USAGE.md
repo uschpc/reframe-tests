@@ -4,7 +4,7 @@ Some guidance for running tests.
 
 ## Installing ReFrame
 
-ReFrame can be installed using the [install-reframe.sh](scripts/install-reframe.sh) script. Currently, tests are developed and run using ReFrame v4.7.4. A shared installation is available on CARC clusters in `/apps/reframe/reframe-4.7.4`. This shared version is loaded when using the [use-reframe.sh](scripts/use-reframe.sh) script.
+ReFrame can be installed using the [install-reframe.sh](scripts/install-reframe.sh) script. Currently, tests are developed and run using ReFrame v4.9.1. A shared installation is available on CARC clusters in `/apps/reframe/reframe-4.9.1`. This shared version is loaded when using the [use-reframe.sh](scripts/use-reframe.sh) script.
 
 ## Installing and using the CARC test suite
 

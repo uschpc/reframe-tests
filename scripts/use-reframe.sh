@@ -33,4 +33,4 @@ fi
 
 # Load ReFrame
 
-export PATH=/apps/reframe/reframe-4.7.4/bin:"$PATH"
+export PATH=/apps/reframe/reframe-4.9.1/bin:"$PATH"
