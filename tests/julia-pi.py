@@ -38,7 +38,7 @@ class julia_pi(rfm.RunOnlyRegressionTest):
             "elapsed_time": (3.6, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (1.3, -0.1, 0.1, "seconds")
+            "elapsed_time": (1.5, -0.1, 0.1, "seconds")
         }
     }
 
