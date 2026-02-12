@@ -120,8 +120,6 @@ site_configuration = {
                         "env-julia",
                         "env-python",
                         "env-r"
-                        "env-ior",
-                        "env-omb"
                     ]
                 },
                 {
