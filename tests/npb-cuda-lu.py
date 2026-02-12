@@ -65,7 +65,7 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
             "Mop/s_total": (133000, -0.05, 0.05, "Mop/s")
         },
         "endeavour:h200": {
-            "Mop/s_total": (1265289, -0.05, 0.05, "Mop/s")
+            "Mop/s_total": (1265000, -0.05, 0.05, "Mop/s")
         },
         "endeavour:l40s": {
             "Mop/s_total": (414000, -0.05, 0.05, "Mop/s")
