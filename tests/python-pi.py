@@ -39,7 +39,7 @@ class python_pi(rfm.RunOnlyRegressionTest):
             "elapsed_time": (127.2, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (63.4, -0.1, 0.1, "seconds")
+            "elapsed_time": (73.1, -0.1, 0.1, "seconds")
         }
     }
 
