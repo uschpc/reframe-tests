@@ -163,7 +163,7 @@ site_configuration = {
         {
             "name": "env-r",
             "modules": [
-                "rstats/4.5.2"
+                "r/4.5.3"
             ]
         },
         {
