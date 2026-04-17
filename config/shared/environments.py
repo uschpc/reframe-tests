@@ -175,7 +175,7 @@ site_configuration = {
         {
             "name": "env-qchem",
             "modules": [
-                "qchem/6.3.0-openmp"
+                "qchem/6.4.0"
             ]
         }
     ]
