@@ -169,7 +169,7 @@ site_configuration = {
         {
             "name": "env-matlab",
             "modules": [
-                "matlab/2024a"
+                "matlab/2025b"
             ]
         },
         {
