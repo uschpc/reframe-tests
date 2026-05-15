@@ -214,6 +214,20 @@ site_configuration = {
                         "env-python",
                         "env-r"
                     ]
+                },
+                {
+                    "name": "htcondor",
+                    "descr": "Laguna htcondor partition",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                         "--account=hpcroot",
+                         "--partition=htcondor"
+                    ],
+                    "max_jobs": 100,
+                    "environs": [
+                        "env-none"
+                    ]
                 }
             ]
         }

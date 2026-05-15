@@ -676,6 +676,20 @@ site_configuration = {
                         "env-matlab",
                         "env-qchem"
                     ]
+                },
+                {
+                    "name": "htcondor",
+                    "descr": "Discovery htcondor partition",
+                    "scheduler": "slurm",
+                    "launcher": "srun",
+                    "access": [
+                         "--account=hpcroot",
+                         "--partition=htcondor"
+                    ],
+                    "max_jobs": 100,
+                    "environs": [
+                        "env-none"
+                    ]
                 }
             ]
         }
