@@ -1,31 +1,38 @@
-% Estimate pi using local parpool
-
-cluster = parallel.cluster.Local;
-nproc = str2num(getenv('SLURM_CPUS_PER_TASK'));
-pool = parpool(cluster,nproc);
+% Estimate pi using Monte Carlo method in parallel
 
 tic;
 
-% Number of points to use for the pi estimation
+cluster = parallel.cluster.Local;
+nproc = str2double(getenv("SLURM_CPUS_PER_TASK"));
+pool = parpool(cluster, nproc);
+
+% Estimate pi using n points
 n = 5000000000;
 
-% Calculate the number of points in the unit circle out of n points
-c = 0;
-parfor i = 1:n
-    x = rand;
-    y = rand;
-    if(x^2 + y^2 < 1.0)
-        c = c + 1;
-    end
+% Chunk number of points for parallel processing
+% Limit chunk size to limit memory usage
+chunk_size = 3000000;
+quo = floor(n / chunk_size);
+rem = mod(n, chunk_size);
+chunks = repmat([chunk_size], 1, quo);
+if rem ~= 0
+    chunks(end + 1) = rem;
 end
 
-% Estimate pi
-est = 4.0 * (c / n);
+% Calculate number of points in the unit circle out of n points
+counts = zeros(length(chunks), 1);
+parfor i = 1:length(chunks)
+    x = rand(chunks(i), 1);
+    y = rand(chunks(i), 1);
+    counts(i) = sum((x .* x) + (y .* y) <= 1);
+end
+total = sum(counts);
 
-delete(pool)
+res = 4 * total / n;
+
+delete(pool);
 
 elapsed = toc;
 
-% Display results
-fprintf("Estimate of pi: %f\n", est)
+fprintf("Estimate of pi: %f\n", res)
 fprintf("Elapsed time: %f\n", elapsed)
