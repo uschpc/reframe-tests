@@ -8,7 +8,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class julia_pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimating pi in parallel using Julia with multiple threads"
+    descr = "Estimate pi in parallel using Julia"
     tags = {
         "maintenance",
         "performance"
@@ -28,13 +28,13 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     time_limit = "1m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (2.9, -0.1, 0.1, "seconds")
+            "elapsed_time": (2.6, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (2.1, -0.1, 0.1, "seconds")
+            "elapsed_time": (2.0, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (1.5, -0.1, 0.1, "seconds")
+            "elapsed_time": (1.4, -0.1, 0.1, "seconds")
         }
     }
 
