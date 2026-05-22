@@ -9,7 +9,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class matlab_pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimate pi in parallel using MATLAB with parpool"
+    descr = "Estimate pi in parallel using MATLAB"
     tags = {
         "maintenance",
         "performance"
@@ -28,10 +28,10 @@ class matlab_pi(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (65.2, -0.1, 0.1, "seconds")
+            "elapsed_time": (30.7, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (52.4, -0.1, 0.1, "seconds")
+            "elapsed_time": (26.3, -0.1, 0.1, "seconds")
         }
     }
 
