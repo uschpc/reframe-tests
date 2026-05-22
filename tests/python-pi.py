@@ -8,7 +8,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class python_pi(rfm.RunOnlyRegressionTest):
-    descr = "Estimating pi in parallel using Python with multiprocessing"
+    descr = "Estimate pi in parallel using Python"
     tags = {
         "maintenance",
         "performance",
@@ -29,13 +29,13 @@ class python_pi(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (100.8, -0.1, 0.1, "seconds")
+            "elapsed_time": (65.4, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (73.8, -0.1, 0.1, "seconds")
+            "elapsed_time": (58.1, -0.1, 0.1, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (73.1, -0.1, 0.1, "seconds")
+            "elapsed_time": (54.2, -0.1, 0.1, "seconds")
         }
     }
 
