@@ -532,36 +532,6 @@ site_configuration = {
                     ]
                 },
                 {
-                    "name": "epyc-64",
-                    "descr": "Discovery epyc-64 partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                         "--account=hpcroot",
-                         "--partition=epyc-64"
-                    ],
-                    "max_jobs": 1000,
-                    "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r",
-                        "env-matlab",
-                        "env-qchem"
-                    ]
-                },
-                {
                     "name": "gpu",
                     "descr": "Discovery gpu partition",
                     "scheduler": "slurm",
