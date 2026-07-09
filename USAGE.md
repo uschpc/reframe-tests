@@ -4,7 +4,7 @@ Some guidance for running tests.
 
 ## Installing ReFrame
 
-ReFrame can be installed using the [install-reframe.sh](scripts/install-reframe.sh) script. Currently, tests are developed and run using ReFrame v4.9.1. A shared installation is available on CARC clusters in `/apps/reframe/reframe-4.9.1`. This shared version is loaded when using the [use-reframe.sh](scripts/use-reframe.sh) script.
+ReFrame can be installed using the [install-reframe.sh](scripts/install-reframe.sh) script. A shared installation is available on CARC clusters in `/apps/reframe`. This shared version is loaded when using the [use-reframe.sh](scripts/use-reframe.sh) script.
 
 ## Installing and using the CARC test suite
 
@@ -30,8 +30,8 @@ The configuration files are stored in `config`:
 - shared/environments.py > for defining software environments
 - discovery.py > for the Discovery cluster
 - endeavour.py > for the Endeavour cluster
-- pathfinder.py > for the Pathfinder cluster
 - laguna.py > for the Laguna cluster
+- pathfinder.py > for the Pathfinder cluster
 
 The system partitions defined in the cluster configuration files are flexible and do not have to be limited to actual Slurm partitions. For example, an epyc-7513 system partition is defined as nodes with epyc-7513 CPUs. Note that this requires adding an allnodes partition and node features (i.e., epyc-7513) to the Slurm configuration. Defining partitions by node type makes it easier to check test performance by node type and distribute tests to all nodes of a certain type.
 
