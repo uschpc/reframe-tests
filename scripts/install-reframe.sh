@@ -1,5 +1,5 @@
 # Install ReFrame in current directory
-# e.g., bash install-reframe.sh 4.9.1
+# e.g., bash install-reframe.sh 4.10.0
 
 set -eu
 
@@ -9,32 +9,21 @@ if [[ "$#" -eq 0 ]]; then
     exit 1
 fi
 
+echo "Installing ReFrame..."
+
 ver="$1"
 
 module purge
-module load ver/2506 gcc/14.3.0 python/3.13.11 curl tar gzip
+module load ver/2506
+module load gcc/14.3.0
+module load python/3.13.11
 
-url="https://github.com/reframe-hpc/reframe/archive/refs/tags/v$ver.tar.gz"
-code="$(curl -sILo /dev/null -w "%{http_code}" "$url")"
-if [[ "$code" -ne 200 ]]; then
-    echo "Error: URL does not exist or not reachable"
-    echo "Check ReFrame version"
-    exit 1
-fi
-curl -sLO "$url"
-
-f="$(file -b v"$ver".tar.gz)"
-if [[ "$f" != *"gzip compressed data"* ]]; then
-    echo "Error: file is not gzipped archive"
-    exit 1
-fi
-tar -xf v"$ver".tar.gz
-rm v"$ver".tar.gz
-
-cd reframe-"$ver" || { echo "Error: cd failure"; exit 1; }
-./bootstrap.sh
-py="$(type -p python3)"
-sed -i "1s%.*%#\!${py}%" bin/reframe
+python3 -m venv "$PWD"/reframe-"$ver"
+source "$PWD"/reframe-"$ver"/bin/activate
+pip3 install --quiet --upgrade pip
+pip3 install --quiet reframe-hpc=="$ver"
 
 module purge
-echo "Installed ReFrame" "$(bin/reframe -V)"
+
+echo "Installed ReFrame $(reframe -V)"
+echo "Start testing..."

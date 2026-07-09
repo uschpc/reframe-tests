@@ -9,10 +9,10 @@ if [[ "$h" == "discovery"* ]]; then
     cl="discovery"
 elif [[ "$h" == "endeavour"* ]]; then
     cl="endeavour"
-elif [[ "$h" == "wolf-test" ]]; then
-    cl="pathfinder"
 elif [[ "$h" == "laguna"* ]]; then
     cl="laguna"
+elif [[ "$h" == "wolf-test" ]]; then
+    cl="pathfinder"
 else
     echo "Error: hostname not recognized for ReFrame configuration"
     return 1 2> /dev/null
@@ -33,4 +33,7 @@ fi
 
 # Load ReFrame
 
-export PATH=/apps/reframe/reframe-4.9.1/bin:"$PATH"
+export PATH=/apps/reframe/reframe-4.10.0/bin:"$PATH"
+
+echo "Using ReFrame $(reframe -V)"
+echo "Start testing..."
