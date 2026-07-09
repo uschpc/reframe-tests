@@ -1,6 +1,12 @@
 # Launch ReFrame test runs for maintenance periods in multiple tmux sessions
-# source scripts/use-reframe.sh
-# source scripts/maintenance.sh <res>
+# First: source scripts/use-reframe.sh
+# Then: source scripts/maintenance.sh <res>
+
+if [[ "$#" -eq 0 ]]; then
+    echo "Error: no argument given"
+    echo "Argument should be reservation name"
+    return 1
+fi
 
 # Set reservation name from first argument
 export res="$1"
