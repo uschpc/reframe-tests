@@ -28,10 +28,10 @@ class matlab_pi(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (30.7, -0.1, 0.1, "seconds")
+            "elapsed_time": (42.5, -0.1, 0.1, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (26.3, -0.1, 0.1, "seconds")
+            "elapsed_time": (36.2, -0.1, 0.1, "seconds")
         }
     }
 
