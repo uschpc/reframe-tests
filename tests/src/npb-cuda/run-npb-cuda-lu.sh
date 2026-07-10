@@ -16,7 +16,7 @@ fi
 # Build and run program for each GPU on node
 for i in "${gpus[@]}"; do
     bash make-npb-cuda.sh "$i" lu "$class"
-    ./gpu"$i".lu."$class" &
+    "$TMPDIR"/gpu"$i".lu."$class" &
 done
 
 wait

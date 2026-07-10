@@ -9,4 +9,4 @@ cd NPB-GPU/CUDA
 sed -i '/GPU_DEVICE/ s/0/'"$1"'/' config/gpu.config
 sed -i '/UCC/ s/cc/gcc/' config/make.def
 make "$2" CLASS="$3"
-mv bin/"$2"."$3" "$SLURM_SUBMIT_DIR"/gpu"$1"."$2"."$3"
+mv bin/"$2"."$3" "$TMPDIR"/gpu"$1"."$2"."$3"
