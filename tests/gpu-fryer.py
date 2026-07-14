@@ -34,7 +34,7 @@ class gpu_fryer(rfm.RunOnlyRegressionTest):
         "laguna:l40s"
     ]
     valid_prog_environs = [
-        "apptainer"
+        "apptainer-1.5.2"
     ]
     sourcesdir = None
     executable = "sleep 1s"

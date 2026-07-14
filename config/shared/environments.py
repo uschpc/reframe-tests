@@ -8,9 +8,21 @@ site_configuration = {
              ]
         },
         {
-             "name": "apptainer",
+             "name": "apptainer-1.5.2",
+             "modules": [
+                 "apptainer/1.5.2"
+             ]
+        },
+        {
+             "name": "apptainer-1.4.5",
              "modules": [
                  "apptainer/1.4.5"
+             ]
+        },
+        {
+             "name": "apptainer-1.3.6",
+             "modules": [
+                 "apptainer/1.3.6"
              ]
         },
         {

@@ -34,7 +34,9 @@ class apptainer_gpu_hello(rfm.RunOnlyRegressionTest):
         "laguna:l40s"
     ]
     valid_prog_environs = [
-        "apptainer"
+        "apptainer-1.5.2",
+        "apptainer-1.4.5",
+        "apptainer-1.3.6"
     ]
     sourcesdir = "src/apptainer"
     executable = "apptainer exec --nv reframe-debian-$SLURM_JOB_ID.sif echo \"Hello world from $(nvidia-smi -L)\""

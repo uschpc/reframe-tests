@@ -41,7 +41,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -74,7 +76,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -108,7 +112,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
@@ -140,7 +146,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -173,7 +181,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -206,7 +216,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -239,7 +251,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -272,7 +286,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
@@ -303,7 +319,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -336,7 +354,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -369,7 +389,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -402,7 +424,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -435,7 +459,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -468,7 +494,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -501,7 +529,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -534,7 +564,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
@@ -565,7 +597,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -598,7 +632,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
@@ -629,7 +665,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
@@ -660,7 +698,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -693,7 +733,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -711,7 +753,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -729,7 +773,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -747,7 +793,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -765,7 +813,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -783,7 +833,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -801,7 +853,9 @@ site_configuration = {
                     "max_jobs": 5000,
                     "environs": [
                         "none",
-                        "apptainer",
+                        "apptainer-1.5.2",
+                        "apptainer-1.4.5",
+                        "apptainer-1.3.6",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
