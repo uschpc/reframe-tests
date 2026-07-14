@@ -24,7 +24,7 @@ class fio_randrw_home(rfm.RunOnlyRegressionTest):
         "pathfinder:xeon-2640v3"
     ]
     valid_prog_environs = [
-        "env-fio"
+        "fio"
     ]
     sourcesdir = "src/fio-randrw"
     executable = "bash fio-randrw.sh home"

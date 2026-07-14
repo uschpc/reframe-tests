@@ -78,7 +78,7 @@ Test names are defined in the test files as the class name.
 To run a set of tests based on software environments, use the `-p` option. For example:
 
 ```
-reframe -c tests -p "env-julia" -r
+reframe -c tests -p "julia" -r
 ```
 
 ### Tagged tests

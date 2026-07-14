@@ -24,10 +24,10 @@ class npb_mpi_is(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "env-gcc-14.3.0-openmpi-5.0.8",
-        "env-gcc-14.3.0-mpich-4.3.1",
-        "env-gcc-13.3.0-openmpi-5.0.5",
-        "env-gcc-13.3.0-mpich-4.2.2"
+        "gcc-14.3.0-openmpi-5.0.8",
+        "gcc-14.3.0-mpich-4.3.1",
+        "gcc-13.3.0-openmpi-5.0.5",
+        "gcc-13.3.0-mpich-4.2.2"
     ]
     sourcesdir = "src/npb-mpi"
     executable = "is.D.x"

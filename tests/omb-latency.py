@@ -30,7 +30,7 @@ class omb_latency(rfm.RunOnlyRegressionTest):
         "laguna:ndr200"
     ]
     valid_prog_environs = [
-        "env-omb"
+        "omb"
     ]
     sourcesdir = None
     executable = "osu_get_latency"

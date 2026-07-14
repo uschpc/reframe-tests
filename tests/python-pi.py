@@ -20,7 +20,7 @@ class python_pi(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "env-python"
+        "python"
     ]
     sourcesdir = "src/python-pi"
     executable = "python3 pi.py"

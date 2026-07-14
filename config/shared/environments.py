@@ -3,18 +3,18 @@
 site_configuration = {
     "environments": [
         {
-             "name": "env-none",
+             "name": "none",
              "modules": [
              ]
         },
         {
-             "name": "env-apptainer",
+             "name": "apptainer",
              "modules": [
                  "apptainer/1.4.5"
              ]
         },
         {
-            "name": "env-gcc-14.3.0",
+            "name": "gcc-14.3.0",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -25,7 +25,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "env-gcc-14.3.0-cuda-12.9.1",
+            "name": "gcc-14.3.0-cuda-12.9.1",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -37,7 +37,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "env-gcc-14.3.0-mpich-4.3.1",
+            "name": "gcc-14.3.0-mpich-4.3.1",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -49,7 +49,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "env-gcc-14.3.0-openmpi-5.0.8",
+            "name": "gcc-14.3.0-openmpi-5.0.8",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -61,7 +61,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "env-gcc-13.3.0",
+            "name": "gcc-13.3.0",
             "modules": [
                 "gcc/13.3.0",
                 "gmake/4.4.1"
@@ -71,7 +71,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "env-gcc-13.3.0-cuda-12.6.3",
+            "name": "gcc-13.3.0-cuda-12.6.3",
             "modules": [
                 "gcc/13.3.0",
                 "gmake/4.4.1",
@@ -82,7 +82,7 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
-            "name": "env-gcc-13.3.0-mpich-4.2.2",
+            "name": "gcc-13.3.0-mpich-4.2.2",
             "modules": [
                 "gcc/13.3.0",
                 "gmake/4.4.1",
@@ -93,7 +93,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "env-gcc-13.3.0-openmpi-5.0.5",
+            "name": "gcc-13.3.0-openmpi-5.0.5",
             "modules": [
                 "gcc/13.3.0",
                 "gmake/4.4.1",
@@ -104,7 +104,7 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
-            "name": "env-hpcg",
+            "name": "hpcg",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -113,7 +113,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-omb",
+            "name": "omb",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -122,7 +122,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-fio",
+            "name": "fio",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -130,7 +130,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-ior",
+            "name": "ior",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -139,7 +139,7 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-git",
+            "name": "git",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -147,13 +147,13 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-julia",
+            "name": "julia",
             "modules": [
                 "julia/1.12.6"
             ]
         },
         {
-            "name": "env-python",
+            "name": "python",
             "modules": [
                 "ver/2506",
                 "gcc/14.3.0",
@@ -161,19 +161,19 @@ site_configuration = {
             ]
         },
         {
-            "name": "env-r",
+            "name": "r",
             "modules": [
                 "r/4.5.3"
             ]
         },
         {
-            "name": "env-matlab",
+            "name": "matlab",
             "modules": [
                 "matlab/2025b"
             ]
         },
         {
-            "name": "env-qchem",
+            "name": "qchem",
             "modules": [
                 "qchem/6.4.0"
             ]

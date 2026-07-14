@@ -18,7 +18,7 @@ class git_clone_scratch(rfm.RunOnlyRegressionTest):
         "laguna:allnodes"
     ]
     valid_prog_environs = [
-        "env-git"
+        "git"
     ]
     sourcesdir = "src/git-clone"
     executable = "bash git-clone.sh scratch"

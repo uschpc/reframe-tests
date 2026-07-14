@@ -19,7 +19,7 @@ class pmi(rfm.RunOnlyRegressionTest):
         "laguna:allnodes"
     ]
     valid_prog_environs = [
-        "env-none"
+        "none"
     ]
     sourcesdir = None
     executable = "srun --mpi=list"

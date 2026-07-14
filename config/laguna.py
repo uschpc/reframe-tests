@@ -26,7 +26,7 @@ site_configuration = {
                     "launcher": "local",
                     "max_jobs": 5,
                     "environs": [
-                        "env-none"
+                        "none"
                     ]
                 },
                 {
@@ -40,24 +40,24 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-cuda-12.9.1",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-cuda-12.6.3",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-omb",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0",
+                        "gcc-14.3.0-cuda-12.9.1",
+                        "gcc-14.3.0-mpich-4.3.1",
+                        "gcc-14.3.0-openmpi-5.0.8",
+                        "gcc-13.3.0",
+                        "gcc-13.3.0-cuda-12.6.3",
+                        "gcc-13.3.0-mpich-4.2.2",
+                        "gcc-13.3.0-openmpi-5.0.5",
+                        "hpcg",
+                        "omb",
+                        "fio",
+                        "ior",
+                        "git",
+                        "julia",
+                        "python",
+                        "r"
                     ]
                 },
                 {
@@ -72,22 +72,22 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-omb",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0",
+                        "gcc-14.3.0-mpich-4.3.1",
+                        "gcc-14.3.0-openmpi-5.0.8",
+                        "gcc-13.3.0",
+                        "gcc-13.3.0-mpich-4.2.2",
+                        "gcc-13.3.0-openmpi-5.0.5",
+                        "hpcg",
+                        "omb",
+                        "fio",
+                        "ior",
+                        "git",
+                        "julia",
+                        "python",
+                        "r"
                     ]
                 },
                 {
@@ -102,24 +102,24 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-cuda-12.9.1",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-cuda-12.6.3",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-omb",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0",
+                        "gcc-14.3.0-cuda-12.9.1",
+                        "gcc-14.3.0-mpich-4.3.1",
+                        "gcc-14.3.0-openmpi-5.0.8",
+                        "gcc-13.3.0",
+                        "gcc-13.3.0-cuda-12.6.3",
+                        "gcc-13.3.0-mpich-4.2.2",
+                        "gcc-13.3.0-openmpi-5.0.5",
+                        "hpcg",
+                        "omb",
+                        "fio",
+                        "ior",
+                        "git",
+                        "julia",
+                        "python",
+                        "r"
                     ]
                 },
                 {
@@ -134,10 +134,10 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0-cuda-12.9.1",
-                        "env-gcc-13.3.0-cuda-12.6.3"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0-cuda-12.9.1",
+                        "gcc-13.3.0-cuda-12.6.3"
                     ]
                 },
                 {
@@ -152,7 +152,7 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-omb"
+                        "omb"
                     ]
                 },
                 {
@@ -166,22 +166,22 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-omb",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0",
+                        "gcc-14.3.0-mpich-4.3.1",
+                        "gcc-14.3.0-openmpi-5.0.8",
+                        "gcc-13.3.0",
+                        "gcc-13.3.0-mpich-4.2.2",
+                        "gcc-13.3.0-openmpi-5.0.5",
+                        "hpcg",
+                        "omb",
+                        "fio",
+                        "ior",
+                        "git",
+                        "julia",
+                        "python",
+                        "r"
                     ]
                 },
                 {
@@ -195,24 +195,24 @@ site_configuration = {
                     ],
                     "max_jobs": 1000,
                     "environs": [
-                        "env-none",
-                        "env-apptainer",
-                        "env-gcc-14.3.0",
-                        "env-gcc-14.3.0-cuda-12.9.1",
-                        "env-gcc-14.3.0-mpich-4.3.1",
-                        "env-gcc-14.3.0-openmpi-5.0.8",
-                        "env-gcc-13.3.0",
-                        "env-gcc-13.3.0-cuda-12.6.3",
-                        "env-gcc-13.3.0-mpich-4.2.2",
-                        "env-gcc-13.3.0-openmpi-5.0.5",
-                        "env-hpcg",
-                        "env-omb",
-                        "env-fio",
-                        "env-ior",
-                        "env-git",
-                        "env-julia",
-                        "env-python",
-                        "env-r"
+                        "none",
+                        "apptainer",
+                        "gcc-14.3.0",
+                        "gcc-14.3.0-cuda-12.9.1",
+                        "gcc-14.3.0-mpich-4.3.1",
+                        "gcc-14.3.0-openmpi-5.0.8",
+                        "gcc-13.3.0",
+                        "gcc-13.3.0-cuda-12.6.3",
+                        "gcc-13.3.0-mpich-4.2.2",
+                        "gcc-13.3.0-openmpi-5.0.5",
+                        "hpcg",
+                        "omb",
+                        "fio",
+                        "ior",
+                        "git",
+                        "julia",
+                        "python",
+                        "r"
                     ]
                 },
                 {
@@ -226,7 +226,7 @@ site_configuration = {
                     ],
                     "max_jobs": 100,
                     "environs": [
-                        "env-none"
+                        "none"
                     ]
                 }
             ]

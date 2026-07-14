@@ -24,7 +24,7 @@ class fio_randrw_project(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "env-fio"
+        "fio"
     ]
     sourcesdir = "src/fio-randrw"
     executable = "bash fio-randrw.sh project"

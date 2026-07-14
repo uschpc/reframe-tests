@@ -50,8 +50,8 @@ class stream(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9354"
     ]
     valid_prog_environs = [
-        "env-gcc-14.3.0",
-        "env-gcc-13.3.0"
+        "gcc-14.3.0",
+        "gcc-13.3.0"
     ]
     sourcesdir = "src/stream"
     executable = "$TMPDIR/STREAM/stream_c.exe"

@@ -23,7 +23,7 @@ class apptainer_hello(rfm.RunOnlyRegressionTest):
         "laguna:allnodes"
     ]
     valid_prog_environs = [
-        "env-apptainer"
+        "apptainer"
     ]
     sourcesdir = "src/apptainer"
     executable = "apptainer exec reframe-debian-$SLURM_JOB_ID.sif echo \"Hello world\""

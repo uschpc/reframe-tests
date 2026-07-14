@@ -23,7 +23,7 @@ class ior_scratch(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "env-ior"
+        "ior"
     ]
     sourcesdir = "src/ior"
     executable = "bash ior.sh scratch"

@@ -21,7 +21,7 @@ class hpcg_laguna_compute(rfm.RunOnlyRegressionTest):
         "laguna:compute"
     ]
     valid_prog_environs = [
-        "env-hpcg"
+        "hpcg"
     ]
     sourcesdir = None
     executable = "xhpcg"

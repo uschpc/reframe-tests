@@ -24,7 +24,7 @@ class ior_scratch1(rfm.RunOnlyRegressionTest):
         "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
-        "env-ior"
+        "ior"
     ]
     sourcesdir = "src/ior"
     executable = "bash ior.sh scratch1"

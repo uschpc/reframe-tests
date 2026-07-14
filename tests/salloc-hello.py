@@ -19,7 +19,7 @@ class salloc_hello(rfm.RunOnlyRegressionTest):
         "laguna:login"
     ]
     valid_prog_environs = [
-        "env-none"
+        "none"
     ]
     sourcesdir = "src/salloc"
     executable = "bash salloc.sh"

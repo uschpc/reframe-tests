@@ -25,7 +25,7 @@ class fio_randrw_scratch2(rfm.RunOnlyRegressionTest):
         "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
-        "env-fio"
+        "fio"
     ]
     sourcesdir = "src/fio-randrw"
     executable = "bash fio-randrw.sh scratch2"

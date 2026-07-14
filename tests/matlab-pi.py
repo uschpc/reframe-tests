@@ -19,7 +19,7 @@ class matlab_pi(rfm.RunOnlyRegressionTest):
         "endeavour:epyc-7513"
     ]
     valid_prog_environs = [
-        "env-matlab"
+        "matlab"
     ]
     sourcesdir = "src/matlab-pi"
     executable = "matlab -batch \"pi\""

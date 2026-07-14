@@ -19,7 +19,7 @@ class git_clone_scratch2(rfm.RunOnlyRegressionTest):
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
-        "env-git"
+        "git"
     ]
     sourcesdir = "src/git-clone"
     executable = "bash git-clone.sh scratch2"

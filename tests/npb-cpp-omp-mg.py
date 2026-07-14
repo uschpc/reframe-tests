@@ -27,8 +27,8 @@ class npb_cpp_omp_mg(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "env-gcc-14.3.0",
-        "env-gcc-13.3.0"
+        "gcc-14.3.0",
+        "gcc-13.3.0"
     ]
     sourcesdir = "src/npb-cpp-omp"
     executable = "$TMPDIR/NPB-CPP/NPB-OMP/bin/mg.D"

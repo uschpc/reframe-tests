@@ -17,7 +17,7 @@ class htcondor_avail(rfm.RunOnlyRegressionTest):
         "laguna:htcondor"
     ]
     valid_prog_environs = [
-        "env-none"
+        "none"
     ]
     sourcesdir = None
     executable = "condor_q"

@@ -38,8 +38,8 @@ class npb_cuda_lu(rfm.RunOnlyRegressionTest):
         "laguna:l40s"
     ]
     valid_prog_environs = [
-        "env-gcc-14.3.0-cuda-12.9.1",
-        "env-gcc-13.3.0-cuda-12.6.3"
+        "gcc-14.3.0-cuda-12.9.1",
+        "gcc-13.3.0-cuda-12.6.3"
     ]
     sourcesdir = "src/npb-cuda"
     executable = "sleep 1s"

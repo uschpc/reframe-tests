@@ -19,7 +19,7 @@ class qchem_b3lyp(rfm.RunOnlyRegressionTest):
         "endeavour:allnodes"
     ]
     valid_prog_environs = [
-        "env-qchem"
+        "qchem"
     ]
     sourcesdir = "src/qchem-b3lyp"
     executable = "qchem -nt $OMP_NUM_THREADS qchem-b3lyp.inp"

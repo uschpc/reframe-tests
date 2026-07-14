@@ -52,8 +52,8 @@ class npb_omp_ep(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9354"
     ]
     valid_prog_environs = [
-        "env-gcc-14.3.0",
-        "env-gcc-13.3.0"
+        "gcc-14.3.0",
+        "gcc-13.3.0"
     ]
     sourcesdir = "src/npb-omp"
     executable = "$TMPDIR/NPB3.4.4/NPB3.4-OMP/bin/ep.D.x"

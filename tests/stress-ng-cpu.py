@@ -23,7 +23,7 @@ class stress_ng_cpu(rfm.RunOnlyRegressionTest):
         "laguna:allnodes"
     ]
     valid_prog_environs = [
-        "env-apptainer"
+        "apptainer"
     ]
     sourcesdir = None
     executable = "apptainer exec /apps/reframe/resources/containers/stress-ng.sif stress-ng --matrix $SLURM_CPUS_ON_NODE --timeout 2m"
