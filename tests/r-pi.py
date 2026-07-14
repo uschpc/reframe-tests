@@ -20,7 +20,9 @@ class r_pi(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "r"
+        "r-4.6.1",
+        "r-4.5.3",
+        "r-4.4.3"
     ]
     sourcesdir = "src/r-pi"
     executable = "Rscript pi.R"

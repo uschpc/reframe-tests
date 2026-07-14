@@ -54,7 +54,9 @@ site_configuration = {
                         "git",
                         "julia",
                         "python",
-                        "r"
+                        "r-4.6.1",
+                        "r-4.5.3",
+                        "r-4.4.3"
                     ]
                 },
                 {
@@ -83,7 +85,9 @@ site_configuration = {
                         "git",
                         "julia",
                         "python",
-                        "r"
+                        "r-4.6.1",
+                        "r-4.5.3",
+                        "r-4.4.3"
                     ]
                 }
             ]

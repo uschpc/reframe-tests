@@ -173,9 +173,21 @@ site_configuration = {
             ]
         },
         {
-            "name": "r",
+            "name": "r-4.6.1",
+            "modules": [
+                "r/4.6.1"
+            ]
+        },
+        {
+            "name": "r-4.5.3",
             "modules": [
                 "r/4.5.3"
+            ]
+        },
+        {
+            "name": "r-4.4.3",
+            "modules": [
+                "r/4.4.3"
             ]
         },
         {
