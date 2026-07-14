@@ -55,7 +55,7 @@ class npb_omp_is(rfm.RunOnlyRegressionTest):
         "env-gcc-13.3.0"
     ]
     sourcesdir = "src/npb-omp"
-    executable = "$TMPDIR/NPB3.4.3/NPB3.4-OMP/bin/is.C.x"
+    executable = "$TMPDIR/NPB3.4.4/NPB3.4-OMP/bin/is.C.x"
     time_limit = "5m"
     env_vars = {
         "OMP_NUM_THREADS": "$SLURM_CPUS_ON_NODE"
