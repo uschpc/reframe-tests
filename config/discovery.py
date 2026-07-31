@@ -87,17 +87,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -105,8 +102,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -135,7 +131,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -143,8 +138,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -165,17 +159,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -183,8 +174,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -205,17 +195,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -223,8 +210,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -253,7 +239,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -261,8 +246,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -283,17 +267,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -301,8 +282,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -323,17 +303,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -341,8 +318,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -371,7 +347,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -379,8 +354,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -401,17 +375,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -419,8 +390,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -538,6 +508,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -553,6 +524,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -568,6 +540,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -583,188 +556,8 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
-                    ]
-                },
-                {
-                    "name": "main",
-                    "descr": "Discovery main partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                        "--account=hpcroot",
-                        "--partition=main"
-                    ],
-                    "max_jobs": 1000,
-                    "environs": [
-                        "none",
-                        "apptainer-1.5.3",
-                        "apptainer-1.4.5",
-                        "apptainer-1.3.6",
-                        "gcc-15.3.0",
-                        "gcc-14.3.0",
-                        "gcc-14.3.0-mpich-4.3.1",
-                        "gcc-14.3.0-openmpi-5.0.8",
-                        "gcc-13.3.0",
-                        "gcc-13.3.0-mpich-4.2.2",
-                        "gcc-13.3.0-openmpi-5.0.5",
-                        "hpcg",
-                        "fio",
-                        "git",
-                        "python",
-                        "julia-1.12.6",
-                        "julia-1.11.9",
-                        "julia-1.10.11",
-                        "r-4.6.1",
-                        "r-4.5.3",
-                        "r-4.4.3",
-                        "matlab",
-                        "qchem"
-                    ]
-                },
-                {
-                    "name": "gpu",
-                    "descr": "Discovery gpu partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                         "--account=hpcroot",
-                         "--partition=gpu"
-                    ],
-                    "max_jobs": 1000,
-                    "environs": [
-                        "none",
-                        "apptainer-1.5.3",
-                        "apptainer-1.4.5",
-                        "apptainer-1.3.6",
-                        "gcc-15.3.0",
-                        "gcc-15.3.0-cuda-13.0.3",
-                        "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
-                        "gcc-14.3.0-mpich-4.3.1",
-                        "gcc-14.3.0-openmpi-5.0.8",
-                        "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
-                        "gcc-13.3.0-mpich-4.2.2",
-                        "gcc-13.3.0-openmpi-5.0.5",
-                        "fio",
-                        "git",
-                        "python",
-                        "julia-1.12.6",
-                        "julia-1.11.9",
-                        "julia-1.10.11",
-                        "r-4.6.1",
-                        "r-4.5.3",
-                        "r-4.4.3",
-                        "matlab",
-                        "qchem"
-                    ]
-                },
-                {
-                    "name": "largemem",
-                    "descr": "Discovery largemem partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                         "--account=hpcroot",
-                         "--partition=largemem"
-                    ],
-                    "max_jobs": 100,
-                    "environs": [
-                        "none",
-                        "apptainer-1.5.3",
-                        "apptainer-1.4.5",
-                        "apptainer-1.3.6",
-                        "gcc-15.3.0",
-                        "gcc-14.3.0",
-                        "gcc-14.3.0-mpich-4.3.1",
-                        "gcc-14.3.0-openmpi-5.0.8",
-                        "gcc-13.3.0",
-                        "gcc-13.3.0-mpich-4.2.2",
-                        "gcc-13.3.0-openmpi-5.0.5",
-                        "fio",
-                        "git",
-                        "python",
-                        "julia-1.12.6",
-                        "julia-1.11.9",
-                        "julia-1.10.11",
-                        "r-4.6.1",
-                        "r-4.5.3",
-                        "r-4.4.3",
-                        "matlab",
-                        "qchem"
-                    ]
-                },
-                {
-                    "name": "debug",
-                    "descr": "Discovery debug partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                         "--account=hpcroot",
-                         "--partition=debug"
-                    ],
-                    "max_jobs": 100,
-                    "environs": [
-                        "none",
-                        "apptainer-1.5.3",
-                        "apptainer-1.4.5",
-                        "apptainer-1.3.6",
-                        "gcc-15.3.0",
-                        "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
-                        "gcc-14.3.0-mpich-4.3.1",
-                        "gcc-14.3.0-openmpi-5.0.8",
-                        "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
-                        "gcc-13.3.0-mpich-4.2.2",
-                        "gcc-13.3.0-openmpi-5.0.5",
-                        "fio",
-                        "git",
-                        "python",
-                        "julia-1.12.6",
-                        "julia-1.11.9",
-                        "julia-1.10.11",
-                        "r-4.6.1",
-                        "r-4.5.3",
-                        "r-4.4.3",
-                        "matlab",
-                        "qchem"
-                    ]
-                },
-                {
-                    "name": "oneweek",
-                    "descr": "Discovery oneweek partition",
-                    "scheduler": "slurm",
-                    "launcher": "srun",
-                    "access": [
-                         "--account=hpcroot",
-                         "--partition=oneweek"
-                    ],
-                    "max_jobs": 1000,
-                    "environs": [
-                        "none",
-                        "apptainer-1.5.3",
-                        "apptainer-1.4.5",
-                        "apptainer-1.3.6",
-                        "gcc-15.3.0",
-                        "gcc-14.3.0",
-                        "gcc-14.3.0-mpich-4.3.1",
-                        "gcc-14.3.0-openmpi-5.0.8",
-                        "gcc-13.3.0",
-                        "gcc-13.3.0-mpich-4.2.2",
-                        "gcc-13.3.0-openmpi-5.0.5",
-                        "fio",
-                        "git",
-                        "python",
-                        "julia-1.12.6",
-                        "julia-1.11.9",
-                        "julia-1.10.11",
-                        "r-4.6.1",
-                        "r-4.5.3",
-                        "r-4.4.3",
-                        "matlab",
-                        "qchem"
                     ]
                 },
                 {
