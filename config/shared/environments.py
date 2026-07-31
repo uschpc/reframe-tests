@@ -49,6 +49,18 @@ site_configuration = {
             "ftn": "gfortran"
         },
         {
+            "name": "gcc-15.3.0-mpich-5.0.1",
+            "modules": [
+                "ver/2607",
+                "gcc/15.3.0",
+                "gmake/4.4.1",
+                "mpich/5.0.1"
+            ],
+            "cc": "mpicc",
+            "cxx": "mpic++",
+            "ftn": "mpif90"
+        },
+        {
             "name": "gcc-14.3.0",
             "modules": [
                 "ver/2506",

@@ -26,6 +26,7 @@ class npb_mpi_mg(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
+        "gcc-15.3.0-mpich-5.0.1",
         "gcc-14.3.0-openmpi-5.0.8",
         "gcc-14.3.0-mpich-4.3.1",
         "gcc-13.3.0-openmpi-5.0.5",
