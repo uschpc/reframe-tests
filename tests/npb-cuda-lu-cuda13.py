@@ -15,7 +15,7 @@ import reframe as rfm
 import reframe.utility.sanity as sn
 
 @rfm.simple_test
-class npb_cuda_lu(rfm.RunOnlyRegressionTest):
+class npb_cuda_lu_cuda13(rfm.RunOnlyRegressionTest):
     descr = "NPB CUDA LU benchmark"
     tags = {
         "gpu",
