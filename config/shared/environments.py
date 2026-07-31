@@ -61,6 +61,18 @@ site_configuration = {
             "ftn": "mpif90"
         },
         {
+            "name": "gcc-15.3.0-openmpi-5.0.10",
+            "modules": [
+                "ver/2607",
+                "gcc/15.3.0",
+                "gmake/4.4.1",
+                "openmpi/5.0.10"
+            ],
+            "cc": "mpicc",
+            "cxx": "mpic++",
+            "ftn": "mpif90"
+        },
+        {
             "name": "gcc-14.3.0",
             "modules": [
                 "ver/2506",
