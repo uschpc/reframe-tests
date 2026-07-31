@@ -19,7 +19,9 @@ class julia_pi(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "julia"
+        "julia-1.12.6",
+        "julia-1.11.9",
+        "julia-1.10.11"
     ]
     sourcesdir = "src/julia-pi"
     executable = "julia --threads 8 pi.jl"

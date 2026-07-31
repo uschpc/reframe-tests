@@ -52,8 +52,10 @@ site_configuration = {
                         "gcc-13.3.0-openmpi-5.0.5",
                         "fio",
                         "git",
-                        "julia",
                         "python",
+                        "julia-1.12.6",
+                        "julia-1.11.9",
+                        "julia-1.10.11",
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3"
@@ -83,8 +85,10 @@ site_configuration = {
                         "gcc-13.3.0-openmpi-5.0.5",
                         "fio",
                         "git",
-                        "julia",
                         "python",
+                        "julia-1.12.6",
+                        "julia-1.11.9",
+                        "julia-1.10.11",
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3"
