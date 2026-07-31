@@ -1,7 +1,8 @@
 # NAS Parallel Benchmarks LU benchmark test
 # Translated to CUDA
+# This test is for CUDA 13 and supported GPU models
 # Purpose of test
-# - Test CUDA 13 module access
+# - Test CUDA module access
 # - Test building CUDA program
 # - Test running CUDA program
 # - Test GPU performance for flow solver
