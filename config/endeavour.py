@@ -87,17 +87,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -105,8 +102,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -136,7 +132,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -144,8 +139,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -167,17 +161,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -185,8 +176,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -207,17 +197,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -225,8 +212,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -247,17 +233,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -265,8 +248,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -287,17 +269,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -305,8 +284,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -335,7 +313,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -343,8 +320,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -365,17 +341,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -383,8 +356,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -405,17 +377,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -423,8 +392,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -445,17 +413,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -463,8 +428,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -485,17 +449,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -503,8 +464,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -525,17 +485,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -543,8 +500,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -565,17 +521,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -583,8 +536,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -605,17 +557,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -623,8 +572,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -653,7 +601,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -661,8 +608,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -683,17 +629,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -701,8 +644,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -731,7 +673,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -739,8 +680,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -769,7 +709,6 @@ site_configuration = {
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -777,8 +716,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -799,17 +737,14 @@ site_configuration = {
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
                         "gcc-14.3.0",
-                        "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
                         "gcc-14.3.0-openmpi-5.0.8",
                         "gcc-13.3.0",
-                        "gcc-13.3.0-cuda-12.6.3",
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "omb",
                         "fio",
                         "ior",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
@@ -817,8 +752,7 @@ site_configuration = {
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3",
-                        "matlab",
-                        "qchem"
+                        "matlab"
                     ]
                 },
                 {
@@ -977,6 +911,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -992,6 +927,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -1007,6 +943,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 },
@@ -1022,6 +959,7 @@ site_configuration = {
                     ],
                     "max_jobs": 5000,
                     "environs": [
+                        "none",
                         "omb"
                     ]
                 }
