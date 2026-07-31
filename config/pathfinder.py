@@ -86,7 +86,6 @@ site_configuration = {
                         "gcc-13.3.0-mpich-4.2.2",
                         "gcc-13.3.0-openmpi-5.0.5",
                         "fio",
-                        "git",
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
