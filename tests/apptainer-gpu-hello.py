@@ -34,7 +34,7 @@ class apptainer_gpu_hello(rfm.RunOnlyRegressionTest):
         "laguna:l40s"
     ]
     valid_prog_environs = [
-        "apptainer-1.5.2",
+        "apptainer-1.5.3",
         "apptainer-1.4.5",
         "apptainer-1.3.6"
     ]

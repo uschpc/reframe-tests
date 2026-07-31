@@ -8,9 +8,9 @@ site_configuration = {
              ]
         },
         {
-             "name": "apptainer-1.5.2",
+             "name": "apptainer-1.5.3",
              "modules": [
-                 "apptainer/1.5.2"
+                 "apptainer/1.5.3"
              ]
         },
         {
