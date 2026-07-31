@@ -45,6 +45,7 @@ site_configuration = {
                         "apptainer-1.4.5",
                         "apptainer-1.3.6",
                         "gcc-15.3.0",
+                        "gcc-15.3.0-cuda-13.0.3",
                         "gcc-14.3.0",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-14.3.0-mpich-4.3.1",
@@ -836,6 +837,7 @@ site_configuration = {
                         "apptainer-1.5.3",
                         "apptainer-1.4.5",
                         "apptainer-1.3.6",
+                        "gcc-15.3.0-cuda-13.0.3",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -856,6 +858,7 @@ site_configuration = {
                         "apptainer-1.5.3",
                         "apptainer-1.4.5",
                         "apptainer-1.3.6",
+                        "gcc-15.3.0-cuda-13.0.3",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -876,6 +879,7 @@ site_configuration = {
                         "apptainer-1.5.3",
                         "apptainer-1.4.5",
                         "apptainer-1.3.6",
+                        "gcc-15.3.0-cuda-13.0.3",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
@@ -896,6 +900,7 @@ site_configuration = {
                         "apptainer-1.5.3",
                         "apptainer-1.4.5",
                         "apptainer-1.3.6",
+                        "gcc-15.3.0-cuda-13.0.3",
                         "gcc-14.3.0-cuda-12.9.1",
                         "gcc-13.3.0-cuda-12.6.3"
                     ]
