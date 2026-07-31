@@ -27,6 +27,7 @@ class npb_cpp_omp_mg(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
+        "gcc-15.3.0",
         "gcc-14.3.0",
         "gcc-13.3.0"
     ]

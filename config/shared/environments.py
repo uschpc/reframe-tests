@@ -26,6 +26,17 @@ site_configuration = {
              ]
         },
         {
+            "name": "gcc-15.3.0",
+            "modules": [
+                "ver/2607",
+                "gcc/15.3.0",
+                "gmake/4.4.1"
+            ],
+            "cc": "gcc",
+            "cxx": "g++",
+            "ftn": "gfortran"
+        },
+        {
             "name": "gcc-14.3.0",
             "modules": [
                 "ver/2506",
