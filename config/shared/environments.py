@@ -183,9 +183,9 @@ site_configuration = {
         {
             "name": "fio",
             "modules": [
-                "ver/2506",
-                "gcc/14.3.0",
-                "fio/3.41"
+                "ver/2607",
+                "gcc/15.3.0",
+                "fio/3.42"
             ]
         },
         {
