@@ -19,7 +19,7 @@ class julia_pi(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
-        "julia-1.12.6",
+        "julia-1.12.7",
         "julia-1.11.9",
         "julia-1.10.12"
     ]
