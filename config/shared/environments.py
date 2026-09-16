@@ -214,6 +214,12 @@ site_configuration = {
             ]
         },
         {
+            "name": "julia-1.13.0",
+            "modules": [
+                "julia/1.13.0"
+            ]
+        },
+        {
             "name": "julia-1.12.7",
             "modules": [
                 "julia/1.12.7"

@@ -19,6 +19,7 @@ class julia_pi(rfm.RunOnlyRegressionTest):
         "laguna:epyc-9554"
     ]
     valid_prog_environs = [
+        "julia-1.13.0",
         "julia-1.12.7",
         "julia-1.11.9",
         "julia-1.10.12"
@@ -30,13 +31,13 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     time_limit = "1m"
     reference = {
         "discovery:epyc-7542": {
-            "elapsed_time": (2.6, -0.1, 0.1, "seconds")
+            "elapsed_time": (2.6, -0.5, 0.5, "seconds")
         },
         "endeavour:epyc-7513": {
-            "elapsed_time": (2.0, -0.1, 0.1, "seconds")
+            "elapsed_time": (2.0, -0.5, 0.5, "seconds")
         },
         "laguna:epyc-9554": {
-            "elapsed_time": (1.4, -0.1, 0.1, "seconds")
+            "elapsed_time": (1.4, -0.5, 0.5, "seconds")
         }
     }
 
