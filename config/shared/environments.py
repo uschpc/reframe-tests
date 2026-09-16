@@ -200,9 +200,9 @@ site_configuration = {
         {
             "name": "git",
             "modules": [
-                "ver/2506",
-                "gcc/14.3.0",
-                "git/2.51.0"
+                "ver/2607",
+                "gcc/15.3.0",
+                "git/2.55.0"
             ]
         },
         {
