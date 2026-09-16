@@ -21,7 +21,7 @@ class julia_pi(rfm.RunOnlyRegressionTest):
     valid_prog_environs = [
         "julia-1.12.6",
         "julia-1.11.9",
-        "julia-1.10.11"
+        "julia-1.10.12"
     ]
     sourcesdir = "src/julia-pi"
     executable = "julia --threads 8 pi.jl"

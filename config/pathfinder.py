@@ -58,7 +58,7 @@ site_configuration = {
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
-                        "julia-1.10.11",
+                        "julia-1.10.12",
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3"
@@ -93,7 +93,7 @@ site_configuration = {
                         "python",
                         "julia-1.12.6",
                         "julia-1.11.9",
-                        "julia-1.10.11",
+                        "julia-1.10.12",
                         "r-4.6.1",
                         "r-4.5.3",
                         "r-4.4.3"

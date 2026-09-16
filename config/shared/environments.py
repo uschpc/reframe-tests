@@ -226,9 +226,9 @@ site_configuration = {
             ]
         },
         {
-            "name": "julia-1.10.11",
+            "name": "julia-1.10.12",
             "modules": [
-                "julia/1.10.11"
+                "julia/1.10.12"
             ]
         },
         {
