@@ -206,6 +206,14 @@ site_configuration = {
             ]
         },
         {
+            "name": "python",
+            "modules": [
+                "ver/2607",
+                "gcc/15.3.0",
+                "python/3.14.7"
+            ]
+        },
+        {
             "name": "julia-1.12.6",
             "modules": [
                 "julia/1.12.6"
@@ -221,14 +229,6 @@ site_configuration = {
             "name": "julia-1.10.11",
             "modules": [
                 "julia/1.10.11"
-            ]
-        },
-        {
-            "name": "python",
-            "modules": [
-                "ver/2506",
-                "gcc/14.3.0",
-                "python/3.13.11"
             ]
         },
         {
