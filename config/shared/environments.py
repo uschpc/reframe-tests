@@ -191,10 +191,10 @@ site_configuration = {
         {
             "name": "ior",
             "modules": [
-                "ver/2506",
-                "gcc/14.3.0",
-                "mpich/4.3.1",
-                "ior/3.3.0"
+                "ver/2607",
+                "gcc/15.3.0",
+                "mpich/5.0.1",
+                "ior/4.0.0"
             ]
         },
         {
