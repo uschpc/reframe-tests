@@ -165,9 +165,9 @@ site_configuration = {
         {
             "name": "hpcg",
             "modules": [
-                "ver/2506",
-                "gcc/14.3.0",
-                "mpich/4.3.1",
+                "ver/2607",
+                "gcc/15.3.0",
+                "mpich/5.0.1",
                 "hpcg/3.1"
             ]
         },
