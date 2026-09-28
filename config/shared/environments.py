@@ -214,9 +214,9 @@ site_configuration = {
             ]
         },
         {
-            "name": "julia-1.13.0",
+            "name": "julia-1.13.1",
             "modules": [
-                "julia/1.13.0"
+                "julia/1.13.1"
             ]
         },
         {
