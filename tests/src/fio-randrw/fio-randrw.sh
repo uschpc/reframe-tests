@@ -2,9 +2,7 @@
 
 set -e
 
-if [[ "$1" == "home" ]]; then
-    dir="/home/hpcroot/reframe/tmp"
-elif [[ "$1" == "home1" ]]; then
+if [[ "$1" == "home1" ]]; then
     dir="/home1/$USER"
 elif [[ "$1" == "scratch" ]]; then
     dir="/scratch/$USER"
@@ -26,12 +24,12 @@ else
     exit 1
 fi
 
-cd "$dir"
+cd "$dir" || exit
 
-if [[ "$1" == "home" ]] || [[ "$1" == "home1" ]]; then
-    fio --name=reframe-fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=1G --numjobs=4 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
+if [[ "$1" == "home1" ]]; then
+    fio --name=reframe-fio-randrw-"$SLURM_JOB_ID" --ioengine=libaio --direct=1 --rw=randrw --bs=64K --size=1G --iodepth=32 --end_fsync=1 --numjobs=4 --group_reporting --time_based --runtime=60 --ramp_time=10
 else
-    fio --name=reframe-fio-randrw-"$SLURM_JOB_ID" --ioengine=posixaio --rw=randrw --bs=64K --size=16G --numjobs=8 --iodepth=64 --direct=1 --runtime=60 --time_based --end_fsync=1
+    fio --name=reframe-fio-randrw-"$SLURM_JOB_ID" --ioengine=libaio --direct=1 --rw=randrw --bs=64K --size=16G --iodepth=32 --end_fsync=1 --numjobs=8 --group_reporting --time_based --runtime=60 --ramp_time=10
 fi
 
 rm reframe-fio-randrw-"$SLURM_JOB_ID"*

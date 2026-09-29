@@ -34,12 +34,12 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     time_limit = "10m"
     reference = {
         "discovery:epyc-7513": {
-            "avg_write_speed": (30, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (30, -0.1, None, "MiB/sec")
+            "avg_write_speed": (600, -0.1, None, "KiB/sec"),
+            "avg_read_speed": (600, -0.1, None, "KiB/sec")
         },
         "endeavour:epyc-7513": {
-            "avg_write_speed": (30, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (30, -0.1, None, "MiB/sec")
+            "avg_write_speed": (600, -0.1, None, "KiB/sec"),
+            "avg_read_speed": (600, -0.1, None, "KiB/sec")
         }
     }
 
@@ -47,10 +47,10 @@ class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     def assert_sanity(self):
         return sn.assert_found(r"all jobs", self.stdout)
 
-    @performance_function("MiB/sec", perf_key = "avg_write_speed")
+    @performance_function("KiB/sec", perf_key = "avg_write_speed")
     def extract_perf_write(self):
         return sn.extractsingle(r"WRITE:\sbw=(?P<W_ret>\d+.\d+)", self.stdout, "W_ret", float)
 
-    @performance_function("MiB/sec", perf_key = "avg_read_speed")
+    @performance_function("KiB/sec", perf_key = "avg_read_speed")
     def extract_perf_read(self):
         return sn.extractsingle(r"READ:\sbw=(?P<R_ret>\d+.\d+)", self.stdout, "R_ret", float)

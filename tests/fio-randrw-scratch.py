@@ -33,8 +33,8 @@ class fio_randrw_scratch(rfm.RunOnlyRegressionTest):
     time_limit = "10m"
     reference = {
         "laguna:epyc-9554": {
-            "avg_write_speed": (517, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (517, -0.1, None, "MiB/sec")
+            "avg_write_speed": (15, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (15, -0.1, None, "MiB/sec")
         }
     }
 

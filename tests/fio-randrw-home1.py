@@ -35,16 +35,16 @@ class fio_randrw_home1(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7513": {
-            "avg_write_speed": (75, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (75, -0.1, None, "MiB/sec")
+            "avg_write_speed": (100, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (100, -0.1, None, "MiB/sec")
         },
         "endeavour:epyc-7513": {
-            "avg_write_speed": (75, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (75, -0.1, None, "MiB/sec")
+            "avg_write_speed": (100, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (100, -0.1, None, "MiB/sec")
         },
         "laguna:epyc-9554": {
-            "avg_write_speed": (72, -0.1, None, "MiB/sec"),
-            "avg_read_speed": (72, -0.1, None, "MiB/sec")
+            "avg_write_speed": (100, -0.1, None, "MiB/sec"),
+            "avg_read_speed": (100, -0.1, None, "MiB/sec")
         }
     }
 
