@@ -16,7 +16,6 @@ import reframe.utility.sanity as sn
 class fio_randrw_scratch1(rfm.RunOnlyRegressionTest):
     descr = "Fio random read/write benchmark for /scratch1 file system"
     tags = {
-        "maintenance",
         "performance",
         "singlenode"
     }
