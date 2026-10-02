@@ -1,4 +1,4 @@
-# Run IOR test with different settings for different file systems
+# Run IOR sequential read/write test with different settings for different file systems
 
 set -e
 
@@ -22,6 +22,6 @@ else
     exit 1
 fi
 
-cd "$dir"
+cd "$dir" || exit
 
-ior -vvv -t 4m -b 64m -s 16 -F -C -e -o "reframe-ior-$SLURM_JOB_ID.tmp"
+ior -vv -t 1M -b 1G -s 10 -F -C -e -g -l random -o "reframe-ior-$SLURM_JOB_ID.tmp"

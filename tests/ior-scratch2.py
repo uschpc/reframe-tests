@@ -1,9 +1,10 @@
-# IOR benchmark test
+# IOR sequential read/write benchmark test
 # For /scratch2 file system
 # Purpose of test
 # - Test IOR module access
 # - Test MPI library
-# - Test /scratch2 file system parallel performance
+# - Test /scratch2 file system access
+# - Test /scratch2 file system performance
 # Notes
 # - https://github.com/hpc/ior
 # - Other I/O tests for this file system should not be run at the same time
@@ -14,7 +15,7 @@ import reframe.utility.sanity as sn
 
 @rfm.simple_test
 class ior_scratch2(rfm.RunOnlyRegressionTest):
-    descr = "IOR benchmark for /scratch2 file system"
+    descr = "IOR sequential read/write benchmark for /scratch2 file system"
     tags = {
         "multinode",
         "performance"
@@ -34,12 +35,12 @@ class ior_scratch2(rfm.RunOnlyRegressionTest):
     time_limit = "5m"
     reference = {
         "discovery:epyc-7513": {
-            "max_write_speed": (3000, -0.25, None, "MiB/sec"),
-            "max_read_speed": (15000, -0.25, None, "MiB/sec")
+            "max_write_speed": (1700, -0.25, None, "MiB/sec"),
+            "max_read_speed": (18000, -0.25, None, "MiB/sec")
         },
         "endeavour:epyc-7513": {
-            "max_write_speed": (3000, -0.25, None, "MiB/sec"),
-            "max_read_speed": (15000, -0.25, None, "MiB/sec")
+            "max_write_speed": (1700, -0.25, None, "MiB/sec"),
+            "max_read_speed": (18000, -0.25, None, "MiB/sec")
         }
     }
 
